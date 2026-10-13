@@ -1,0 +1,6 @@
+.DS_Store
+.venv/
+__pycache__/
+# transcript YouTube (nội dung có bản quyền) và log agy — tạo lại bằng scripts, không commit
+video-youtube/transcripts/
+video-youtube/raw/

@@ -1,0 +1,411 @@
+{
+ "01-ctoaIC4LHmI": [
+  {
+   "q": "It's a simple agentic software factory where a team of agents take a f",
+   "ts": 66,
+   "match": 1.0,
+   "found_at": 63,
+   "ts_off": 3
+  },
+  {
+   "q": "What's new is the automation of relatively unstructured cognitive work",
+   "ts": 186,
+   "match": 1.0,
+   "found_at": 184,
+   "ts_off": 2
+  },
+  {
+   "q": "That's the power of a software factory and this is why everybody's so ",
+   "ts": 343,
+   "match": 0.76,
+   "found_at": 345,
+   "ts_off": 2
+  },
+  {
+   "q": "Also, we just built this ourselves. Like this is your own thing. You y",
+   "ts": 1183,
+   "match": 0.87,
+   "found_at": 1179,
+   "ts_off": 4
+  },
+  {
+   "q": "Anytime we're using sub agents, that's could incur extra costs because",
+   "ts": 1601,
+   "match": 1.0,
+   "found_at": 1596,
+   "ts_off": 5
+  }
+ ],
+ "02-l6GpUvPOVpM": [
+  {
+   "q": "The great thing about using AI agents for this use case is they're pre",
+   "ts": 12,
+   "match": 0.19,
+   "found_at": 12,
+   "ts_off": 0
+  },
+  {
+   "q": "So the idea here behind an AI S or site reliability engineer is that y",
+   "ts": 115,
+   "match": 1.0,
+   "found_at": 115,
+   "ts_off": 0
+  },
+  {
+   "q": "So this is where you need some kind of human in the loop.",
+   "ts": 686,
+   "match": 1.0,
+   "found_at": 678,
+   "ts_off": 8
+  },
+  {
+   "q": "So really the quality of your agents often comes down to the quality o",
+   "ts": 837,
+   "match": 1.0,
+   "found_at": 831,
+   "ts_off": 6
+  },
+  {
+   "q": "So often they'll find the information you need, but maybe they'll misi",
+   "ts": 989,
+   "match": 1.0,
+   "found_at": 985,
+   "ts_off": 4
+  }
+ ],
+ "03-pNmfMi-yjZk": [
+  {
+   "q": "Literally software that self-improves. That as you collect feedback an",
+   "ts": 3,
+   "match": 1.0,
+   "found_at": 0,
+   "ts_off": 3
+  },
+  {
+   "q": "We need to know it's reproduced, it's fixed before we get any autonomo",
+   "ts": 249,
+   "match": 1.0,
+   "found_at": 249,
+   "ts_off": 0
+  },
+  {
+   "q": "And my definitive answer right now is it's got to run on a laptop. Bec",
+   "ts": 390,
+   "match": 1.0,
+   "found_at": 386,
+   "ts_off": 4
+  },
+  {
+   "q": "Now, at the end of the day, I spend most of my time feeling like a sci",
+   "ts": 740,
+   "match": 0.86,
+   "found_at": 738,
+   "ts_off": 2
+  },
+  {
+   "q": "And lastly, I would start small. You don't have to start with all thes",
+   "ts": 868,
+   "match": 1.0,
+   "found_at": 864,
+   "ts_off": 4
+  }
+ ],
+ "04-vGCJ7diEtrw": [
+  {
+   "q": "I would define the software factory as the whole loop the whole life c",
+   "ts": 82,
+   "match": 1.0,
+   "found_at": 82,
+   "ts_off": 0
+  },
+  {
+   "q": "So I want to say software factory is not just coding agent and it's no",
+   "ts": 178,
+   "match": 1.0,
+   "found_at": 177,
+   "ts_off": 1
+  },
+  {
+   "q": "The agents work in sequence and everyone accomplishes something and pa",
+   "ts": 778,
+   "match": 1.0,
+   "found_at": 772,
+   "ts_off": 6
+  },
+  {
+   "q": "Uh important thing is uh the validators judge code that they didn't wr",
+   "ts": 818,
+   "match": 1.0,
+   "found_at": 809,
+   "ts_off": 9
+  },
+  {
+   "q": "We should be as humans deciding what to build in the software not how ",
+   "ts": 1291,
+   "match": 1.0,
+   "found_at": 1288,
+   "ts_off": 3
+  }
+ ],
+ "05-yhLDivVIamQ": [
+  {
+   "q": "What we're going to look at today is how agents can be used at every s",
+   "ts": 6,
+   "match": 0.89,
+   "found_at": 7,
+   "ts_off": 1
+  },
+  {
+   "q": "So, you can kind of see this whole factory as a bit of a loop where we",
+   "ts": 100,
+   "match": 1.0,
+   "found_at": 247,
+   "ts_off": 147
+  },
+  {
+   "q": "So, risk is relative.",
+   "ts": 158,
+   "match": 1.0,
+   "found_at": 150,
+   "ts_off": 8
+  },
+  {
+   "q": "An example of a high risk change would be anything touching infrastruc",
+   "ts": 186,
+   "match": 1.0,
+   "found_at": 181,
+   "ts_off": 5
+  },
+  {
+   "q": "It can take a really, really long time to search through logs and corr",
+   "ts": 456,
+   "match": 1.0,
+   "found_at": 449,
+   "ts_off": 7
+  }
+ ],
+ "06-_LCeJZFIsd4": [
+  {
+   "q": "um but a software factory is completely harness and model agnostic, me",
+   "ts": 145,
+   "match": 1.0,
+   "found_at": 141,
+   "ts_off": 4
+  },
+  {
+   "q": "Every new feature starts in a fresh Git work tree branched from origin",
+   "ts": 327,
+   "match": 1.0,
+   "found_at": 325,
+   "ts_off": 2
+  },
+  {
+   "q": "So, just because it works doesn't mean it's written well. This skill g",
+   "ts": 790,
+   "match": 1.0,
+   "found_at": 785,
+   "ts_off": 5
+  },
+  {
+   "q": "you know, agents can't pinky promise, right?",
+   "ts": 892,
+   "match": 1.0,
+   "found_at": 887,
+   "ts_off": 5
+  },
+  {
+   "q": "No, a software factory is literally just a bunch of markdown files.",
+   "ts": 1704,
+   "match": 1.0,
+   "found_at": 1761,
+   "ts_off": 57
+  }
+ ],
+ "07-ZDOTYfJBuLw": [
+  {
+   "q": "I personally think about a software factory as infrastructure for runn",
+   "ts": 60,
+   "match": 1.0,
+   "found_at": 60,
+   "ts_off": 0
+  },
+  {
+   "q": "You just delegate the work and the factory or the system will take car",
+   "ts": 86,
+   "match": 1.0,
+   "found_at": 80,
+   "ts_off": 6
+  },
+  {
+   "q": "So we can have these completely secure and private, but then we can us",
+   "ts": 160,
+   "match": 1.0,
+   "found_at": 159,
+   "ts_off": 1
+  },
+  {
+   "q": "So by moving this to a script, it's going to be cheaper, more predicta",
+   "ts": 602,
+   "match": 1.0,
+   "found_at": 600,
+   "ts_off": 2
+  },
+  {
+   "q": "With a software factory, everybody is using the same process. Any chan",
+   "ts": 744,
+   "match": 1.0,
+   "found_at": 740,
+   "ts_off": 4
+  }
+ ],
+ "08-tGbjIvvYuHE": [
+  {
+   "q": "Yeah. Like basically do not notify a human until code rabbit is happy.",
+   "ts": 1531,
+   "match": 1.0,
+   "found_at": 1523,
+   "ts_off": 8
+  },
+  {
+   "q": "I think the folly that a lot of people make is they try and make a sys",
+   "ts": 1950,
+   "match": 1.0,
+   "found_at": 1949,
+   "ts_off": 1
+  },
+  {
+   "q": "one of my thesis is like you are going to want to own this uh unless y",
+   "ts": 2164,
+   "match": 0.79,
+   "found_at": 2164,
+   "ts_off": 0
+  },
+  {
+   "q": "What I would the other thing I would recommend is please don't use sub",
+   "ts": 2930,
+   "match": 1.0,
+   "found_at": 2925,
+   "ts_off": 5
+  },
+  {
+   "q": "The real answer is like you should have as an engineer choice and the ",
+   "ts": 3435,
+   "match": 1.0,
+   "found_at": 13,
+   "ts_off": 3422
+  }
+ ],
+ "09-Eyobn1yUfN0": [],
+ "10-AbpyqAfxZ8c": [
+  {
+   "q": "So, the first question is what is a software factory? And it's basical",
+   "ts": 46,
+   "match": 1.0,
+   "found_at": 44,
+   "ts_off": 2
+  },
+  {
+   "q": "We're just giving the agent a task. We're defining the workflow or the",
+   "ts": 333,
+   "match": 1.0,
+   "found_at": 329,
+   "ts_off": 4
+  },
+  {
+   "q": "Ultimately, the workflow is what matters. All of the agents are equall",
+   "ts": 432,
+   "match": 1.0,
+   "found_at": 426,
+   "ts_off": 6
+  },
+  {
+   "q": "But the way Factory is designed is to be largely deterministic. So, wh",
+   "ts": 870,
+   "match": 1.0,
+   "found_at": 866,
+   "ts_off": 4
+  },
+  {
+   "q": "You still need human judgment. You still need engineering thinking at ",
+   "ts": 1174,
+   "match": 1.0,
+   "found_at": 1170,
+   "ts_off": 4
+  }
+ ],
+ "11-haUfb1ievTE": [],
+ "12-g-ZtK5u-iiw": [
+  {
+   "q": "Cái điều thay đổi không phải là các bạn code giỏi hơn. Cái điều thay đ",
+   "ts": 78,
+   "match": 1.0,
+   "found_at": 202,
+   "ts_off": 124
+  },
+  {
+   "q": "Cái điểm then chỗ đây là các bạn phải cho clot code một cái cơ chế để ",
+   "ts": 2222,
+   "match": 1.0,
+   "found_at": 2220,
+   "ts_off": 2
+  },
+  {
+   "q": "1 phút các bạn lập kế hoạch ấy sẽ tiết kiệm được 10 phút xây dựng.",
+   "ts": 4172,
+   "match": 1.0,
+   "found_at": 4166,
+   "ts_off": 6
+  },
+  {
+   "q": "Và đây ta rút ra cái bài học là càng nhiều subent thì cái xác suất toà",
+   "ts": 6208,
+   "match": 1.0,
+   "found_at": 6203,
+   "ts_off": 5
+  },
+  {
+   "q": "Có những người rất có kinh nghiệm ấy. Người ta đã nói một câu là trúng",
+   "ts": 6553,
+   "match": 1.0,
+   "found_at": 6548,
+   "ts_off": 5
+  }
+ ],
+ "13-MbiMwgbGdxw": [
+  {
+   "q": "I haven't written a single line of code myself in over a year now",
+   "ts": 0,
+   "match": 1.0,
+   "found_at": 0,
+   "ts_off": 0
+  },
+  {
+   "q": "Because LLMs will confidently make terrible assumptions.",
+   "ts": 876,
+   "match": 1.0,
+   "found_at": 872,
+   "ts_off": 4
+  },
+  {
+   "q": "So I call it Test Driven Development, but for agents.",
+   "ts": 1009,
+   "match": 1.0,
+   "found_at": 1009,
+   "ts_off": 0
+  },
+  {
+   "q": "He said you want to describe the task, you want to describe the guardr",
+   "ts": 1082,
+   "match": 1.0,
+   "found_at": 1078,
+   "ts_off": 4
+  },
+  {
+   "q": "We want to avoid context rot because large language models have a dumb",
+   "ts": 1176,
+   "match": 1.0,
+   "found_at": 1161,
+   "ts_off": 15
+  }
+ ]
+}

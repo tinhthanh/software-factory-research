@@ -1,0 +1,948 @@
+{
+  "scores": {
+    "K1": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Spec-driven development có giá trị với feature vừa và lớn nhưng quá nặng với bug nhỏ",
+        "note": "Dẫn Fowler: Kiro biến bug nhỏ thành 4 user story/16 acceptance criteria."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Kiro bị đánh giá là quá dài dòng với việc nhỏ",
+        "note": "Hợp với tính năng trung bình/lớn; khuyến nghị mức spec-anchored."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Feature cỡ vừa–lớn, yêu cầu rõ; KHÔNG hợp bug nhỏ",
+        "note": "Khuyến nghị spec-first, không dùng spec-as-source."
+      },
+      "gemini-flash": {
+        "score": 1,
+        "quote": "Bất kỳ task nào tốn trên 1 giờ kỹ thuật đều phải bắt đầu bằng việc kỹ sư cùng AI viết spec.md",
+        "note": "Ngưỡng >1 giờ; nhưng cũng nói 'Chưa có spec được duyệt, tuyệt đối không sinh code production' — gần như tuyệt đối, không nêu SDD quá nặng cho bug nhỏ."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Spec‑Driven Development là nền tảng vững chắc cho AI software factory, giảm drift và tăng auditability.",
+        "note": "Chỉ nêu nhược điểm 'chi phí viết spec'; không phân biệt theo cỡ task."
+      }
+    },
+    "K2": {
+      "claude-A": {
+        "score": 1,
+        "quote": "mặc định dùng pipeline cộng một agent implement",
+        "note": "Không so sánh trực tiếp với hội thoại tự do giữa agent; dẫn Anthropic 'bắt đầu từ giải pháp đơn giản nhất'."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Pipeline có cấu trúc (plan→implement→verify) thường rẻ hơn và tốt ngang hoặc hơn hội thoại tự do giữa nhiều agent",
+        "note": "Agentless 32% SWE-bench Lite, ~$0,70/issue; AgentCoder 56,9K vs 138,2K token."
+      },
+      "claude-C": {
+        "score": 1,
+        "quote": "Một factory thực tế dùng plan→implement→verify làm mặc định",
+        "note": "Stripe chạy git/lint/test deterministic; không so với hội thoại tự do."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "nhanh chóng bộc lộ thất bại trong thực tế sản xuất do: bùng nổ token (token inflation gấp 20x–50x)",
+        "note": "Nói về ChatDev/MetaGPT; pipeline 'Rất ổn định, dễ debug và kiểm soát chi phí'. Con số 20x–50x không có nguồn cụ thể."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Tách rạch giai đoạn lập kế hoạch, triển khai, kiểm thử.",
+        "note": "Chỉ mô tả; không so sánh với hội thoại tự do; lại đề cao swarm chuyên vai."
+      }
+    },
+    "K3": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Một agent mạnh, có công cụ tốt và check tất định thường đủ cho phần implement.",
+        "note": "Vai thứ hai đáng thêm nhất là reviewer độc lập."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Chỉ tách vai agent khi vai đó cho góc nhìn độc lập (test designer, reviewer khác model); viết code nên do một agent mạnh làm.",
+        "note": ""
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Không cần dàn \"PM agent, architect agent, QA agent\" kiểu nhập vai",
+        "note": "Writes đơn luồng; thêm reviewer + planner/research subagent read-only."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Tránh xa các framework \"bầy đàn\" đa vai trò vụn vặt",
+        "note": "Một frontier model + công cụ bash/file + một critic độc lập."
+      },
+      "gpt-oss": {
+        "score": -1,
+        "quote": "Phân chia vai trò cho agent thực sự giúp độ chuyên môn hoá (planner, coder, reviewer, tester, doc‑generator)",
+        "note": "Khẳng định swarm chuyên vai chính xác hơn 12–18% so với agent đa năng."
+      }
+    },
+    "K4": {
+      "claude-A": {
+        "score": 2,
+        "quote": "agent dùng khoảng 4× token so với chat, multi-agent khoảng 15×",
+        "note": "Multi-agent research +90,2%; Anthropic: coding ít task song song thật hơn research."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Multi-agent tốn khoảng 15× token và chỉ đáng dùng cho việc song song hoá được, có giá trị cao",
+        "note": "Subagent chỉ dùng để đọc/khảo sát."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Mặc định nên là một agent mạnh, ghi đơn luồng; multi-agent chỉ cho đọc/review/research",
+        "note": "~15× token; +90,2%."
+      },
+      "gemini-flash": {
+        "score": 1,
+        "quote": "Refactoring quy mô lớn trên nhiều package độc lập; chạy rà soát bảo mật đồng thời trên toàn bộ các repository con",
+        "note": "Không nêu ~15×; thay vào đó 500K–2M token/task ($5–$30/PR) và ChatDev/MetaGPT 20x–50x."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Best‑of‑N với N = 5 tăng chi phí ≈ 5×",
+        "note": "Không nêu ~15×; không giới hạn multi-agent vào việc song song hoá được — khuyến nghị fan-out 4–6 worker làm mặc định."
+      }
+    },
+    "K5": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Thứ quyết định chất lượng factory là bộ kiểm chứng (test, oracle, hook) chứ không phải số lượng agent",
+        "note": ""
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "nên được thiết kế quanh gate kiểm chứng tự động và đặc tả rõ ràng, chứ không quanh số lượng agent",
+        "note": ""
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Harness (test, lint, CI, rules file) quyết định chất lượng factory nhiều hơn số agent hay cách chia vai",
+        "note": ""
+      },
+      "gemini-flash": {
+        "score": 1,
+        "quote": "AI giúp team có nền tảng test vững chắc đi nhanh gấp bội",
+        "note": "Có Verification Matrix L1–L5; nhưng lại gán '80% độ chính xác' cho context engineering thay vì bộ kiểm chứng."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Guardrails (static analysis, secret detection, spec validator) là thiết yếu để ngăn reward hacking và prompt injection.",
+        "note": "Không so sánh với số lượng agent."
+      }
+    },
+    "K6": {
+      "claude-A": {
+        "score": 2,
+        "quote": "(1) duyệt spec, (2) duyệt plan hoặc task breakdown cho task nhiều file, (3) duyệt PR trước khi merge, (4) duyệt deploy",
+        "note": "GitHub chặn kỹ thuật việc agent tự approve/merge."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "hai gate quan trọng nhất là bước 2–3 (đặc tả và tiêu chí kiểm chứng) và bước 5–6 (kiểm chứng)",
+        "note": "5 checkpoint bắt buộc, gồm cả mọi thay đổi test/CI/dependency/secrets/quyền."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Checkpoint người đáng giá nhất là duyệt plan trước khi code và duyệt PR trước khi merge",
+        "note": "Thêm: hành động có tác dụng ra ngoài (Rule of Two)."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Checkpoint 1: Phê duyệt Spec & Architecture (Chi phí thấp nhất, giá trị cao nhất)",
+        "note": "Thêm lệnh có tác động ngoại biên + duyệt PR cuối."
+      },
+      "gpt-oss": {
+        "score": 2,
+        "quote": "Human‑in‑the‑loop nên xuất hiện ở spec approval, task plan review, và pre‑merge để giữ kiểm soát.",
+        "note": "Bảng vòng đời yêu cầu ≥2 human reviewers, nhưng mục giảm thiểu lại đề xuất chỉ human-review 20% PR có score thấp — tự mâu thuẫn."
+      }
+    },
+    "K7": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Mỗi task cho agent nên là một đơn vị tự đủ, có check pass/fail và vừa một PR nhỏ",
+        "note": "PR review được trong 15–30 phút, dưới vài trăm dòng diff (suy luận); Copilot giới hạn 59 phút/phiên; Agent Teams 5–6 task/teammate."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "giao agent task mà người làm mất ≤ 1–4 giờ và có test chấp nhận tự động, tạo ra PR khoảng ≤ 300–400 dòng diff",
+        "note": "1–4 giờ người; ≤300–400 dòng; neo vào METR time horizon."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Task giao cho agent nên vừa một PR review được trong ~15–30 phút, có lệnh verify tự động",
+        "note": "Stripe: tối đa 2 vòng CI rồi trả về người."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Kỹ sư phụ trách xác nhận các task đủ nhỏ (mỗi task tương đương dưới 2 giờ làm việc của người)",
+        "note": "30 phút–2 giờ người; <5–8 file; diff <300–400 dòng; mỗi task có DoD riêng."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Giao task độ sâu 1‑2 mức độ (ví dụ: “tạo API endpoint + unit test”) cho mỗi worker.",
+        "note": "200–500 LOC/worker (gán cho DORA 2025, không có cơ sở); không nêu tiêu chí pass/fail hay giờ công."
+      }
+    },
+    "K8": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Cô lập bằng worktree hoặc container và chia task theo ranh giới file là bắt buộc khi chạy song song",
+        "note": ""
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Một agent ↔ một worktree/branch ↔ một sandbox.",
+        "note": "Tự ghi chú: thực hành phổ biến, chưa có paper đo trực tiếp."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Sandbox cô lập (devbox không có prod/internet) là điều kiện để cho agent tự chủ an toàn và chạy song song",
+        "note": "Lưu ý worktree chỉ giải xung đột file; Stripe chạy song song bằng devbox, không cần worktree."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Mọi coding agent phải chạy trên Git worktree hoặc container sandbox riêng biệt để triệt tiêu xung đột ghi đè và race conditions",
+        "note": ""
+      },
+      "gpt-oss": {
+        "score": 2,
+        "quote": "Git worktree + container sandbox là phương án cô lập môi trường tiêu chuẩn, ngăn xung đột.",
+        "note": ""
+      }
+    },
+    "K9": {
+      "claude-A": {
+        "score": 2,
+        "quote": "(1) tách task theo ranh giới file hoặc module ngay ở bước breakdown, (2) chốt interface hoặc contract trong spec trước khi song song",
+        "note": ""
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "khai báo trước tập file/module mỗi task được chạm, và không giao hai task chạm cùng file chạy song song",
+        "note": "Phần interface ngầm định: 'Spec chưa chốt' được nêu là điều kiện song song phản tác dụng."
+      },
+      "claude-C": {
+        "score": 1,
+        "quote": "chia task theo ranh giới module để giảm overlap",
+        "note": "Không nêu chốt interface trước; bổ sung merge queue + task tracker."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Orchestrator chỉ giao các task có tập hợp file chạm vào giao nhau bằng rỗng",
+        "note": "Duyệt spec.md và data schema trước khi phân rã task; thêm file-level lock."
+      },
+      "gpt-oss": {
+        "score": 0,
+        "quote": "",
+        "note": "Xử lý xung đột hậu kiểm: orchestrator phát hiện merge conflict, giao conflict-resolver agent; không nêu chia theo ranh giới file/interface."
+      }
+    },
+    "K10": {
+      "claude-A": {
+        "score": 2,
+        "quote": "AGENTS.md/CLAUDE.md nên ngắn, đóng vai mục lục; quy tắc bắt buộc thì chuyển thành hook",
+        "note": ""
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "File ngữ cảnh repo (CLAUDE.md/AGENTS.md): viết ngắn, chỉ ghi điều không hiển nhiên.",
+        "note": "Dẫn ETH: context file không tăng success, tăng >20% chi phí. Không nói 'hook' tường minh nhưng đặt quy tắc bắt buộc (cấm sửa test, dependency) ở CI gate."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "giữ file gốc ngắn, đẩy chi tiết xuống thư mục",
+        "note": "'rules file là guide không phải guarantee; phải có sensor (lint, test, arch check)'."
+      },
+      "gemini-flash": {
+        "score": 1,
+        "quote": "Giữ file ngắn gọn, súc tích (dưới 200–300 dòng token cao).",
+        "note": "<200–300 dòng / <250 dòng; nhưng vẫn đặt 'các lệnh cấm tuyệt đối' trong AGENTS.md, không chuyển sang hook."
+      },
+      "gpt-oss": {
+        "score": 0,
+        "quote": "",
+        "note": "Mô tả 'constitution' chứa định dạng API, coding standards, security policies nạp vào system prompt — không bàn độ dài; tinh thần ngược 'mục lục'."
+      }
+    },
+    "K11": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Nút cổ chai mới là review của con người: PR tăng gần gấp đôi, thời gian review tăng 91%",
+        "note": "Faros: PR +98%, review +91%, PR size +154%, bug/dev +9%; Faros 2026: review trung vị +441%."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "dev hoàn thành nhiều hơn 21% task và merge nhiều hơn 98% PR. Đổi lại, thời gian review tăng 91%",
+        "note": "+21% task, +98% PR, +91% review, +154% PR size."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Reviewer: trở thành bottleneck chính; Faros ghi nhận thời gian review PR tăng ~91%",
+        "note": "+91% review, +154% PR size, +9% bug/dev (thứ cấp)."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "nút thắt lớn nhất của nhà máy phần mềm nằm ở năng lực thẩm định và phê duyệt PR của con người",
+        "note": "Không có số liệu Faros."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Con người bị quá tải khi phải duyệt nhiều PR.",
+        "note": "Chỉ liệt kê như một failure mode; giải pháp là auto-review + chỉ human-review 20% PR."
+      }
+    },
+    "K12": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Bắt đầu với ≤ 2–3 agent song song cho mỗi người, chỉ tăng khi năng lực review cho phép",
+        "note": "Agent Teams: 3–5 teammate; tháng 3: 2–4 agent mỗi feature; giới hạn WIP."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Giới hạn ≤ 2 agent ghi song song cho mỗi reviewer",
+        "note": "Quy tắc khởi đầu: số agent ghi ≤ 2–3 × số reviewer người."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "thực tế practitioner hội tụ quanh 2–5 agent/người",
+        "note": "Open WebUI ~3; khởi đầu 2–3; Coinbase 5–10 và Yegge 20–30 là ngoại lệ."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "số lượng agent chạy song song tối ưu là 2 đến 3 agent/kỹ sư",
+        "note": "WIP: mỗi kỹ sư không mở quá 2 PR agent cùng lúc."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "DORA 2025 khuyến cáo 4‑6 workers cho repos < 200 k LOC.",
+        "note": "Giới hạn theo repo/hệ thống (≤6 worker), không theo người; reviewer ≤5 PR/tuần; gán cho DORA không có cơ sở."
+      }
+    },
+    "K13": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Hook chặn agent sửa test hiện có, CI config và lockfile",
+        "note": "Bằng chứng METR: o3 monkey-patch evaluator, override ==."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Agent sẽ tìm cách gian lận test nếu được phép; test chấp nhận phải viết trước và khoá quyền sửa.",
+        "note": "ImpossibleBench (cheating rate)."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Agent sẽ gian lận test nếu được phép — bảo vệ test bằng CI, không bằng prompt",
+        "note": "Kent Beck, ImpossibleBench, EvilGenie; holdout test, mutation testing."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Luôn duy trì thư mục test ở trạng thái Read-Only đối với coding agent để chặn đứng hành vi test reward hacking",
+        "note": "Thêm private holdout test suite, mutation testing."
+      },
+      "gpt-oss": {
+        "score": 2,
+        "quote": "Isolate test generation (separate agent) và hard‑coded test suites không cho sửa.",
+        "note": ""
+      }
+    },
+    "K14": {
+      "claude-A": {
+        "score": 2,
+        "quote": "một reviewer subagent với context mới, nên dùng model khác, đối chiếu diff với SPEC",
+        "note": "Tự thừa nhận 'chưa có số liệu công khai mạnh từ vendor về mức lợi' của review khác model."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Agent reviewer nên dùng model khác hoặc ít nhất prompt và context khác với agent coder.",
+        "note": "Dẫn self-preference bias (Panickssery et al.)."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Review agent (context sạch, model khác hãng nếu có thể) đối chiếu diff với plan/spec",
+        "note": "Devin Review: 2 bug/PR, ~58% nghiêm trọng (vendor)."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Điều này giúp triệt tiêu các \"điểm mù hệ thống\" (systemic biases) mà một dòng model thường lặp lại",
+        "note": "Gắn nhãn (suy luận)."
+      },
+      "gpt-oss": {
+        "score": 2,
+        "quote": "Cross‑model review (Claude vs. GPT) cải thiện độ chính xác ~12 % so với single‑model review.",
+        "note": "+12% không có nguồn kiểm chứng được."
+      }
+    },
+    "K15": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Benchmark công khai đang bão hoà hoặc bị nhiễm dữ liệu; hãy đo bằng DORA cộng eval nội bộ",
+        "note": "Verified: ≥59,4% task (tập con audit) test sai; Pro <25% lúc ra mắt vs Verified >70%; Pro bị audit ~30% lỗi (chưa xác minh); eval nội bộ ~20 case."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Benchmark công khai bão hoà và nhiễm (59,4% task SWE-bench Verified được audit có test lỗi), nên cần eval nội bộ",
+        "note": "Pro <45% public / <20% commercial; Terminal-Bench 2.0 <65% rồi >85%; eval 20–50 issue."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "benchmark chỉ để chọn model sơ bộ; quyết định thật phải dựa trên eval trên chính repo của mình",
+        "note": "~59% của 138 task lỗi; cùng model ~81% Verified vs ~46% Pro; eval 20–50 case."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Không dựa vào benchmark công khai. Doanh nghiệp cần xây dựng bộ eval riêng dựa trên các bug lịch sử",
+        "note": "Nêu nhiễm dữ liệu; không có số liệu."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "trên SWE‑bench Pro chỉ ~55 %, cho thấy còn chênh lệch khó khăn thực tế",
+        "note": "Verified ~78%, Pro ~55%, Terminal-bench <60%; không nêu nhiễm dữ liệu hay eval nội bộ; số Pro cao hơn hẳn 3 báo cáo Claude."
+      }
+    },
+    "K16": {
+      "claude-A": {
+        "score": 2,
+        "quote": "họ chậm hơn 19% nhưng vẫn tin mình nhanh hơn 20%",
+        "note": "METR 2026: −18%/−4% nhưng CI chứa 0, bằng chứng 'rất yếu'."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "dev tin nhanh hơn 20% nhưng thực tế chậm hơn 19% (METR 2025)",
+        "note": ""
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "METR: dev giàu kinh nghiệm chậm hơn 19% nhưng tin nhanh hơn 20%",
+        "note": ""
+      },
+      "gemini-flash": {
+        "score": 1,
+        "quote": "dù các kỹ sư cảm thấy làm việc nhanh hơn và đạt trạng thái \"flow\" tốt hơn",
+        "note": "Dùng DORA 2024, không dẫn METR RCT; có nhắc 'ảo tưởng năng suất'."
+      },
+      "gpt-oss": {
+        "score": 0,
+        "quote": "",
+        "note": "Không đề cập; bảng metric còn gán cải thiện cho 'METR study'."
+      }
+    },
+    "K17": {
+      "claude-A": {
+        "score": 2,
+        "quote": "AI là \"bộ khuếch đại\" của năng lực sẵn có",
+        "note": "DORA 2025: tăng throughput nhưng vẫn tăng instability."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "AI là bộ khuếch đại: team có test, CI và version control tốt hưởng lợi; team yếu bị tăng instability",
+        "note": "Chỉ 2/7 cụm (~40% mẫu) tăng throughput mà không tăng CFR."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "AI khuếch đại năng lực sẵn có của team; team yếu về DORA sẽ yếu hơn",
+        "note": "2/7 cluster."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "AI là chiếc kính phóng đại tổ chức",
+        "note": ""
+      },
+      "gpt-oss": {
+        "score": 0,
+        "quote": "",
+        "note": "Không đề cập; bảng metric lại báo cải thiện đồng loạt (CFR 15%→4%), không phân biệt team mạnh/yếu."
+      }
+    },
+    "K18": {
+      "claude-A": {
+        "score": 2,
+        "quote": "DORA bốn chỉ số: lead time, deploy frequency, change failure rate, thời gian khôi phục.",
+        "note": "Thêm agent PR merge rate, defect escape, cost/PR, review latency."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Đo năng suất bằng telemetry, không bằng cảm nhận",
+        "note": "DORA 5 + defect escape + churn."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "DORA 4 chỉ số (lead time, deploy frequency, change failure rate, MTTR) — chỉ số kết quả, không được xấu đi.",
+        "note": ""
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "tuyệt đối không đo bằng số dòng code hay số PR được sinh ra",
+        "note": ""
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Canary rollout, collect DORA metrics, alert on failures.",
+        "note": "Liệt kê DORA + defect escape + cost/PR nhưng kèm số liệu 'thực tế' không kiểm chứng; không phản đối đo bằng LOC/PR (còn dùng LOC làm đơn vị task)."
+      }
+    },
+    "K19": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Bảo mật phải dựa trên kiến trúc (sandbox FS+network, least privilege, tránh lethal trifecta), không dựa vào prompt",
+        "note": ""
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Vì vậy phải cắt (1) hoặc (3): sandbox không có secrets production, và network egress theo allowlist.",
+        "note": "Không nói tường minh 'chưa giải ở mức model' nhưng chỉ dựa vào kiến trúc."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Prompt injection không có giải pháp model-level; phải thiết kế session tránh lethal trifecta / theo Rule of Two",
+        "note": ""
+      },
+      "gemini-flash": {
+        "score": 1,
+        "quote": "bọc trong ranh giới phân tách dữ liệu/chỉ thị nghiêm ngặt",
+        "note": "Có least privilege + container ngắt mạng trừ whitelist; nhưng biện pháp chính cho injection là phân tách dữ liệu/chỉ thị (mức prompt), không nêu lethal trifecta."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Prompt injection: Sử dụng sandboxed prompt parser và whitelisting các biến môi trường.",
+        "note": "Có least-privilege, sandbox seccomp; nhưng ngụ ý guardrails 'ngăn' được prompt injection — trái tinh thần 'chưa giải được'."
+      }
+    },
+    "K20": {
+      "claude-A": {
+        "score": 1,
+        "quote": "Supply chain: đối chiếu dependency mới với advisory DB",
+        "note": "Không nhắc package ảo giác/slopsquatting; đề xuất pin version, chặn đổi lockfile."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "19,7% package được gợi ý không tồn tại (hơn 205K tên)",
+        "note": "43% tên ảo giác lặp lại; gate: dependency mới cần người duyệt."
+      },
+      "claude-C": {
+        "score": 1,
+        "quote": "pin dependency + review lockfile",
+        "note": "Nêu s1ngularity (postinstall gọi AI CLI); không nêu slopsquatting."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Mọi dependency bổ sung phải qua whitelist được kiểm tra tuổi đời (package phải tồn tại trên 30 ngày)",
+        "note": "Nêu slopsquatting, không số liệu."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Kiểm tra dependencies bằng SBOM và SLSA compliance trong CI.",
+        "note": "Không nhắc package ảo giác."
+      }
+    },
+    "K21": {
+      "claude-A": {
+        "score": 1,
+        "quote": "kết quả agent kém thường do môi trường codebase chứ không do model",
+        "note": "Dẫn Factory agent readiness; không dẫn MAST."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Hệ đa agent hỏng chủ yếu do thiết kế, phối hợp và kiểm chứng, không chỉ do model yếu (MAST).",
+        "note": "Can thiệp đơn giản chỉ cải thiện ~14%."
+      },
+      "claude-C": {
+        "score": 1,
+        "quote": "subagent không chia sẻ ngữ cảnh sẽ ra quyết định ngầm xung đột",
+        "note": "Dẫn Cognition; không dẫn MAST."
+      },
+      "gemini-flash": {
+        "score": 1,
+        "quote": "lỗi đồng bộ ngữ cảnh qua quá nhiều khâu trung gian",
+        "note": "Về ChatDev/MetaGPT."
+      },
+      "gpt-oss": {
+        "score": 0,
+        "quote": "",
+        "note": "Không bàn nguyên nhân hỏng của MAS; ngược lại quy lỗi cho 'single super-agent' (hallucination, context overflow)."
+      }
+    },
+    "K22": {
+      "claude-A": {
+        "score": 2,
+        "quote": "số khối code trùng ≥5 dòng tăng 8 lần trong 2024, số dòng được \"move\" (dấu hiệu refactor) giảm 39,9%",
+        "note": "GitClear (thứ cấp)."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "khối code trùng lặp ≥5 dòng tăng 8× trong 2024",
+        "note": "Thêm: symbol từ PR agent bị xoá median 3 ngày vs 34 ngày."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "GitClear: block trùng ≥5 dòng tăng ~8× năm 2024",
+        "note": "Thêm Thoughtworks 'cognitive debt'."
+      },
+      "gemini-flash": {
+        "score": 1,
+        "quote": "Agent sinh mã lặp lại (duplicate logic), không dùng hàm dùng chung có sẵn",
+        "note": "Chỉ liệt kê như failure mode, không số liệu."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Tạo nhiều file/tối ưu không cần.",
+        "note": "Chỉ liệt kê như failure mode, không số liệu."
+      }
+    },
+    "K23": {
+      "claude-A": {
+        "score": -1,
+        "quote": "Chỉ dùng orchestrator-worker hoặc swarm khi có ≥5 task thật sự độc lập và có test oracle. Best-of-N dành cho task nhỏ và quan trọng.",
+        "note": "Mặc định: pipeline + một agent implement."
+      },
+      "claude-B": {
+        "score": -1,
+        "quote": "Chưa cần framework multi-agent nặng; bằng chứng không cho thấy nó đáng chi phí ở quy mô này",
+        "note": "Orchestrator–worker chỉ ở tháng 3 cho tính năng chia được thành module độc lập; best-of-N chỉ khi có oracle."
+      },
+      "claude-C": {
+        "score": -1,
+        "quote": "Mặc định nên là một agent mạnh, ghi đơn luồng",
+        "note": "Orchestrator–worker chỉ cho task chia được; best-of-N chỉ khi lọc tự động được."
+      },
+      "gemini-flash": {
+        "score": -1,
+        "quote": "kiến trúc hiệu quả nhất là một frontier model xuất sắc kết hợp công cụ bash/file và một critic độc lập",
+        "note": "Best-of-N chỉ cho bug khó có test làm trọng tài."
+      },
+      "gpt-oss": {
+        "score": 2,
+        "quote": "Orchestrator‑Worker + Best‑of‑N là pattern hiệu quả nhất cho tính năng phức tạp, cân bằng chất lượng và chi phí.",
+        "note": "Nguồn [C9] là redirect gần trùng với C3/C11/C15...; dẫn 'AlphaCorp AI', 'Swarms.ai'."
+      }
+    },
+    "K24": {
+      "claude-A": {
+        "score": 2,
+        "quote": "Giao issue có nhãn agent-ok (test, bug có repro, dependency bump, docs) cho cloud agent",
+        "note": "T1 nền tảng 1 agent; T2 async việc vặt + SDD 1–2 feature; T3 song song 2–4 agent."
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Mỗi dev dùng 1 agent tương tác cho task nhỏ",
+        "note": "T1 nền móng; T2 ≤2 agent ghi/reviewer + async việc đuôi dài; T3 orchestrator–worker."
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "Mỗi dev dùng 1 agent tương tác, plan→implement→verify",
+        "note": "T2 2–3 agent/dev + ticket→PR task nhỏ; T3 orchestrator–worker."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Thí điểm trên 20% các task có phạm vi độc lập, rõ ràng",
+        "note": "Headless ticket→PR chỉ ở tháng 3."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Đánh giá metric, tinh chỉnh spec template, mở rộng N workers.",
+        "note": "Có lộ trình 3 tháng nhưng tháng 2 đã fan-out 4–6 worker; không có bước bắt đầu từ task rủi ro thấp."
+      }
+    },
+    "K25": {
+      "claude-A": {
+        "score": 1,
+        "quote": "Anthropic coi context là tài nguyên hữu hạn với hiện tượng \"context rot\".",
+        "note": "Không coi là yếu tố then chốt nhất (xếp sau bộ kiểm chứng); viết lại mô tả tool giảm 40% thời gian."
+      },
+      "claude-B": {
+        "score": 1,
+        "quote": "Spec là nguồn sự thật, đặt ở mức spec-anchored",
+        "note": "Dẫn ETH: context file không cải thiện success → phản biện một phần vai trò context file; SWE-agent: ACI cải thiện kết quả."
+      },
+      "claude-C": {
+        "score": 1,
+        "quote": "Context là tài nguyên hữu hạn",
+        "note": "Xem rules file là 'guide không phải guarantee'; harness quan trọng hơn."
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Quản trị ngữ cảnh repo bằng AGENTS.md tinh gọn và giao thức MCP quyết định 80% độ chính xác của agent",
+        "note": "Con số 80% không có nguồn."
+      },
+      "gpt-oss": {
+        "score": 1,
+        "quote": "Spec làm nguồn sự thật: mọi query của agent tới codebase đều được filtered bởi spec",
+        "note": "Vector DB memory, chunk ≤8k token; không nói là yếu tố then chốt."
+      }
+    },
+    "K26": {
+      "claude-A": {
+        "score": 2,
+        "quote": "khi chưa có test oracle (song song chỉ nhân bản lỗi), và khi năng lực review của người đã bão hoà",
+        "note": ""
+      },
+      "claude-B": {
+        "score": 2,
+        "quote": "Giới hạn song song nằm ở khâu review của người, không ở compute.",
+        "note": ""
+      },
+      "claude-C": {
+        "score": 2,
+        "quote": "review queue đã đầy — thêm agent chỉ tăng WIP, không tăng throughput (định luật Little)",
+        "note": ""
+      },
+      "gemini-flash": {
+        "score": 2,
+        "quote": "Chạy 5 agent song song trên cùng một miền logic bị sai sẽ nhân năm lượng code rác cần kỹ sư dọn dẹp",
+        "note": ""
+      },
+      "gpt-oss": {
+        "score": 2,
+        "quote": "Đaa luồng > 10 workers dẫn tới rate‑limit và latency trong CI",
+        "note": "Ngưỡng >10 worker; best-of-N N>3 cải thiện <2%; lý do là rate-limit/chi phí, không nhắc review overload."
+      }
+    }
+  },
+  "outliers": [
+    {
+      "report": "claude-A",
+      "claim": "Thí nghiệm C compiler: 16 agent, ~2.000 phiên/2 tuần, ~20.000 USD (2 tỷ token input, 140 triệu output) ra ~100K dòng Rust; không có orchestrator",
+      "cited_url": "https://www.anthropic.com/engineering/building-c-compiler",
+      "assessment": "Đáng tin: nguồn gốc vendor, số liệu cụ thể; là case study đơn lẻ."
+    },
+    {
+      "report": "claude-A",
+      "claim": "Sandbox Claude Code (FS + network) giảm 84% số lần hỏi quyền",
+      "cited_url": "https://www.anthropic.com/engineering/claude-code-sandboxing",
+      "assessment": "Khá đáng tin: số do chính vendor công bố, chưa có đo độc lập."
+    },
+    {
+      "report": "claude-A",
+      "claim": "Faros 2026 (22.000 dev): bug/dev +54%, thời gian review trung vị +441%",
+      "cited_url": "https://pages.faros.ai/hubfs/AI_Engineering_Report_2026_The_Acceleration_Whiplash_Faros.pdf",
+      "assessment": "Trung bình: telemetry của vendor, tương quan; con số +441% rất lớn so với +91% (2025) được cả 3 báo cáo Claude dẫn — cần đọc bản gốc."
+    },
+    {
+      "report": "claude-A",
+      "claim": "Devin merge rate 67% (từ 34%); Factory: một số khách hàng 15–20% thay đổi code hoàn toàn tự động",
+      "cited_url": "https://agentmarketcap.ai/blog/2026/04/07/devin-67-percent-pr-merge-rate-autonomous-coding-agent-performance",
+      "assessment": "Yếu: vendor tự báo cáo qua nguồn thứ cấp; báo cáo tự gắn nhãn (thứ cấp)."
+    },
+    {
+      "report": "claude-A",
+      "claim": "METR 02/2026 (57 dev, >800 task): −18% / −4% thời gian, khoảng tin cậy chứa 0; 30–50% dev giữ lại task không muốn làm thiếu AI",
+      "cited_url": "https://metr.org/blog/2026-02-24-uplift-update/",
+      "assessment": "Đáng tin: nguồn gốc METR; B và C chỉ nêu định tính qua nguồn thứ cấp."
+    },
+    {
+      "report": "claude-A",
+      "claim": "Viết lại mô tả tool giảm 40% thời gian hoàn thành task; subagent trả tóm tắt 1.000–2.000 token",
+      "cited_url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+      "assessment": "Khá đáng tin: vendor, eval nội bộ cho research (không phải coding)."
+    },
+    {
+      "report": "claude-A",
+      "claim": "AGENTS.md được >20 công cụ, >60K repo dùng; repo chính OpenAI có 88 file AGENTS.md",
+      "cited_url": "https://agents.md/",
+      "assessment": "Khá đáng tin: trang chính thức của chuẩn; số liệu tự quảng bá."
+    },
+    {
+      "report": "claude-A",
+      "claim": "Audit độc lập cho rằng ~30% bài SWE-bench Pro cũng lỗi",
+      "cited_url": "https://www.lesswrong.com/posts/nAMhbz5sfpcynjPP5/swe-bench-pro-is-even-worse",
+      "assessment": "Yếu: bài blog đơn lẻ; báo cáo tự ghi 'chưa xác minh'. B nhắc nghi ngờ nhưng không có số."
+    },
+    {
+      "report": "claude-B",
+      "claim": "Agentless (pipeline cố định) đạt 32% SWE-bench Lite với ~$0,70/issue, vượt agent phức tạp cùng thời",
+      "cited_url": "https://arxiv.org/abs/2407.01489",
+      "assessment": "Đáng tin: paper peer-reviewed; nhưng số liệu thời 2024, benchmark Lite đã cũ."
+    },
+    {
+      "report": "claude-B",
+      "claim": "AgentCoder: 96,3% pass@1 HumanEval, 56,9K token so với 90,2%/138,2K của SOTA trước",
+      "cited_url": "https://arxiv.org/abs/2312.13010",
+      "assessment": "Đáng tin về nguồn; HumanEval là benchmark nhỏ/bão hoà, khả năng tổng quát cho repo thật hạn chế."
+    },
+    {
+      "report": "claude-B",
+      "claim": "ETH (Gloaguen 02/2026): file context (AGENTS.md) nhìn chung không cải thiện tỷ lệ thành công, tăng chi phí suy luận >20%",
+      "cited_url": "https://arxiv.org/abs/2602.11988",
+      "assessment": "Đáng chú ý vì phản biện một phần khuyến nghị chung; paper arXiv (preprint), cần đọc kỹ thiết kế. Bổ trợ: arXiv 2606.13449 (15.549 PR)."
+    },
+    {
+      "report": "claude-B",
+      "claim": "Slopsquatting: 19,7% package gợi ý không tồn tại (>205K tên), 43% tên lặp lại mọi lần chạy (16 model, 576K mẫu)",
+      "cited_url": "https://arxiv.org/abs/2406.10279",
+      "assessment": "Đáng tin: USENIX Security 2025. Gemini nói về slopsquatting nhưng không có số."
+    },
+    {
+      "report": "claude-B",
+      "claim": "Veracode: 45% task có lỗ hổng OWASP Top 10, Java >70% fail; bảo mật không cải thiện theo thế hệ model",
+      "cited_url": "https://www.veracode.com/press-release/ai-generated-code-poses-major-security-risks-in-nearly-half-of-all-development-tasks-veracode-research-reveals/",
+      "assessment": "Trung bình: vendor bảo mật (có động cơ thương mại), báo cáo tự lưu ý."
+    },
+    {
+      "report": "claude-B",
+      "claim": "Debate không hơn self-consistency ở cùng số lượt sinh: 83,0% vs 88,2% trên GSM8K (9 response)",
+      "cited_url": "https://arxiv.org/abs/2310.01798",
+      "assessment": "Khá đáng tin (paper học thuật) nhưng là bài toán toán học, không phải code; suy rộng sang coding là suy luận."
+    },
+    {
+      "report": "claude-B",
+      "claim": "Symbol do PR agent tạo bị xoá sớm hơn nhiều (median 3 ngày vs 34 ngày)",
+      "cited_url": "https://arxiv.org/abs/2601.17627",
+      "assessment": "Trung bình: preprint đơn lẻ, chưa có xác nhận độc lập."
+    },
+    {
+      "report": "claude-B",
+      "claim": "Stack Overflow 2025: 46% không tin độ chính xác của AI, 33% tin; mức ưa thích giảm 72%→60%; 66% gặp output 'gần đúng'",
+      "cited_url": "https://survey.stackoverflow.co/2025/ai",
+      "assessment": "Đáng tin: khảo sát lớn (49K+), nhưng là số đo cảm nhận."
+    },
+    {
+      "report": "claude-C",
+      "claim": "Stripe Minions: >1.000 PR merge/tuần, code 100% agent viết, 100% có người review; tối đa 2 vòng CI",
+      "cited_url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
+      "assessment": "Khá đáng tin: blog kỹ thuật gốc của Stripe; số tự báo cáo."
+    },
+    {
+      "report": "claude-C",
+      "claim": "Devin Review bắt trung bình 2 bug/PR, ~58% nghiêm trọng; Cognition 04/2026: multi-agent chỉ hiệu quả khi writes đơn luồng",
+      "cited_url": "https://cognition.com/blog/multi-agents-working",
+      "assessment": "Trung bình: vendor tự báo cáo về sản phẩm của mình."
+    },
+    {
+      "report": "claude-C",
+      "claim": "Coinbase: kỹ sư chạy 5–10 agent đồng thời; >95% code 'AI-assisted' (2026)",
+      "cited_url": "https://cointelegraph.com/news/over-95-of-coinbases-code-is-now-written-with-ai",
+      "assessment": "Yếu: nguồn báo chí crypto thứ cấp, CEO tự báo cáo, định nghĩa 'AI-assisted' mơ hồ."
+    },
+    {
+      "report": "claude-C",
+      "claim": "Tấn công s1ngularity (Nx, 08/2025): postinstall gọi Claude/Gemini/Q CLI với --yolo để lục secrets; ~2.180 tài khoản, ~7.200 repo bị lộ",
+      "cited_url": "https://wiz.io/blog/s1ngularity-supply-chain-attack",
+      "assessment": "Đáng tin: điều tra của Wiz, có BleepingComputer xác nhận."
+    },
+    {
+      "report": "claude-C",
+      "claim": "OpenAI harness engineering: ~1 triệu dòng, ~3,5 PR/kỹ sư/ngày, không dòng code viết tay",
+      "cited_url": "https://openai.com/index/harness-engineering/",
+      "assessment": "Trung bình: tự báo cáo; A cũng dẫn bài này (3→7 người, ~1.500 PR) nhưng ghi chưa đối chiếu được bản gốc."
+    },
+    {
+      "report": "claude-C",
+      "claim": "Cùng một model: ~81% SWE-bench Verified nhưng ~46% Pro",
+      "cited_url": "https://www.morphllm.com/swe-bench-pro",
+      "assessment": "Trung bình: leaderboard thứ cấp, không rõ model/thời điểm."
+    },
+    {
+      "report": "claude-C",
+      "claim": "Meta 'Agents Rule of Two': một session chỉ được có tối đa 2/3 yếu tố (input không tin cậy, dữ liệu nhạy cảm, đổi state/giao tiếp ra ngoài)",
+      "cited_url": "https://simonw.substack.com/p/new-prompt-injection-papers-agents",
+      "assessment": "Đáng tin: khung của Meta qua Willison; chỉ C nêu, các báo cáo khác dùng lethal trifecta."
+    },
+    {
+      "report": "claude-C",
+      "claim": "Yegge (Gas Town) điều phối 20–30 agent qua tmux + Beads, cần 2–3 subscription Max",
+      "cited_url": "https://softwareengineeringdaily.com/2026/02/12/gas-town-beads-and-the-rise-of-agentic-development-with-steve-yegge/",
+      "assessment": "Giai thoại: tác giả tự nhận alpha; không đại diện cho team thông thường."
+    },
+    {
+      "report": "gemini-flash",
+      "claim": "ChatDev/MetaGPT gây token inflation 20x–50x",
+      "cited_url": "https://arxiv.org/abs/2407.01686",
+      "assessment": "Không đáng tin: nguồn mô tả chung chung ('Single-Agent vs Multi-Agent ... Trade-offs'), không xác minh được paper chứa con số này."
+    },
+    {
+      "report": "gemini-flash",
+      "claim": "Task multi-agent không kiểm soát tốn 500K–2M token ($5–$30/PR); prompt caching giảm 80–90% chi phí context cố định",
+      "cited_url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "assessment": "Yếu: bài dẫn không chứa các số này; mức giảm caching phù hợp bảng giá nói chung nhưng bị gán nguồn sai."
+    },
+    {
+      "report": "gemini-flash",
+      "claim": "AGENTS.md tinh gọn + MCP 'quyết định 80% độ chính xác của agent'",
+      "cited_url": "https://agents.md/",
+      "assessment": "Không đáng tin: không nguồn nào hỗ trợ con số 80%; B còn dẫn nghiên cứu ETH cho thấy context file không tăng success."
+    },
+    {
+      "report": "gemini-flash",
+      "claim": "Theo METR, agent tin cậy nhất với task 30 phút–2 giờ người; time horizon nhân đôi mỗi 3–7 tháng",
+      "cited_url": "https://metr.org/",
+      "assessment": "Trung bình: URL trang chủ, không chỉ bài cụ thể; '30 phút–2 giờ' là diễn giải, METR đo ngưỡng 50% thành công (B lưu ý ngưỡng 80% ngắn hơn nhiều)."
+    },
+    {
+      "report": "gemini-flash",
+      "claim": "Kỹ sư dành 70% thời gian đọc spec, đọc diff, phản biện kiến trúc",
+      "cited_url": "https://dora.dev/research/2025/dora-report/",
+      "assessment": "Không đáng tin: không thấy số này trong DORA; có vẻ bịa/diễn giải."
+    },
+    {
+      "report": "gemini-flash",
+      "claim": "Dependency mới phải qua whitelist kiểm tra tuổi đời (tồn tại >30 ngày)",
+      "cited_url": "https://www.trendmicro.com/",
+      "assessment": "Là khuyến nghị thực hành hợp lý nhưng nguồn là trang chủ, không có bằng chứng cụ thể."
+    },
+    {
+      "report": "gemini-flash",
+      "claim": "AGENTS.md giữ dưới 200–300 dòng (khuyến nghị <250 dòng)",
+      "cited_url": "https://agents.md/",
+      "assessment": "Ngưỡng cụ thể không có nguồn; định hướng 'ngắn' trùng các báo cáo khác."
+    },
+    {
+      "report": "gemini-flash",
+      "claim": "Reward hacking/test tampering dẫn từ 'NIST & AI Safety Studies'",
+      "cited_url": "https://www.nist.gov/",
+      "assessment": "Nguồn chỉ là trang chủ NIST — không truy được tài liệu; nội dung đúng hướng nhưng trích dẫn không kiểm chứng được (tương tự sysdig.com, scale.com, cloudsecurityalliance.org)."
+    },
+    {
+      "report": "gpt-oss",
+      "claim": "Swarm agent chuyên vai đạt accuracy cao hơn 12–18% so với một agent đa năng (Anthropic 2025, OpenAI 2025)",
+      "cited_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJ4AHm... [C5] / AUZIYQGF2ps2... [C6]",
+      "assessment": "Không đáng tin: trái ngược công bố của chính Anthropic (coding ít song song) và Cognition; nguồn là redirect không truy được."
+    },
+    {
+      "report": "gpt-oss",
+      "claim": "Cross-model review (Claude vs GPT) cải thiện độ chính xác ~12%",
+      "cited_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJ4AHm... [C5]",
+      "assessment": "Không đáng tin: không có nghiên cứu cụ thể; cùng URL với C13, C19."
+    },
+    {
+      "report": "gpt-oss",
+      "claim": "DORA 2025 khuyến cáo task size 200–500 LOC/worker",
+      "cited_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjloUY... [C8]",
+      "assessment": "Không đáng tin: DORA không đưa khuyến nghị kích thước task cho agent; có vẻ bịa."
+    },
+    {
+      "report": "gpt-oss",
+      "claim": "DORA 2025 khuyến cáo 4–6 worker cho repo <200K LOC; >10 worker gây rate-limit",
+      "cited_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJtGyp... [C15]",
+      "assessment": "Không đáng tin: gán sai cho DORA; URL là redirect lặp lại cho ~13 nguồn khác nhau."
+    },
+    {
+      "report": "gpt-oss",
+      "claim": "Best-of-N: N>3 cải thiện <2% test-pass rate (SWE-bench 2025); cost/PR ~$0,12, N>3 lên >$0,5/PR",
+      "cited_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJtGyp... [C15]/[C16]",
+      "assessment": "Không đáng tin: không nguồn cụ thể; $0,12/PR mâu thuẫn mạnh với Gemini ($5–$30/PR) và với dữ liệu C compiler của A."
+    },
+    {
+      "report": "gpt-oss",
+      "claim": "SWE-bench Verified ~78%, SWE-bench Pro ~55%, Terminal-bench <60%",
+      "cited_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElmbuq... [C17]",
+      "assessment": "Trung bình–yếu: Verified ~78% hợp lý cho 2025 nhưng Pro ~55% cao hơn hẳn A (<25% lúc ra mắt), B (<45%), C (~46%); không nêu thời điểm/model."
+    },
+    {
+      "report": "gpt-oss",
+      "claim": "Metric 'thực tế': lead time 4d→1,2d (Meta Research), deploy 3→12/tuần (GitHub), CFR 15%→4% (OpenAI internal), MTTR −50% (Anthropic), defect escape 0,7% (DORA 2025), 35% PR AI tự merge",
+      "cited_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJtGyp... [C25–C30]",
+      "assessment": "Rất không đáng tin: các 'nghiên cứu nội bộ' không truy được, cả 6 nguồn trỏ cùng một redirect; trái với DORA 2024/2025 (AI tăng instability) mà 4 báo cáo khác dẫn."
+    },
+    {
+      "report": "gpt-oss",
+      "claim": "Dẫn 'Anthropic Guardrails for AI Factories (2025)', 'OpenAI Agentic Safety (2026)', 'AlphaCorp AI', 'Swarms.ai'; đề xuất Claude 2.5/Claude-2 làm model",
+      "cited_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJtGyp... [C9][C21][C22]",
+      "assessment": "Không xác định được các tài liệu này; ~16/30 URL nguồn gần trùng nhau; tên model lỗi thời/không tồn tại; file còn bị lặp nửa đầu (output hỏng). Độ tin cậy tổng thể thấp."
+    }
+  ]
+}

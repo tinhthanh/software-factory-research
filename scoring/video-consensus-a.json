@@ -1,0 +1,1134 @@
+{
+ "scores": {
+  "K1": {
+   "v01": {
+    "score": 1,
+    "quote": "First thing we do is write a spec, and I'm going to use Opus for that.",
+    "ts": "01:23"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 1,
+    "quote": "something from the orchestrator agent called validation contract uh that's written before any code is done",
+    "ts": "13:44"
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K2": {
+   "v01": {
+    "score": 1,
+    "quote": "A feature comes through the specwriter which goes into the builder which then gets verified by various review agents",
+    "ts": "05:19"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 1,
+    "quote": "Collect, babysit, review, ship, repeat.",
+    "ts": "05:34"
+   },
+   "v04": {
+    "score": 1,
+    "quote": "the orchestrator just decides and writes the conditions what it needs to be done. Then it gives it to the agents called workers.",
+    "ts": "12:39"
+   },
+   "v05": {
+    "score": 1,
+    "quote": "then the agent will iterate around this cycle a few times until we have a code change that is ready to go.",
+    "ts": "01:23"
+   },
+   "v06": {
+    "score": 2,
+    "quote": "allows you to systematize and use these models in a very efficient way versus just typing in and continuing to go back and forth.",
+    "ts": "03:54"
+   }
+  },
+  "K3": {
+   "v01": {
+    "score": 1,
+    "quote": "a security review, a UX review, a UI design review, and a code review. And these are all done with separate agents.",
+    "ts": "01:37"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 1,
+    "quote": "a whole other model trained by someone else is giving the oversight and guidance",
+    "ts": "09:41"
+   },
+   "v04": {
+    "score": 1,
+    "quote": "software factory is not just coding agent and it's not even a swarm of coding agents even thousands of agents",
+    "ts": "02:57"
+   },
+   "v05": {
+    "score": 1,
+    "quote": "they're breaking their review process down into multiple different AI agents looking at different things.",
+    "ts": "01:47"
+   },
+   "v06": {
+    "score": 1,
+    "quote": "It has a methodology to prove its work. And then it has an external service proving its work checking its work.",
+    "ts": "26:09"
+   }
+  },
+  "K4": {
+   "v01": {
+    "score": 1,
+    "quote": "Anytime we're using sub agents, that's could incur extra costs because the agent has to pass contacts back and forth.",
+    "ts": "26:39"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 1,
+    "quote": "spawning sub-agents to look over extended periods of time",
+    "ts": "11:00"
+   },
+   "v04": {
+    "score": 1,
+    "quote": "every worker of the sequence can have parallel agents doing smaller tasks. So I don't know researching on the web",
+    "ts": "13:17"
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K5": {
+   "v01": {
+    "score": 1,
+    "quote": "this gets fed back into the builder agent. And this happens in a loop until we're happy, satisfied with the code.",
+    "ts": "01:46"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 2,
+    "quote": "But as you might have assumed, the verification part is essential. You don't want agents just guessing and throwing up PR",
+    "ts": "04:03"
+   },
+   "v04": {
+    "score": 2,
+    "quote": "the question is not the loop itself but the question is how how you define what it means to be done in the loop.",
+    "ts": "10:35"
+   },
+   "v05": {
+    "score": 1,
+    "quote": "this is an example of a low risk change that we could auto merge, but we won't because the CI build is failing.",
+    "ts": "06:15"
+   },
+   "v06": {
+    "score": 2,
+    "quote": "Notice we didn't talk about model. We didn't talk about hardness. It's all workflows, skills, and a little bit of domain knowledge",
+    "ts": "26:30"
+   }
+  },
+  "K6": {
+   "v01": {
+    "score": 1,
+    "quote": "we input some feature request and then the rest is handled autonomously except for this last step, this human approval step.",
+    "ts": "01:14"
+   },
+   "v02": {
+    "score": 1,
+    "quote": "taking action in production, it's really really useful to have some kind of approval mechanism.",
+    "ts": "11:35"
+   },
+   "v03": {
+    "score": 1,
+    "quote": "If it needs human review, it waits on the human review and then merge.",
+    "ts": "05:27"
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 1,
+    "quote": "then we're going to wait for a human to review and approve that change.",
+    "ts": "04:59"
+   },
+   "v06": {
+    "score": 1,
+    "quote": "Once I get a five out of five, this is when I enter the picture.",
+    "ts": "26:23"
+   }
+  },
+  "K7": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 2,
+    "quote": "If it's a clear issue that is verifiable, aka an agent can reproduce the issue itself, fix it, and then verify the fix",
+    "ts": "03:15"
+   },
+   "v04": {
+    "score": 1,
+    "quote": "it's really difficult to define how do you verify that the loop was done that the task was accomplished",
+    "ts": "11:09"
+   },
+   "v05": {
+    "score": 1,
+    "quote": "I'm stacking up a large number of pull requests which are relatively small anyway.",
+    "ts": "05:13"
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K8": {
+   "v01": {
+    "score": 2,
+    "quote": "that won't work too well because we're not using git work trees.",
+    "ts": "16:23"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 1,
+    "quote": "in Codex it spawns its own isolated work tree, does the verification, fix, and opens or updates a PR.",
+    "ts": "03:23"
+   },
+   "v04": {
+    "score": 1,
+    "quote": "we were missing good environments where the agents can actually work in the isolation.",
+    "ts": "02:38"
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 2,
+    "quote": "fresh Git work tree branched from origin main, so agents can work in parallel without conflicts. Never build on main.",
+    "ts": "05:29"
+   }
+  },
+  "K9": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K10": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 1,
+    "quote": "most people's agents.md file is useless because they were telling the agents.md file what the code looked like",
+    "ts": "05:01"
+   }
+  },
+  "K11": {
+   "v01": {
+    "score": 1,
+    "quote": "I think like all of these things Claude is going to figure out some reason to get me to look at them.",
+    "ts": "21:28"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 1,
+    "quote": "Does it waste as minimal human time as possible?",
+    "ts": "12:33"
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 2,
+    "quote": "many of us have pull requests that are stacking up and we're unable to keep up with the code changes as humans.",
+    "ts": "02:01"
+   },
+   "v06": {
+    "score": 1,
+    "quote": "I'll be honest, I'm not reading all my code nowadays.",
+    "ts": "17:00"
+   }
+  },
+  "K12": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": -1,
+    "quote": "I did this while working on 15 either simultaneous version Sorry, features. 15 different features.",
+    "ts": "25:45"
+   }
+  },
+  "K13": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 2,
+    "quote": "the agent can try to pass your tests but not really like not really verify what you need to do",
+    "ts": "11:49"
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 1,
+    "quote": "sometimes will straight up be like, \"Oh, I actually realized I didn't do this work for you.\"",
+    "ts": "15:13"
+   }
+  },
+  "K14": {
+   "v01": {
+    "score": 1,
+    "quote": "if we tested out like a really dumb agent as the builder and then got Opus to keep like fixing and judging the dumb agent.",
+    "ts": "21:14"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 2,
+    "quote": "a whole other model trained by someone else is giving the oversight and guidance that the Bitmore GPT-based factory is doing day-to-day.",
+    "ts": "09:41"
+   },
+   "v04": {
+    "score": 1,
+    "quote": "the validators judge code that they didn't write.",
+    "ts": "13:38"
+   },
+   "v05": {
+    "score": 1,
+    "quote": "they have things like a data specialist, an infrastructure specialist, a cloud specialist, and also a security specialist as well.",
+    "ts": "01:39"
+   },
+   "v06": {
+    "score": 2,
+    "quote": "But then I'll have Fable review the code and Fable will be like, \"This is disgusting.",
+    "ts": "13:01"
+   }
+  },
+  "K15": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K16": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K17": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 2,
+    "quote": "if your codebase is not ready, if you don't have structured codebase and all important things, then adopting or turning into software factory",
+    "ts": "17:32"
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K18": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 1,
+    "quote": "check back and verify that oh good, this type of feedback has actually wound down, or these errors or these P90s have actually come down.",
+    "ts": "11:40"
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K19": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 1,
+    "quote": "You can ensure that the agents only have specific permissions.",
+    "ts": "14:05"
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K20": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K21": {
+   "v01": {
+    "score": 1,
+    "quote": "Merge only runs when the main checkout is clean and on main here we have some stuff. So that failed.",
+    "ts": "22:11"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 1,
+    "quote": "there's a lot of cases where they just don't. They just kind of forget or stop or don't go the whole way.",
+    "ts": "09:54"
+   },
+   "v04": {
+    "score": 1,
+    "quote": "there is a lot of agents as I said they will be testing validating iterating and it all can end up as a big chaos",
+    "ts": "03:58"
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 1,
+    "quote": "Almost always, it's because people have their agents working on different features on the same branch.",
+    "ts": "07:57"
+   }
+  },
+  "K22": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 1,
+    "quote": "make sure that you don't actually break things or make your code quality worse.",
+    "ts": "01:09"
+   },
+   "v04": {
+    "score": 2,
+    "quote": "without structured uh code base and being ready and documenting well the AI can make your code worse",
+    "ts": "18:00"
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 2,
+    "quote": "Like there's duplications, there's functions all over the place, there's dead code.",
+    "ts": "13:05"
+   }
+  },
+  "K23": {
+   "v01": {
+    "score": 1,
+    "quote": "Now the orchestrator is very important for my software factory.",
+    "ts": "05:02"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v04": {
+    "score": 1,
+    "quote": "the main agent is orchestrator and then it's uh assigns work to workers agents and then validators who review the task.",
+    "ts": "12:17"
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K24": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 2,
+    "quote": "And lastly, I would start small. You don't have to start with all these things.",
+    "ts": "14:27"
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K25": {
+   "v01": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v02": {
+    "score": 2,
+    "quote": "So really the quality of your agents often comes down to the quality of the tools you actually give the agents.",
+    "ts": "13:55"
+   },
+   "v03": {
+    "score": 1,
+    "quote": "efficacy of your factory is highly dependent on the quality of your inputs.",
+    "ts": "13:25"
+   },
+   "v04": {
+    "score": 2,
+    "quote": "how do you actually keep the context clean and that's very valid",
+    "ts": "15:55"
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": 1,
+    "quote": "this workflow is something that's not native to the agent, so it explains clearly how to do it.",
+    "ts": "05:14"
+   }
+  },
+  "K26": {
+   "v01": {
+    "score": 1,
+    "quote": "So, this one won't merge because of the changes that I just got Sonnet to make.",
+    "ts": "23:42"
+   },
+   "v02": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v03": {
+    "score": 1,
+    "quote": "it's super annoying when this stuff is running, especially if it's doing a lot of work, when I'm trying to do work in parallel.",
+    "ts": "06:54"
+   },
+   "v04": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v05": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v06": {
+    "score": -1,
+    "quote": "we're merging into the into the main document, and there's not going to be conflicts cuz we worked on a copy at first.",
+    "ts": "08:58"
+   }
+  }
+ },
+ "new_claims": [
+  {
+   "claim": "Phân loại rủi ro thay đổi (low/high risk) để quyết định auto-merge hay bắt buộc người review; risk là tương đối theo ngữ cảnh (DB/infra luôn cần người).",
+   "evidence": [
+    {
+     "video": "v05",
+     "quote": "whether a change is low risk or high risk and then decide whether an agent should auto merge and auto deploy that change.",
+     "ts": "02:13"
+    },
+    {
+     "video": "v03",
+     "quote": "basically decides, are we okay with this auto merging and deploying?",
+     "ts": "05:14"
+    },
+    {
+     "video": "v01",
+     "quote": "Opus decides, this agent says either we merge to main automatically or we hand it off for human review.",
+     "ts": "01:57"
+    }
+   ],
+   "assessment": "ý kiến + demo (v05 dẫn bài Pragmatic Engineer về OpenAI; v03 dùng hằng ngày nhưng không số liệu)"
+  },
+  {
+   "claim": "Model routing: orchestrator/việc khó dùng model mạnh, worker/việc thường dùng model rẻ; router chọn model rẻ nhất vượt ngưỡng độ khó.",
+   "evidence": [
+    {
+     "video": "v04",
+     "quote": "you choose the cheapest model above the threshold.",
+     "ts": "08:28"
+    },
+    {
+     "video": "v01",
+     "quote": "we want a really smart model to be the orchestrator and then some of the sub aents can use lower models",
+     "ts": "19:06"
+    },
+    {
+     "video": "v03",
+     "quote": "reminds the model to spawn low-cost sub-agents, like with Sonnet, Luna, whatever, if it's possible to save cost.",
+     "ts": "09:16"
+    }
+   ],
+   "assessment": "v04 có benchmark nội bộ vendor (~25% tiết kiệm, tự nhận 'conservative'); v01 ý kiến; v03 thực chiến không số đo"
+  },
+  {
+   "claim": "Worker chạy TUẦN TỰ (không swarm song song) để mỗi bước có context sạch; song song chỉ ở sub-agent nhỏ bên trong mỗi bước.",
+   "evidence": [
+    {
+     "video": "v04",
+     "quote": "they work in a sequence. So they don't work in a swarm or parallel.",
+     "ts": "12:54"
+    }
+   ],
+   "assessment": "thực chiến của vendor (Factory missions), không số liệu so sánh"
+  },
+  {
+   "claim": "Kiểm chứng chiếm phần lớn chi phí/thời gian (vd. ~40% một mission 16 giờ); kiểm chứng end-to-end trong browser tốn token.",
+   "evidence": [
+    {
+     "video": "v04",
+     "quote": "it takes even 40% of the whole process.",
+     "ts": "12:36"
+    },
+    {
+     "video": "v03",
+     "quote": "Many things need to be verified end-to-end in a browser. That consumes tokens",
+     "ts": "03:56"
+    }
+   ],
+   "assessment": "v04 một case khách hàng có số; v03 thực chiến định tính"
+  },
+  {
+   "claim": "Validator kiểu 'user testing': agent dùng máy ảo/computer-use bấm thử sản phẩm thật, hoặc PR phải kèm bằng chứng before/after (screenshot, video, số đo).",
+   "evidence": [
+    {
+     "video": "v04",
+     "quote": "it works in its virtual computer and it clicks on the stuff and really checks if everything works",
+     "ts": "14:13"
+    },
+    {
+     "video": "v06",
+     "quote": "for every feature that I'm building, every PR that I'm doing, I am getting a before state and after state.",
+     "ts": "16:50"
+    }
+   ],
+   "assessment": "v04 vendor có ví dụ khách hàng; v06 thực chiến cá nhân, có ví dụ số (850ms→60ms)"
+  },
+  {
+   "claim": "Factory khép vòng với production: telemetry/Sentry/issue/feedback là input tự động; lỗi và regression đẩy ngược thành ticket (self-improving loop).",
+   "evidence": [
+    {
+     "video": "v03",
+     "quote": "We want any feedback or telemetry, such as Sentry errors, error logs, performance and uptime metrics of those that are verifiably fixable.",
+     "ts": "00:35"
+    },
+    {
+     "video": "v05",
+     "quote": "anytime we have bugs or incidents or production outages, we push tickets back into the pipeline",
+     "ts": "04:20"
+    },
+    {
+     "video": "v04",
+     "quote": "collecting all the signals reacting to user feedback to logs, prioritizing what's important",
+     "ts": "01:37"
+    }
+   ],
+   "assessment": "v03 thực chiến (dozens PR merged/ngày, không số đo chất lượng); v05/v04 ý kiến/mô tả"
+  },
+  {
+   "claim": "Cần job 'watchdog' định kỳ phát hiện việc agent bỏ dở (PR tạo ra nhưng không ship) và nhắc hoàn tất.",
+   "evidence": [
+    {
+     "video": "v03",
+     "quote": "I have Factory Watchdog running about four times per day and its whole job is to look over work that was done and is actionable",
+     "ts": "10:00"
+    }
+   ],
+   "assessment": "thực chiến, định tính ('a few of these per day')"
+  },
+  {
+   "claim": "Lookback định kỳ (hàng tuần) tìm lỗi lặp lại/fix không bền, giao model lớn phân tích gốc rễ toàn hệ thống.",
+   "evidence": [
+    {
+     "video": "v03",
+     "quote": "once a week I run the factory look back skill.",
+     "ts": "10:32"
+    }
+   ],
+   "assessment": "thực chiến, định tính"
+  },
+  {
+   "claim": "Code deterministic thực hiện rollout; agent chỉ quan sát metric/log trong lúc deploy và đề xuất/thực hiện rollback (có người duyệt).",
+   "evidence": [
+    {
+     "video": "v05",
+     "quote": "use your deterministic code to roll the change out, but then you can have the AI agent pay attention to what's happening in production",
+     "ts": "08:50"
+    },
+    {
+     "video": "v02",
+     "quote": "watch the next deployment for 5 minutes look for like errors and latency increases investigate any regressions",
+     "ts": "07:35"
+    }
+   ],
+   "assessment": "demo (hệ thống giả lập), ý kiến"
+  },
+  {
+   "claim": "Agent vận hành/chẩn đoán hay kết luận vội, overindex một tín hiệu → giữ human-in-the-loop cho hành động production quan trọng.",
+   "evidence": [
+    {
+     "video": "v02",
+     "quote": "although AI agents are really really powerful they do often jump to the wrong conclusions.",
+     "ts": "06:18"
+    }
+   ],
+   "assessment": "ý kiến từ kinh nghiệm, kèm demo"
+  },
+  {
+   "claim": "Bộ nhớ bền dạng lessons.md tích luỹ bài học sự cố để agent chẩn đoán tốt dần.",
+   "evidence": [
+    {
+     "video": "v02",
+     "quote": "by having the agent write to a lessons.mmd file, the agent can then have some kind of persistent memory",
+     "ts": "09:08"
+    }
+   ],
+   "assessment": "ý kiến (dẫn Anthropic on-call kit), demo"
+  },
+  {
+   "claim": "Progressive disclosure tool/context (deferred loading) giảm phình context và tiết kiệm token khi có nhiều tool.",
+   "evidence": [
+    {
+     "video": "v04",
+     "quote": "we just progressively disclose what's in the context and what tools to use.",
+     "ts": "16:37"
+    }
+   ],
+   "assessment": "vendor tự báo cáo 'save 50% of tokens or more', không chi tiết phương pháp"
+  },
+  {
+   "claim": "Agent 'babysit' PR: bắt buộc xử lý mọi comment review/CI fail (đồng ý thì sửa, không thì giải thích) và lặp tới khi reviewer bot đạt ngưỡng (vd. 5/5).",
+   "evidence": [
+    {
+     "video": "v03",
+     "quote": "They're required to verify and address every single comment or CI failure.",
+     "ts": "04:46"
+    },
+    {
+     "video": "v06",
+     "quote": "if its work is not up to standard, it has to continue in a loop working until that standard is met.",
+     "ts": "26:17"
+    }
+   ],
+   "assessment": "thực chiến cá nhân, không số liệu"
+  },
+  {
+   "claim": "Tách beta (đồng bộ main, auto-fix) và production (cắt deploy 1 lần/ngày) để giới hạn blast radius khi PR agent nhiều.",
+   "evidence": [
+    {
+     "video": "v03",
+     "quote": "Once a day, a production deploy is cut over to prod, and then we know production is far more stable.",
+     "ts": "14:11"
+    }
+   ],
+   "assessment": "thực chiến, định tính"
+  },
+  {
+   "claim": "Factory chạy trên máy/môi trường thật của dev (máy riêng 24/7) vì kiểm chứng cần env, keys, browser session, OTP; cloud khó tái tạo.",
+   "evidence": [
+    {
+     "video": "v03",
+     "quote": "my definitive answer right now is it's got to run on a laptop. Because to actually verify things, it needs my actual environment.",
+     "ts": "06:30"
+    }
+   ],
+   "assessment": "ý kiến từ thực chiến"
+  },
+  {
+   "claim": "Input mơ hồ → bot tự hỏi lại người báo lỗi để làm rõ trước khi nhận việc.",
+   "evidence": [
+    {
+     "video": "v03",
+     "quote": "If we need more information, we can automatically post asking for more information.",
+     "ts": "05:50"
+    }
+   ],
+   "assessment": "thực chiến, định tính"
+  },
+  {
+   "claim": "Trạng thái factory lưu dạng file markdown + dashboard để quan sát (observability) và dễ cho agent/người đọc lại.",
+   "evidence": [
+    {
+     "video": "v01",
+     "quote": "The markdown files are going to control the state of our application.",
+     "ts": "04:58"
+    }
+   ],
+   "assessment": "demo/tutorial"
+  },
+  {
+   "claim": "Guideline cấu trúc code (vd. service layer) cho agent để code dễ review/bảo trì, vì model ưu tiên 'xong việc' hơn chất lượng.",
+   "evidence": [
+    {
+     "video": "v06",
+     "quote": "This skill gives the agent a guideline on how to write code.",
+     "ts": "13:13"
+    }
+   ],
+   "assessment": "ý kiến từ thực chiến cá nhân"
+  },
+  {
+   "claim": "Nên tự xây factory đơn giản hiểu rõ (vài skill/markdown), harness/model-agnostic, thay vì mua sản phẩm/skill 'hype'.",
+   "evidence": [
+    {
+     "video": "v06",
+     "quote": "a software factory is literally just a bunch of markdown files.",
+     "ts": "29:27"
+    },
+    {
+     "video": "v01",
+     "quote": "this is your own very simple skill for your own software factory and you know exactly how it works",
+     "ts": "19:53"
+    }
+   ],
+   "assessment": "ý kiến"
+  }
+ ],
+ "video_meta": {
+  "v01": {
+   "kind": "tutorial",
+   "evidence_strength": 2,
+   "note": "Tutorial được Anthropic tài trợ, demo factory spec→build→4 reviewer→approver trên website thật của tác giả; vài feature nhỏ, không đo chất lượng/chi phí."
+  },
+  "v02": {
+   "kind": "demo/quảng cáo",
+   "evidence_strength": 1,
+   "note": "Demo agent SRE (Claude Agent SDK) trên hệ thống giả lập; số liệu downtime chỉ là thống kê ngành, không có kết quả production."
+  },
+  "v03": {
+   "kind": "thực chiến",
+   "evidence_strength": 3,
+   "note": "Steve (Builder.io) mô tả factory chạy hằng ngày (dozens PR merged/ngày, watchdog, lookback); thực tế nhưng số liệu tự báo cáo, có quảng bá skills/framework của mình."
+  },
+  "v04": {
+   "kind": "talk",
+   "evidence_strength": 3,
+   "note": "Talk AI Engineer của vendor Factory: kiến trúc missions (orchestrator/worker tuần tự/validator), số liệu (40% validation, 25% routing, 50% token) là của vendor, thiếu phương pháp."
+  },
+  "v05": {
+   "kind": "tutorial",
+   "evidence_strength": 2,
+   "note": "Tóm tắt bài Pragmatic Engineer về factory của OpenAI + demo risk-label auto-merge và on-call agent; dữ liệu OpenAI là gián tiếp, demo nhỏ."
+  },
+  "v06": {
+   "kind": "tutorial",
+   "evidence_strength": 2,
+   "note": "Podcast (Greg Isenberg + Ross Mike) giới thiệu workflow isolate→build→prove→ship bằng skill; ví dụ PR thật nhưng giai thoại, có tài trợ, khẳng định song song 15 feature không xung đột là chủ quan."
+  }
+ }
+}

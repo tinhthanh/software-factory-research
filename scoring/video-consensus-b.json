@@ -1,0 +1,1329 @@
+{
+ "scores": {
+  "K1": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 2,
+    "quote": "I'd say 90% of what we ship is small enough that you could just do it in one pass.",
+    "ts": "14:11",
+    "note": "Quy trình PRD/mockup + loop chỉ cho 'big stuff' [11:08]"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 1,
+    "quote": "There's no way an agent can do anything with this ticket. It has no description, no acceptance criteria.",
+    "ts": "03:30",
+    "note": "Spec/triage trước khi code, nhưng dùng cho 99% việc, không nói quá nặng cho task nhỏ"
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 2,
+    "quote": "Những khi mà các bạn không cần phải plan mode là khi mà sửa những cái lỗi nhỏ đơn giản",
+    "ts": "71:21",
+    "note": "Plan mode cho feature mới/refactor/nhiều file [71:04]; là plan chứ không phải spec tài liệu"
+   }
+  },
+  "K2": {
+   "v07": {
+    "score": 1,
+    "quote": "you put work into the system and it will run through a defined process the same way every single time",
+    "ts": "01:07",
+    "note": "Nhấn tính lặp lại/nhất quán, không so sánh với hội thoại multi-agent"
+   },
+   "v08": {
+    "score": 1,
+    "quote": "I'll cue another prompt that is like okay review it.",
+    "ts": "12:03",
+    "note": "Chuỗi prompt có cấu trúc implement→review; không so sánh trực tiếp"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 2,
+    "quote": "we're not just randomly prompting the agent. We're actually just defining the entire step-by-step process up front",
+    "ts": "04:56",
+    "note": "Kèm 'Ultimately, the workflow is what matters.' [07:12]; không so với multi-agent chat"
+   },
+   "v11": {
+    "score": 2,
+    "quote": "Agents plus code beats agents alone.",
+    "ts": "01:07",
+    "note": "Pha plan→build→test→review: 'One agent, one prompt, one purpose.' [21:04]"
+   },
+   "v12": {
+    "score": 1,
+    "quote": "plan mode nó dùng ít token hơn",
+    "ts": "70:29",
+    "note": "Plan-trước rẻ hơn build thẳng; không so với hội thoại multi-agent"
+   }
+  },
+  "K3": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 1,
+    "quote": "Do not fire up a team of agents to rename a variable or change a button color.",
+    "ts": "03:16",
+    "note": "Tín hiệu lẫn lộn: ủng hộ dùng 1 agent cho việc nhỏ nhưng mô tả tích cực team chia vai planner/builder/tester/reviewer [01:23]"
+   },
+   "v10": {
+    "score": 1,
+    "quote": "we're writing, you know, sub agent tests, we're doing code reviews",
+    "ts": "18:33",
+    "note": "Một agent chạy workflow, sub-agent cho test/review"
+   },
+   "v11": {
+    "score": 1,
+    "quote": "you probably could have just thrown in a single agent and got the work done. I fully acknowledge that.",
+    "ts": "23:52",
+    "note": "Nhưng factory vẫn chia nhiều vai planner/builder/reviewer/documenter"
+   },
+   "v12": {
+    "score": 2,
+    "quote": "Hãy luôn làm thử với một agent trước. Nếu mà nó chạy tốt thì các bạn không cần phải dùng agent team.",
+    "ts": "109:47",
+    "note": "Tách vai chủ yếu reviewer/QA có góc nhìn độc lập [53:02], [106:41]"
+   }
+  },
+  "K4": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 2,
+    "quote": "Use agent teams for the big stuff where running things in parallel actually pays off",
+    "ts": "03:07",
+    "note": "Kèm 'This feature eats tokens like nothing else.' [02:39]; không có hệ số 15x"
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 2,
+    "quote": "Nó sẽ tốn gấp khoảng bảy lần số token sử dụng so với một session thông thường.",
+    "ts": "107:42",
+    "note": "Song song chỉ có giá trị với task độc lập [101:33]; 7x chứ không 15x"
+   }
+  },
+  "K5": {
+   "v07": {
+    "score": 1,
+    "quote": "I also have a bunch of somewhat deterministic evals as well. So I can do automated checking and automated testing",
+    "ts": "06:52",
+    "note": "Eval kiểm tra tuân thủ quy trình, không nói harness quan trọng hơn số agent"
+   },
+   "v08": {
+    "score": 1,
+    "quote": "we just check if every issue is fixed always. It's very cheap. It's like CPU time",
+    "ts": "17:23",
+    "note": "Bộ repro chạy trên mọi PR; không so với số agent"
+   },
+   "v09": {
+    "score": 1,
+    "quote": "a verification step that only checks surface-level errors will not catch it",
+    "ts": "03:51"
+   },
+   "v10": {
+    "score": 1,
+    "quote": "The agents are doing extensive code review. They're doing a lot of CI checks.",
+    "ts": "15:35"
+   },
+   "v11": {
+    "score": 2,
+    "quote": "at some point your system will get so large, so complex, that validation will be the only way forward.",
+    "ts": "24:04",
+    "note": "Kèm deterministic gate checks [11:22]"
+   },
+   "v12": {
+    "score": 2,
+    "quote": "các bạn phải cho clot code một cái cơ chế để nó tự kiểm tra được cái kết quả của chính nó",
+    "ts": "37:02",
+    "note": "Kết hợp cảnh báo càng nhiều agent càng dễ sai [103:28]"
+   }
+  },
+  "K6": {
+   "v07": {
+    "score": 1,
+    "quote": "And then in the morning I can review those tasks.",
+    "ts": "13:45",
+    "note": "Chỉ review kết quả; không có duyệt plan"
+   },
+   "v08": {
+    "score": 2,
+    "quote": "we don't merge automatically. Uh we do have a human hit merge.",
+    "ts": "25:23",
+    "note": "Kèm duyệt plan cho issue khó: 'this is really hard. Here's a plan.' [19:26]"
+   },
+   "v09": {
+    "score": 1,
+    "quote": "You stop being the person typing every instruction and start being the person reviewing the output.",
+    "ts": "02:29"
+   },
+   "v10": {
+    "score": 2,
+    "quote": "we give the results over to a human to kind of review and make a decision about merging the change",
+    "ts": "06:15",
+    "note": "Và duyệt ticket/spec trước khi implement: 'I'm happy with this ticket. I want the agent to work on it.' [12:31]"
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "Các bạn hãy đọc kỹ cái plan này giống bạn đang review công việc của một nhân viên mới ấy.",
+    "ts": "72:53",
+    "note": "Duyệt plan rõ; không có duyệt PR (chỉ review auth trước deploy [123:42])"
+   }
+  },
+  "K7": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 1,
+    "quote": "we merge like a one to 3,000 line PR at a time.",
+    "ts": "12:36",
+    "note": "Chia PR nhỏ hơn nhưng 1-3k dòng vẫn lớn; có repro làm tiêu chí"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 2,
+    "quote": "We have an outcome, we have some context, we have some acceptance criteria to test",
+    "ts": "06:44",
+    "note": "Spec chia thành nhiều ticket [06:56]"
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "chúng ta nên giữ cái định nghĩa của task nó đơn giản và rõ ràng",
+    "ts": "103:34",
+    "note": "Không có tiêu chí pass/fail hay cỡ PR"
+   }
+  },
+  "K8": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 1,
+    "quote": "you need a place for the aven isolates, right?",
+    "ts": "31:51",
+    "note": "Boundary lại chạy thẳng trên MacBook không sandbox [31:35] vì input đã qua repro tin cậy"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 2,
+    "quote": "every time we run an agent, we're going to spawn a new get work tree and run it there to keep the code isolated",
+    "ts": "09:06",
+    "note": "Và 'when working on a VM or like in a team environment, you definitely want some kind of good sandboxing' [13:44]"
+   },
+   "v11": {
+    "score": 1,
+    "quote": "I'm just running this on the main branch. Of course, you're going to want a branch.",
+    "ts": "21:24",
+    "note": "Thừa nhận thiếu, không gắn với chạy song song"
+   },
+   "v12": {
+    "score": 2,
+    "quote": "khi nhiều agent nó cùng làm việc trong một thư mục duy nhất ấ cái việc va chạm là không thể tránh khỏi",
+    "ts": "114:20",
+    "note": "Giải pháp: git worktree [113:14]"
+   }
+  },
+  "K9": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "Cái file nó không có cái danh giới tuyệt đối cho nên một cái component nó có thể được dùng chung trong nhiều trang.",
+    "ts": "114:26",
+    "note": "Nêu vấn đề ranh giới file, không đề xuất chốt interface"
+   }
+  },
+  "K10": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "Giữ mỗi cái rule file ngắn gọn thôi. Tối đa 200 đến 500 dòng.",
+    "ts": "48:38",
+    "note": "Hook là 'deterministic control point' [94:05] nhưng không nói chuyển rule bắt buộc thành hook"
+   }
+  },
+  "K11": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 2,
+    "quote": "then you make the agent test the thing and then like this part is now fast but the review part is still slow",
+    "ts": "22:28",
+    "note": "Không có số liệu; cũng [18:57] 'PR review part is actually the thing that we're really trying to bottleneck'"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K12": {
+   "v07": {
+    "score": 1,
+    "quote": "So we have the max concurrent jobs.",
+    "ts": "06:10",
+    "note": "Chỉ cấu hình giới hạn job đồng thời, không bàn con số"
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": -1,
+    "quote": "I could be working on maybe 10, 20 tickets at a time here.",
+    "ts": "12:35",
+    "note": "Còn nói 'could be running hundreds and hundreds of tickets at the same time' [12:59]; tuyên bố demo, không số liệu"
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "sinh ra ít agent thôi nhưng mà những cái task nó rất là rõ ràng",
+    "ts": "103:38",
+    "note": "Ít agent, không nêu giới hạn/người"
+   }
+  },
+  "K13": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K14": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 1,
+    "quote": "use the codeex CLI to have C codeex review it and then compact and then do it again",
+    "ts": "12:07",
+    "note": "Thực hành review chéo model (Fable viết, Codex review), không nêu hiệu quả bắt lỗi"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 1,
+    "quote": "we've been given a thumbs up from Codex.",
+    "ts": "07:21",
+    "note": "Codex review PR do agent khác (Neo) viết; không đánh giá hiệu quả"
+   },
+   "v11": {
+    "score": 1,
+    "quote": "Our review agent is asking the question, is what we built what we asked for?",
+    "ts": "21:56",
+    "note": "Reviewer dùng model khác builder (Opus vs Gemini Flash), không nêu hiệu quả"
+   },
+   "v12": {
+    "score": 2,
+    "quote": "gửi cái code của nó sang một reviewer agent hoàn toàn mới và nó sẽ view cái code này",
+    "ts": "53:00",
+    "note": "Reviewer context mới, không phải model khác"
+   }
+  },
+  "K15": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 1,
+    "quote": "now we have enough issues as a database that we actually like have eval",
+    "ts": "19:55",
+    "note": "Eval nội bộ từ issue cũ; không nói benchmark công khai bão hoà"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 1,
+    "quote": "I know that the benchmarks are saying Opus 5 beats Fable. It's just what I'm feeling with my benchmarks and my execution.",
+    "ts": "15:52"
+   },
+   "v12": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K16": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K17": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K18": {
+   "v07": {
+    "score": 1,
+    "quote": "start to see what difference it makes in terms of the cycle time, how effectively the tasks are being completed",
+    "ts": "05:48",
+    "note": "Đo cycle time/token, không DORA/defect"
+   },
+   "v08": {
+    "score": 1,
+    "quote": "you actually have to give us metrics for every single version of this pipeline",
+    "ts": "20:23",
+    "note": "Metric pipeline (repro/pass rate), không DORA"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 1,
+    "quote": "If you don't measure it, you cannot improve it.",
+    "ts": "13:11",
+    "note": "Đo cost/tool call theo pha, không DORA"
+   },
+   "v12": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K19": {
+   "v07": {
+    "score": 1,
+    "quote": "we can run our software factory and our agents on a virtual machine with no public internet access",
+    "ts": "02:34",
+    "note": "Cô lập mạng vì bảo mật/riêng tư, không nói prompt injection"
+   },
+   "v08": {
+    "score": 1,
+    "quote": "raw feedback coming from a user is completely untrustworthy. We run our own prompts to create repros",
+    "ts": "31:09",
+    "note": "Xử lý input không tin cậy bằng kiến trúc, nhưng không sandbox; không nhắc prompt injection"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "nếu một MCP chỉ để đọc file ấ mà nó lại xin quyền truy cập Internet ấy thì đấy là cái dấu hiệu đáng ngờ",
+    "ts": "92:12",
+    "note": "Least privilege cho MCP; không nhắc prompt injection"
+   }
+  },
+  "K20": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "chỉ cài từ cái nguồn bạn tin tưởng",
+    "ts": "92:25",
+    "note": "Kiểm duyệt MCP server; không nói package ảo giác"
+   }
+  },
+  "K21": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 2,
+    "quote": "The hard problem with multi-agent setups is coordination.",
+    "ts": "03:41",
+    "note": "Planning và building agent lệch nhau giữa chừng [03:47]"
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "thay vì là nhiều agent với nhiều cái task mơ hồ",
+    "ts": "103:39",
+    "note": "Lỗi do thiết kế task/số agent (0.95^n), minh hoạ toán chứ không dữ liệu"
+   }
+  },
+  "K22": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "Clot nó rất hay tạo ra những cái file tạm, những cái thư viện không cần thiết",
+    "ts": "77:49",
+    "note": "Bloat workspace, không số liệu chất lượng code"
+   }
+  },
+  "K23": {
+   "v07": {
+    "score": 1,
+    "quote": "every single task when we send a task through machinist is given to a foreman coordinator",
+    "ts": "04:05",
+    "note": "Có orchestrator→sub-agent, không có best-of-N hay khẳng định hiệu quả nhất"
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 1,
+    "quote": "one agent takes the planning and architecture. A couple of others go build different pieces at the same time.",
+    "ts": "01:23",
+    "note": "Mô tả orchestrator-worker, không đánh giá là hiệu quả nhất"
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "chúng ta sẽ đi ba cái đường thẳng song song và chọn ra cái đường nào tốt nhất",
+    "ts": "109:04",
+    "note": "Best-of-N cho design/khám phá; khuyên không dùng khi cần chính xác cao [110:19]"
+   }
+  },
+  "K24": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 1,
+    "quote": "as you begin to trust these agent systems more and more, you can let them run for longer.",
+    "ts": "18:01",
+    "note": "Mở rộng tự chủ dần, không có lộ trình 3 tháng"
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 1,
+    "quote": "Khi mà các bạn đã quen rồi thì hãy nâng lên sau.",
+    "ts": "68:50",
+    "note": "Nâng dần mức quyền (ask→auto-edit→bypass), không lộ trình 3 tháng"
+   }
+  },
+  "K25": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 1,
+    "quote": "We do a lot of systems design. We do a lot of context engineering.",
+    "ts": "01:40",
+    "note": "Chủ yếu nhắc tên; phần monorepo giúp agent duyệt workspace [46:14]"
+   },
+   "v09": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v10": {
+    "score": 1,
+    "quote": "We have an outcome, we have some context, we have some acceptance criteria to test",
+    "ts": "06:44",
+    "note": "Ticket làm nguồn ngữ cảnh; không khẳng định là yếu tố then chốt"
+   },
+   "v11": {
+    "score": 1,
+    "quote": "Your software factory depends on your ability to prompt engineer, context engineer, and of course, harness engineer.",
+    "ts": "02:43"
+   },
+   "v12": {
+    "score": 2,
+    "quote": "80 đến 100% ấy rất là rõ ràng clot nó có thể quên cái kiến trúc ban đầu",
+    "ts": "62:46",
+    "note": "CLAUDE.md làm 'bộ não', manual compact, MCP"
+   }
+  },
+  "K26": {
+   "v07": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v08": {
+    "score": 1,
+    "quote": "we get a bunch of like tiny PRs and like the amount of tiny work is like overwhelmingly large",
+    "ts": "15:56",
+    "note": "Quá tải khối lượng PR nhỏ, không quy cho song song"
+   },
+   "v09": {
+    "score": 1,
+    "quote": "kicked off a teamwork run, watched it work beautifully, and then slammed straight into their quota right in the middle",
+    "ts": "02:46",
+    "note": "Chi phí/quota, để lại code dở dang"
+   },
+   "v10": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v11": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   },
+   "v12": {
+    "score": 2,
+    "quote": "càng nhiều subent thì cái xác suất toàn bộ hoàn thành đúng càng thấp",
+    "ts": "103:30",
+    "note": "Demo 10 sub-agent chậm hơn tuần tự (3m42 vs ~3m) [104:16]; Agent Team 'vũ khí hạt nhân nhắm vào ví' [109:13]"
+   }
+  }
+ },
+ "new_claims": [
+  {
+   "claim": "Vòng tự cải tiến: ghi telemetry mọi lần chạy (token, thời gian, lệnh) rồi cho agent phân tích để tối ưu prompt/quy trình của factory",
+   "evidence": [
+    {
+     "video": "v07",
+     "quote": "review the outputs of the latest coding runs, find ways to improve our prompt to make it more efficient in terms of token usage",
+     "ts": "09:13"
+    }
+   ],
+   "assessment": "demo (hệ thống mới dựng 1 ngày, cải tiến mới đề xuất, chưa đo kết quả)"
+  },
+  {
+   "claim": "Code tất định điều phối/thay bước agent (polling, theo dõi CI, gate, chạy test); agent chỉ được gọi khi có việc hoặc khi lỗi",
+   "evidence": [
+    {
+     "video": "v07",
+     "quote": "by moving this to a script, it's going to be cheaper, more predictable, more testable",
+     "ts": "10:00"
+    },
+    {
+     "video": "v10",
+     "quote": "when we're polling GitHub looking for work to do, we're not wasting any tokens",
+     "ts": "14:32"
+    },
+    {
+     "video": "v11",
+     "quote": "agents proposing and code disposing",
+     "ts": "16:37"
+    },
+    {
+     "video": "v08",
+     "quote": "That's like a hard-coded Y loop",
+     "ts": "25:05"
+    }
+   ],
+   "assessment": "ý kiến đồng thuận của 4 video, thực chiến nhỏ; không có số liệu tiết kiệm"
+  },
+  {
+   "claim": "Model routing / model stack: chọn model theo chi phí-tốc độ-năng lực từng pha (model rẻ cho scan/build, model mạnh cho plan/review)",
+   "evidence": [
+    {
+     "video": "v11",
+     "quote": "I'm using the right model at the right cost, at the right speed",
+     "ts": "05:36"
+    },
+    {
+     "video": "v07",
+     "quote": "scan the codebase using a cheaper model, find bugs",
+     "ts": "05:03"
+    },
+    {
+     "video": "v12",
+     "quote": "dùng clot sonet 46 để tiết kiệm chi phí",
+     "ts": "106:31"
+    },
+    {
+     "video": "v08",
+     "quote": "things that are UI focused will still use Fable or Opus",
+     "ts": "06:37"
+    }
+   ],
+   "assessment": "ý kiến/thực hành cá nhân; v11 có bảng giá model nhưng không đo chất lượng"
+  },
+  {
+   "claim": "Phân loại độ khó/rủi ro rồi định tuyến: việc nhỏ agent tự sửa, việc khó gửi plan cho người 'shepherd' duyệt (risk-tiered)",
+   "evidence": [
+    {
+     "video": "v08",
+     "quote": "Here's the bug fix. go read the PR or this is really hard. Here's a plan.",
+     "ts": "19:23"
+    },
+    {
+     "video": "v08",
+     "quote": "If the fix is more than 60, if the fix ends up being mclassified as a small issue",
+     "ts": "20:58"
+    }
+   ],
+   "assessment": "thực chiến đang triển khai; độ chính xác classifier chưa đo (mục tiêu ~60%)"
+  },
+  {
+   "claim": "Nhắm 95% tự động, không 100%: có đường thoát lên người khi agent không tạo được repro hoặc vòng sửa vượt giới hạn",
+   "evidence": [
+    {
+     "video": "v08",
+     "quote": "the folly that a lot of people make is they try and make a system that is fully automatic",
+     "ts": "32:29"
+    },
+    {
+     "video": "v08",
+     "quote": "if the Y loop hits like max iterations like three",
+     "ts": "25:08"
+    }
+   ],
+   "assessment": "ý kiến từ người vận hành production (Boundary), không số liệu"
+  },
+  {
+   "claim": "Vòng bot-review có giới hạn lần lặp: agent sửa tới khi bot review (CodeRabbit) hài lòng rồi mới báo người",
+   "evidence": [
+    {
+     "video": "v08",
+     "quote": "basically do not notify a human until code rabbit is happy.",
+     "ts": "25:31"
+    }
+   ],
+   "assessment": "thực chiến (Boundary)"
+  },
+  {
+   "claim": "Input bên ngoài (feedback user) coi là không tin cậy; agent tự tạo repro làm artifact tin cậy, bộ repro chạy lại trên mọi PR như regression suite",
+   "evidence": [
+    {
+     "video": "v08",
+     "quote": "raw feedback coming from a user is completely untrustworthy. We run our own prompts to create repros",
+     "ts": "31:09"
+    },
+    {
+     "video": "v08",
+     "quote": "we just check if every issue is fixed always. It's very cheap.",
+     "ts": "17:23"
+    }
+   ],
+   "assessment": "thực chiến (Boundary), code nói là open source"
+  },
+  {
+   "claim": "Agentic merge queue: sau khi người approve, agent tự rebase/merge main và theo CI tới khi merge xong",
+   "evidence": [
+    {
+     "video": "v08",
+     "quote": "it's an agentic merge queue.",
+     "ts": "26:20"
+    }
+   ],
+   "assessment": "ý tưởng đang làm, chưa có kết quả"
+  },
+  {
+   "claim": "Prototype lớn ('slop PR') làm spec sống, sau đó cho model chia lại thành chuỗi PR dễ review",
+   "evidence": [
+    {
+     "video": "v08",
+     "quote": "I'm not asking anyone to review a 20k line PR",
+     "ts": "13:56"
+    }
+   ],
+   "assessment": "thực chiến (HumanLayer), có số dòng PR nhưng không đo chất lượng"
+  },
+  {
+   "claim": "Multi-repo cản agent: dùng monorepo hoặc mô phỏng monorepo (thư mục điều phối/symlink), tránh git submodule",
+   "evidence": [
+    {
+     "video": "v08",
+     "quote": "simulate a monor repo as much as you can",
+     "ts": "46:14"
+    },
+    {
+     "video": "v08",
+     "quote": "please don't use subm modules.",
+     "ts": "48:50"
+    }
+   ],
+   "assessment": "ý kiến tư vấn từ kinh nghiệm"
+  },
+  {
+   "claim": "Factory gồm các tầng compute / dev environment / harness / control plane; nên tự sở hữu dev environment, các tầng khác có thể mua; dev env nên là 'cattle' tạo theo nhu cầu",
+   "evidence": [
+    {
+     "video": "v08",
+     "quote": "you are going to want to own this uh unless you're building like tiny little toy nex.js JS apps",
+     "ts": "36:04"
+    },
+    {
+     "video": "v07",
+     "quote": "The data plane and the control plane.",
+     "ts": "01:31"
+    }
+   ],
+   "assessment": "ý kiến kiến trúc"
+  },
+  {
+   "claim": "Tách control plane (hàng đợi, DB, UI) và data plane (worker kéo task, dựng môi trường, gọi harness) để mở rộng worker",
+   "evidence": [
+    {
+     "video": "v07",
+     "quote": "the workers are just going to pull tasks off the queue and then delegate those to the right coding agents",
+     "ts": "02:00"
+    }
+   ],
+   "assessment": "demo cá nhân (1 worker)"
+  },
+  {
+   "claim": "Agent triage biến ticket mơ hồ thành ticket sẵn sàng implement; trạng thái chuyển bằng label GitHub (state machine)",
+   "evidence": [
+    {
+     "video": "v10",
+     "quote": "Your goal is to turn the GitHub issue into a clear implementation ready task",
+     "ts": "10:36"
+    }
+   ],
+   "assessment": "demo trên repo của tác giả"
+  },
+  {
+   "claim": "Job định kỳ (bug finder/health check) tự quét codebase và mở ticket; automation lưu trong config có version control",
+   "evidence": [
+    {
+     "video": "v10",
+     "quote": "keeping all of these automations version controlled",
+     "ts": "17:03"
+    },
+    {
+     "video": "v07",
+     "quote": "every so often it will run a health check",
+     "ts": "05:01"
+    }
+   ],
+   "assessment": "demo"
+  },
+  {
+   "claim": "Factory dùng chung cho cả team (cùng prompt/harness/model) tốt hơn mỗi dev tự cấu hình; mọi cải tiến cấu hình lợi cho cả team (như CI/CD)",
+   "evidence": [
+    {
+     "video": "v07",
+     "quote": "With a software factory, everybody is using the same process.",
+     "ts": "12:21"
+    },
+    {
+     "video": "v10",
+     "quote": "you're using the same pipeline to deploy software which just massively raises the quality bar",
+     "ts": "20:36"
+    }
+   ],
+   "assessment": "ý kiến"
+  },
+  {
+   "claim": "Factory cho việc cơ học/nền/qua đêm; việc thiết kế, lặp nhanh, việc khó vẫn làm tương tác với agent local",
+   "evidence": [
+    {
+     "video": "v07",
+     "quote": "If you're working on design or iterative work, it doesn't make sense to me to be using a software factory",
+     "ts": "13:16"
+    },
+    {
+     "video": "v10",
+     "quote": "mechanical things, security upgrades, bug fixes, really trivial tedious work",
+     "ts": "19:42"
+    },
+    {
+     "video": "v11",
+     "quote": "push all the 80% junk work of engineering away off to your agent stack",
+     "ts": "27:27"
+    }
+   ],
+   "assessment": "ý kiến"
+  },
+  {
+   "claim": "Task agent chạy dài (20-60 phút) là lý do offload sang hệ thống bất đồng bộ thay vì ngồi canh terminal",
+   "evidence": [
+    {
+     "video": "v10",
+     "quote": "an agent will run on it for maybe 20 minutes to even up to an hour",
+     "ts": "15:31"
+    }
+   ],
+   "assessment": "thực chiến cá nhân (task 35 phút trong demo)"
+  },
+  {
+   "claim": "Bàn giao giữa các pha bằng JSON có schema, được validate; sai thì agent phải xuất lại",
+   "evidence": [
+    {
+     "video": "v11",
+     "quote": "my agents are outputting JSON, it's getting formatted, it's getting validated. If it fails, the agent must properly output it",
+     "ts": "12:07"
+    }
+   ],
+   "assessment": "demo (app thử nghiệm)"
+  },
+  {
+   "claim": "Không đẩy output test pass vào context agent; chỉ trả lỗi về khi fail",
+   "evidence": [
+    {
+     "video": "v11",
+     "quote": "Tell me why you would need to pass successful passing tests back into your agent's context window.",
+     "ts": "13:57"
+    }
+   ],
+   "assessment": "ý kiến"
+  },
+  {
+   "claim": "Observability/đo đạc từng lần chạy để A/B so sánh model, prompt, harness",
+   "evidence": [
+    {
+     "video": "v11",
+     "quote": "If you can't measure your agents, you can't improve them.",
+     "ts": "01:35"
+    },
+    {
+     "video": "v07",
+     "quote": "run that for a couple of days, collect a bunch of data",
+     "ts": "05:44"
+    }
+   ],
+   "assessment": "ý kiến + dashboard demo (v07: 15 triệu token, task TB 18 phút)"
+  },
+  {
+   "claim": "Xác suất thành công giảm theo luỹ thừa khi thêm sub-agent (0.95^n): ít agent, task rõ",
+   "evidence": [
+    {
+     "video": "v12",
+     "quote": "Với ba subent ấy thì chúng ta sẽ có 0,95 mũ 3 lên. Tức là chỉ còn có 85,7% thành công thôi.",
+     "ts": "103:16"
+    }
+   ],
+   "assessment": "minh hoạ toán học (giả định độc lập), không dữ liệu thực"
+  },
+  {
+   "claim": "Quản lý context window: chất lượng giảm khi vượt ~80%; compact thủ công kèm chỉ định cái cần giữ thay vì auto-compact",
+   "evidence": [
+    {
+     "video": "v12",
+     "quote": "Cho nên chúng ta nên làm theo cái cách hai tức là manual compact",
+     "ts": "64:00"
+    }
+   ],
+   "assessment": "ý kiến/hướng dẫn"
+  },
+  {
+   "claim": "Agent lặp lại cùng một lỗi từ 2 lần trở lên thì thêm ngay thành rule (rules tích luỹ từ lỗi)",
+   "evidence": [
+    {
+     "video": "v12",
+     "quote": "Nếu mà clot nó làm sai cùng một lỗi hơn hai lần ấy thì ngay lập tức chúng ta hãy thêm cái ru vào",
+     "ts": "48:47"
+    }
+   ],
+   "assessment": "ý kiến"
+  },
+  {
+   "claim": "Thử nhanh bằng MCP, rồi chuyển thao tác ổn định thành skill/script để tiết kiệm context; chỉ giữ MCP khi thật cần",
+   "evidence": [
+    {
+     "video": "v12",
+     "quote": "Thứ nhất là properti với MCP. Thứ hai là convert nó sang skill.",
+     "ts": "92:51"
+    }
+   ],
+   "assessment": "ý kiến"
+  },
+  {
+   "claim": "Phân cấp quyền (ask/auto-edit/plan/bypass) + hook backup trước khi sửa và audit trail mọi tool call",
+   "evidence": [
+    {
+     "video": "v12",
+     "quote": "Clocke nó đã chạy lệnh xóa toàn bộ cái dữ liệu ở trên ổ cứng",
+     "ts": "68:38"
+    },
+    {
+     "video": "v12",
+     "quote": "cái hook login audit trail",
+     "ts": "97:49"
+    }
+   ],
+   "assessment": "ý kiến + giai thoại (sự cố xoá ổ đĩa nghe kể lại)"
+  },
+  {
+   "claim": "Người có kinh nghiệm phải review phần auth/thanh toán trước khi deploy app ra ngoài",
+   "evidence": [
+    {
+     "video": "v12",
+     "quote": "đừng bao giờ deploy những cái app mà nhận thông tin nhạy cảm của người dùng",
+     "ts": "123:40"
+    }
+   ],
+   "assessment": "ý kiến"
+  },
+  {
+   "claim": "Cần ước tính chi phí trước khi chạy và pause/resume khi hết quota cho run multi-agent (kiểm soát ngân sách)",
+   "evidence": [
+    {
+     "video": "v09",
+     "quote": "there is still no cost estimate shown before a run kicks off",
+     "ts": "03:26"
+    },
+    {
+     "video": "v09",
+     "quote": "Your code can be sitting there half finished and you are left cleaning up.",
+     "ts": "03:00"
+    }
+   ],
+   "assessment": "ý kiến dựa trên phản ánh người dùng trên forum"
+  },
+  {
+   "claim": "Văn hoá team: không đẩy mọi task vào pipeline, vẫn cần phán đoán kỹ thuật ở mọi bước",
+   "evidence": [
+    {
+     "video": "v10",
+     "quote": "you need to have the culture such that people don't abuse these pipelines",
+     "ts": "19:22"
+    }
+   ],
+   "assessment": "ý kiến"
+  }
+ ],
+ "video_meta": {
+  "v07": {
+   "kind": "thực chiến",
+   "evidence_strength": 2,
+   "comment": "Hệ thống tự dựng (Machinist) có dashboard thật (15M token, task TB 18 phút) nhưng mới dựng 1 ngày, solo, vòng tự cải tiến mới dừng ở đề xuất."
+  },
+  "v08": {
+   "kind": "talk",
+   "evidence_strength": 3,
+   "comment": "Podcast giữa 2 founder đang vận hành pipeline thật (Boundary, HumanLayer); nhiều chi tiết production nhưng metric (dedup, classifier) còn chưa đo xong."
+  },
+  "v09": {
+   "kind": "demo/quảng cáo",
+   "evidence_strength": 1,
+   "comment": "Tin tức/bình luận tính năng Antigravity Agent Teams; có góc phê bình (token, coordination) nhưng không có thử nghiệm của chính tác giả."
+  },
+  "v10": {
+   "kind": "tutorial",
+   "evidence_strength": 2,
+   "comment": "Hướng dẫn kèm demo tool Rust open-source của tác giả trên repo riêng; quy trình rõ (triage→implement→PR, worktree) nhưng chỉ vài ticket demo."
+  },
+  "v11": {
+   "kind": "demo/quảng cáo",
+   "evidence_strength": 2,
+   "comment": "Demo framework ADW trên app thử nghiệm, nhiều ý hay (code tất định, model stack, JSON gate) nhưng tác giả thừa nhận 1 agent cũng làm được; có quảng bá khoá học."
+  },
+  "v12": {
+   "kind": "tutorial",
+   "evidence_strength": 2,
+   "comment": "Khoá Claude Code cho người mới, phần sau (context, plan mode, sub-agent, worktree) chắc; có vài phép đo nhỏ (10 sub-agent chậm hơn tuần tự) nhưng không phải software factory production."
+  }
+ }
+}

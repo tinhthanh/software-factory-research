@@ -1,0 +1,196 @@
+[
+ {
+  "id": "V1",
+  "claim": "Code tất định điều phối pipeline (polling, gate, CI, retry, rollout); agent chỉ làm bước cần phán đoán — 'agent proposes, code disposes'",
+  "videos": [
+   "v02",
+   "v05",
+   "v07",
+   "v08",
+   "v10",
+   "v11"
+  ]
+ },
+ {
+  "id": "V2",
+  "claim": "Phân loại rủi ro thay đổi để định tuyến: low-risk được auto-merge/agent tự sửa, high-risk (DB, infra, khó) bắt buộc người duyệt plan/PR",
+  "videos": [
+   "v01",
+   "v03",
+   "v05",
+   "v08"
+  ]
+ },
+ {
+  "id": "V3",
+  "claim": "Model routing theo pha/chi phí: model mạnh cho plan/orchestrate/review, model rẻ cho scan/worker; chọn model rẻ nhất vượt ngưỡng độ khó",
+  "videos": [
+   "v01",
+   "v03",
+   "v04",
+   "v07",
+   "v08",
+   "v11",
+   "v12"
+  ]
+ },
+ {
+  "id": "V4",
+  "claim": "Khép vòng với production: telemetry/Sentry/feedback/incident tự thành ticket; job định kỳ (bug finder, health check, watchdog việc bỏ dở, lookback hàng tuần)",
+  "videos": [
+   "v03",
+   "v04",
+   "v05",
+   "v07",
+   "v10"
+  ]
+ },
+ {
+  "id": "V5",
+  "claim": "Đo từng lần chạy (token, thời gian, kết quả) để agent/người tối ưu prompt-harness-model (self-improving, A/B)",
+  "videos": [
+   "v01",
+   "v07",
+   "v11"
+  ]
+ },
+ {
+  "id": "V6",
+  "claim": "Vòng bot-review có giới hạn lặp: agent phải xử lý mọi comment/CI fail, chỉ báo người khi bot reviewer đạt ngưỡng",
+  "videos": [
+   "v03",
+   "v06",
+   "v08"
+  ]
+ },
+ {
+  "id": "V7",
+  "claim": "Kiểm chứng tốn kém (~40% một mission) và phải end-to-end thật: browser/computer-use, PR kèm bằng chứng before/after, repro suite làm regression",
+  "videos": [
+   "v03",
+   "v04",
+   "v06",
+   "v08",
+   "v13"
+  ]
+ },
+ {
+  "id": "V8",
+  "claim": "Nhắm ~95% tự động, không 100%: luôn có đường thoát lên người khi vượt số vòng lặp hoặc không tạo được repro",
+  "videos": [
+   "v08"
+  ]
+ },
+ {
+  "id": "V9",
+  "claim": "Factory cho việc cơ học/nền/chạy lâu (20–60 phút); việc thiết kế, lặp nhanh, việc khó vẫn làm tương tác với agent local",
+  "videos": [
+   "v07",
+   "v10",
+   "v11"
+  ]
+ },
+ {
+  "id": "V10",
+  "claim": "Factory dùng chung cho cả team (cùng prompt/harness/model) như CI/CD, thay vì mỗi dev tự cấu hình",
+  "videos": [
+   "v07",
+   "v10"
+  ]
+ },
+ {
+  "id": "V11",
+  "claim": "Vệ sinh context: nạp tool dần (progressive disclosure, ~50% token), không đẩy output test pass vào context, compact thủ công, MCP ổn định → skill/script",
+  "videos": [
+   "v04",
+   "v11",
+   "v12",
+   "v13"
+  ]
+ },
+ {
+  "id": "V12",
+  "claim": "Worker chạy tuần tự với context sạch; song song chỉ ở sub-agent nhỏ trong một bước; xác suất thành công giảm theo 0.95^n khi thêm agent",
+  "videos": [
+   "v04",
+   "v12",
+   "v13"
+  ]
+ },
+ {
+  "id": "V13",
+  "claim": "Tự sở hữu tầng dev environment (môi trường dạng 'cattle'), tách control plane / data plane; dùng monorepo hoặc mô phỏng monorepo, tránh submodule",
+  "videos": [
+   "v07",
+   "v08"
+  ]
+ },
+ {
+  "id": "V14",
+  "claim": "Lỗi lặp lại ≥2 lần → thêm rule ngay; bộ nhớ lessons.md tích luỹ bài học sự cố",
+  "videos": [
+   "v02",
+   "v12"
+  ]
+ },
+ {
+  "id": "V15",
+  "claim": "Bàn giao giữa các pha bằng JSON có schema, được validate",
+  "videos": [
+   "v11",
+   "v13"
+  ]
+ },
+ {
+  "id": "V16",
+  "claim": "Tách beta (auto-fix, đồng bộ main) và production (cắt deploy 1 lần/ngày) để giới hạn blast radius",
+  "videos": [
+   "v03"
+  ]
+ },
+ {
+  "id": "V17",
+  "claim": "Prototype lớn ('slop PR') làm spec sống, rồi cho model chia lại thành chuỗi PR nhỏ dễ review",
+  "videos": [
+   "v08"
+  ]
+ },
+ {
+  "id": "V18",
+  "claim": "Kiểm soát chi phí multi-agent: ước tính trước khi chạy, pause/resume khi hết quota",
+  "videos": [
+   "v09"
+  ]
+ },
+ {
+  "id": "V19",
+  "claim": "Factory chạy trên máy/môi trường thật của dev vì kiểm chứng cần env, keys, session thật (đối lập với sandbox cô lập)",
+  "videos": [
+   "v03"
+  ]
+ },
+ {
+  "id": "V20",
+  "claim": "Tự xây factory đơn giản từ skill/markdown, chọn lọc từng phần, harness/model-agnostic — thay vì framework/sản phẩm áp toàn bộ SDLC (Spec Kit, Gastown...)",
+  "videos": [
+   "v01",
+   "v06",
+   "v13"
+  ]
+ },
+ {
+  "id": "V21",
+  "claim": "Agent phải phỏng vấn/hỏi lại người trước khi viết PRD/spec/plan hoặc nhận việc, để loại giả định ngầm",
+  "videos": [
+   "v03",
+   "v13"
+  ]
+ },
+ {
+  "id": "V22",
+  "claim": "Tách PRD (what/why) và spec (how) thành hai phiên riêng; mọi artifact theo template cố định; người review plan tập trung vào chiến lược kiểm chứng (exit criteria)",
+  "videos": [
+   "v13"
+  ]
+ }
+]

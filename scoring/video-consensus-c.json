@@ -1,0 +1,423 @@
+{
+ "scores": {
+  "K1": {
+   "v13": {
+    "score": 1,
+    "quote": "we need to split it up into the bite-sized pieces of work",
+    "ts": "11:01",
+    "note": "PRD + spec cho mỗi epic/MVP (outer loop) [06:23, 10:06]; không nói spec quá nặng cho bug/task nhỏ"
+   }
+  },
+  "K2": {
+   "v13": {
+    "score": 2,
+    "quote": "we're gonna go through the process of planning, implementing, and validating for every single one of them.",
+    "ts": "12:33",
+    "note": "Inner loop PIV (plan→implement→validate); 'That's why we need a full workflow here' [14:40]; không so với hội thoại multi-agent"
+   }
+  },
+  "K3": {
+   "v13": {
+    "score": 1,
+    "quote": "",
+    "ts": "",
+    "note": "Ngầm: toàn bộ quy trình là 1 coding agent + skill trong các conversation riêng; không bàn về tách vai/bầy agent"
+   }
+  },
+  "K4": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K5": {
+   "v13": {
+    "score": 2,
+    "quote": "as long as the agent has the harness and the instructions to test and iterate on its own work, it's going to get there.",
+    "ts": "18:33",
+    "note": "Validation-first là 'the most important thing in the entire process' [02:42]; không so với số lượng agent"
+   }
+  },
+  "K6": {
+   "v13": {
+    "score": 2,
+    "quote": "I encourage you when you create these plans to look through it yourself.",
+    "ts": "17:34",
+    "note": "Và PR: 'you perform the review on the pull request, you deem it good, you merge it' [21:06]"
+   }
+  },
+  "K7": {
+   "v13": {
+    "score": 2,
+    "quote": "split it up into the bite-sized pieces of work so we're not overwhelming our agent with too big of an ask per conversation.",
+    "ts": "11:01",
+    "note": "Mỗi ticket kết thúc bằng 1 PR [20:49]; plan nêu 'here is what done looks like' [17:47]; không nói cỡ vài giờ"
+   }
+  },
+  "K8": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K9": {
+   "v13": {
+    "score": 1,
+    "quote": "mapping dependencies, figuring out what we can do in parallel.",
+    "ts": "11:14",
+    "note": "Có map phụ thuộc giữa ticket nhưng không nói ranh giới file/module hay chốt interface"
+   }
+  },
+  "K10": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": "",
+    "note": "Chỉ nhắc 'it has its global rules' [13:35]"
+   }
+  },
+  "K11": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K12": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K13": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": "",
+    "note": "Test được định nghĩa trước (TDD cho agent) nhưng không nói gian lận test hay khoá quyền sửa"
+   }
+  },
+  "K14": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K15": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K16": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K17": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K18": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K19": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K20": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K21": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K22": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": "",
+    "note": "Chỉ nói chung 'a lot less AI slop' [17:17], không về trùng lặp/churn"
+   }
+  },
+  "K23": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K24": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": "",
+    "note": "'Pick and choose' skill để áp dụng dần là về công cụ, không phải mở rộng mức tự chủ theo giai đoạn"
+   }
+  },
+  "K25": {
+   "v13": {
+    "score": 2,
+    "quote": "We want to avoid context rot because large language models have a dumb zone where they get overwhelmed with information",
+    "ts": "19:36",
+    "note": "Prime-codebase nạp context [13:40]; plan file là context duy nhất cho implement [19:43]; MCP lấy PRD từ Confluence [12:04]"
+   }
+  },
+  "K26": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  }
+ },
+ "v_scores": {
+  "V1": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V2": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V3": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V4": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V5": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V6": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V7": {
+   "v13": {
+    "score": 1,
+    "quote": "How can we drive the application as a user also would? Using tools like, you know, the agent browser",
+    "ts": "16:31",
+    "note": "Có manual validation qua browser automation trong plan; không nói chi phí, bằng chứng before/after hay repro suite"
+   }
+  },
+  "V8": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": "",
+    "note": "Chỉ nói agent không hoàn hảo, người vẫn review [20:36]; không có ngưỡng lặp/escalation"
+   }
+  },
+  "V9": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V10": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": "",
+    "note": "Chỉ nhắc tuỳ chọn cài plugin 'for collaborators' [03:47]"
+   }
+  },
+  "V11": {
+   "v13": {
+    "score": 1,
+    "quote": "we're going to do this in a brand new conversation.",
+    "ts": "19:21",
+    "note": "Context sạch bằng cách tách conversation (PRD/spec/implement); không nói progressive disclosure, output test hay MCP→skill"
+   }
+  },
+  "V12": {
+   "v13": {
+    "score": 1,
+    "quote": "then you're simply going to move on to the next ticket and you're going to do the inner loop again.",
+    "ts": "21:12",
+    "note": "Ticket xử lý tuần tự, implement trong conversation mới; không có sub-agent song song hay 0.95^n"
+   }
+  },
+  "V13": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V14": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V15": {
+   "v13": {
+    "score": 1,
+    "quote": "Because every single skill where there's an output document like this, I have a template for the coding agent to follow.",
+    "ts": "15:25",
+    "note": "Bàn giao giữa pha bằng markdown theo template (PRD→spec→tickets→plan), không phải JSON schema được validate"
+   }
+  },
+  "V16": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V17": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V18": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "V19": {
+   "v13": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  }
+ },
+ "new_claims": [
+  {
+   "claim": "Tách 'what/why' (PRD) và 'how' (spec kiến trúc) thành hai hội thoại riêng, mỗi hội thoại ra một artifact làm đầu vào cho bước slice ticket",
+   "evidence": [
+    {
+     "video": "v13",
+     "quote": "these really are two separate conversations you're going to have with your coding agent.",
+     "ts": "10:17"
+    },
+    {
+     "video": "v13",
+     "quote": "we're not describing at all how we're actually going to build these new features into the code base.",
+     "ts": "09:57"
+    }
+   ],
+   "assessment": "ý kiến/thực chiến cá nhân (dùng ~nửa năm, không có số liệu)"
+  },
+  {
+   "claim": "Agent phải phỏng vấn người (hỏi nhiều câu) trước khi tạo PRD/spec/plan để loại bỏ giả định ngầm — rủi ro lớn nhất là agent tự giả định",
+   "evidence": [
+    {
+     "video": "v13",
+     "quote": "Because LLMs will confidently make terrible assumptions.",
+     "ts": "14:36"
+    },
+    {
+     "video": "v13",
+     "quote": "The agent is going to start by interviewing you, asking you a bunch of questions",
+     "ts": "14:22"
+    }
+   ],
+   "assessment": "ý kiến/thực chiến cá nhân; không có demo chạy thật"
+  },
+  {
+   "claim": "'Cụ thể về đích, không cụ thể về đường': người review plan nên tập trung chủ yếu vào chiến lược kiểm chứng (exit criteria), để agent tự tìm cách cài đặt",
+   "evidence": [
+    {
+     "video": "v13",
+     "quote": "you want to be specific about the end, like what exactly are you looking for, what is the validation strategy",
+     "ts": "18:15"
+    },
+    {
+     "video": "v13",
+     "quote": "I'm giving you permission here to mostly just focus on the validation strategy",
+     "ts": "19:04"
+    }
+   ],
+   "assessment": "ý kiến (dẫn lại Boris Cherny [17:58]); hợp lý nhưng không kiểm chứng"
+  },
+  {
+   "claim": "Mọi artifact đầu ra của skill dùng template cố định để quy trình lặp lại được; skill tự chỉnh bằng agent thay vì sửa tay",
+   "evidence": [
+    {
+     "video": "v13",
+     "quote": "This is what makes the skills reliable and repeatable.",
+     "ts": "15:21"
+    },
+    {
+     "video": "v13",
+     "quote": "I'm always having the coding agent make these edits based on a basic description that I give it.",
+     "ts": "22:20"
+    }
+   ],
+   "assessment": "ý kiến/thực chiến cá nhân"
+  },
+  {
+   "claim": "Ưu tiên thư viện skill nhỏ, plug-and-play, chọn lọc từng phần thay vì framework áp toàn bộ SDLC (Spec Kit, Gastown)",
+   "evidence": [
+    {
+     "video": "v13",
+     "quote": "you basically have to adopt their entire process for AI coding.",
+     "ts": "01:52"
+    }
+   ],
+   "assessment": "ý kiến (có lợi ích quảng bá repo/khoá học của tác giả)"
+  }
+ ],
+ "video_meta": {
+  "v13": {
+   "kind": "tutorial",
+   "evidence_strength": 2,
+   "note": "Cole Medin giới thiệu bộ skill PIV (PRD→spec→slice→prime→plan→implement→validate) dùng ~nửa năm, chỉ show tài liệu mẫu không chạy thật, có sponsor và quảng bá khoá học; transcript do Gemini chép."
+  }
+ }
+}
