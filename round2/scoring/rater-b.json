@@ -1,0 +1,1092 @@
+{
+ "rater": "rater-b",
+ "scores": {
+  "N1": {
+   "agy-gemini-argon": [
+    2,
+    "Điểm nghẽn đã dịch chuyển hoàn toàn từ viết code sang kiểm chứng và review"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Nút thắt cổ chai của kỹ nghệ phần mềm hiện đại đã chuyển hoàn toàn từ"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Nút thắt đã chuyển hẳn sang review của con người."
+   ],
+   "claude-E-academic": [
+    2,
+    "Nút thắt của software factory là hàng đợi review"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Nút thắt đã chuyển sang review và CI: review chậm khoảng 5 lần"
+   ],
+   "claude-G-security": [
+    1,
+    "Trần song song là năng lực review, không phải số agent."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Review là nút thắt được xác nhận bởi cả telemetry (review ×5) lẫn mọi case study lớn"
+   ]
+  },
+  "N2": {
+   "agy-gemini-argon": [
+    2,
+    "sản lượng phần mềm hoàn thiện cấp công ty (số Jira epics được giải quyết) không tăng một cách có ý nghĩa thống kê"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Việc áp dụng AI giúp cá nhân cảm thấy nhanh hơn nhưng dữ liệu DORA và viễn thám thực tế cho thấy"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Nghĩa là lợi ích cục bộ không tự động thành lợi ích hệ thống"
+   ],
+   "claude-E-academic": [
+    1,
+    "Thông lượng tăng (task/dev +33,7%, epic/dev +66,2% theo báo thứ cấp). Bug, incident và thời gian review tăng"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "output ở thượng nguồn tăng thật, nhưng giá trị giao được bị nghẽn ở review, deploy và độ ổn định"
+   ],
+   "claude-G-security": [
+    2,
+    "Faros (telemetry tương quan) và METR (RCT) cùng gợi ý lợi ích cá nhân không tự động thành lợi ích hệ thống"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "nhưng \"giao phần mềm nhanh hơn ở cấp hệ thống\" vẫn chưa được chứng minh với team trung vị"
+   ]
+  },
+  "N3": {
+   "agy-gemini-argon": [
+    2,
+    "Sau khi METR tuyên bố thiết kế RCT truyền thống bị phá sản vào tháng 02/2026"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-D-vendor": [
+    1,
+    "METR tự nói dữ liệu \"không đáng tin\""
+   ],
+   "claude-E-academic": [
+    2,
+    "Chưa có RCT nào đo được lợi ích năng suất của agent ở cấp team năm 2026. METR đã phải bỏ thiết kế RCT cũ"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "ngay cả nhóm đo lường nghiêm ngặt nhất cũng không còn đo được speedup bằng RCT kiểu cũ"
+   ],
+   "claude-G-security": [
+    2,
+    "Bằng chứng năng suất có kiểm soát vẫn yếu (METR 2026 có CI chứa 0, selection bias)."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Không còn RCT năng suất đáng tin nào cho agentic coding"
+   ]
+  },
+  "N4": {
+   "agy-gemini-argon": [
+    2,
+    "Thay vì đo ROI bằng \"số dòng code AI sinh ra\" hay \"số PR mở ra\""
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Các nghiên cứu tự báo cáo hoặc đo trong phòng thí nghiệm (Peng et al., GitHub) báo cáo tăng tốc 55%, nhưng dữ liệu đo viễn thám thực tế tại nơi làm việc"
+   ],
+   "claude-D-vendor": [
+    2,
+    "(b) số dòng hay số PR đo khối lượng chứ không đo giá trị; (c) self-report lệch có hệ thống"
+   ],
+   "claude-E-academic": [
+    2,
+    "Tự báo cáo luôn cao hơn đo lường. Đừng dùng khảo sát nội bộ để chứng minh ROI."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "chưa được kiểm toán, và thường được đưa ra trong bối cảnh tuyển dụng hoặc marketing"
+   ],
+   "claude-G-security": [
+    1,
+    "\"% code do AI viết\" (Coinbase 95–100%) không có định nghĩa cách đếm"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Đây là số tự báo cáo hoặc chỉ số đầu ra, chưa phải ROI."
+   ]
+  },
+  "N5": {
+   "agy-gemini-argon": [
+    2,
+    "tỷ lệ sự cố trên mỗi PR được merge tăng 242,7% (gấp hơn 3,4 lần)"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "kích thước trung bình của mỗi PR tăng tới 154%"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Adoption cao đi kèm PR lớn hơn, review lâu hơn và incident/PR tăng (Faros, tương quan)."
+   ],
+   "claude-E-academic": [
+    1,
+    "thời gian review median **+441,5%**, merge không review **+31,3%**, incident/PR **+242,7%**"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "bug/PR +28%, sự cố/PR +242,7%, code churn +861%, kích thước PR +51%"
+   ],
+   "claude-G-security": [
+    2,
+    "PR size +51%, bug/PR +28,7%, incident/PR +242,7%"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "bug/PR +28,7%, bug/dev +54%, **incident/PR +242,7%**, churn +861%"
+   ]
+  },
+  "N6": {
+   "agy-gemini-argon": [
+    -1,
+    "Dữ liệu telemetry trên 22.000 kỹ sư (04/2026) chứng minh việc để 31,3% PR trôi qua không review làm code churn tăng 861% và tỷ lệ sự cố trên mỗi PR tăng gấp 3,4 lần"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-D-vendor": [
+    1,
+    "Faros bán sản phẩm analytics, và phương pháp đầy đủ nằm sau form tải về"
+   ],
+   "claude-E-academic": [
+    2,
+    "Số \"incident tăng gấp 3\" của Faros đã lỗi thời. Dữ liệu mới cho thấy incident/PR chỉ +14,5%"
+   ],
+   "claude-F-casestudy": [
+    1,
+    "Đây là dữ liệu quan sát (tương quan) do một vendor bán sản phẩm phân tích công bố."
+   ],
+   "claude-G-security": [
+    1,
+    "Faros là vendor, số liệu tương quan, không định nghĩa baseline."
+   ],
+   "claude-H-skeptic": [
+    1,
+    "nhưng là vendor, báo cáo phải đăng ký mới xem đủ, và chỉ là tương quan"
+   ]
+  },
+  "N7": {
+   "agy-gemini-argon": [
+    2,
+    "45% tác vụ do AI viết chứa lỗ hổng thuộc OWASP Top 10"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "viết code kém an toàn hơn đáng kể"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Tỷ lệ code an toàn trung bình **56%**, gần như không đổi so với năm trước"
+   ],
+   "claude-E-academic": [
+    2,
+    "Code AI thô vẫn trượt khoảng 44% bài test bảo mật (Veracode). Gate bảo mật tất định là bắt buộc"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "56%, gần như không đổi** so với năm trước"
+   ],
+   "claude-G-security": [
+    2,
+    "Model trần vẫn sinh lỗ hổng ở khoảng 44% task; gate kiểm chứng là bắt buộc."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "gần như không đổi so với 2025, nghĩa là khoảng 44% task sinh code có lỗ hổng OWASP Top 10"
+   ]
+  },
+  "N8": {
+   "agy-gemini-argon": [
+    2,
+    "đều dựa trên microVM khởi động <10 giây, linter/test tất định và giới hạn tối đa 2–3 vòng lặp tự sửa lỗi"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Agent bắt buộc phải vượt qua build, unit test và mutation test trước khi mở PR"
+   ],
+   "claude-D-vendor": [
+    1,
+    "devbox tái lập được, code intelligence dựa trên Sourcegraph, \"Blueprints\" là các bước tất định (lint, codegen, test, dựng PR)"
+   ],
+   "claude-E-academic": [
+    2,
+    "Tổ chức nào chạy agent quy mô lớn thành công cũng có: môi trường cô lập, verifier trước khi mở PR, và giới hạn vòng lặp CI."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "verifier tất định chạy trước khi mở PR, cùng giới hạn số vòng CI"
+   ],
+   "claude-G-security": [
+    2,
+    "sandbox cách ly; kiểm chứng tất định trước khi mở PR; giới hạn retry; tuyển chọn tool; người review mọi PR"
+   ],
+   "claude-H-skeptic": [
+    1,
+    "Tối đa **2 vòng CI**, vì vòng thứ ba trở đi lợi ích giảm dần"
+   ]
+  },
+  "N9": {
+   "agy-gemini-argon": [
+    2,
+    "Thành công của Background Agent phụ thuộc vào Hạ tầng Nền tảng (Platform Infrastructure) chứ không phải lời nhắc (Prompting)"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Điều kiện tiên quyết để agent chạy được không phải là LLM xịn, mà là"
+   ],
+   "claude-D-vendor": [
+    2,
+    "độ tin cậy phụ thuộc vào môi trường sẵn sàng cho agent (retrieval, phản hồi CI, ranh giới bảo mật, vòng review) nhiều hơn là vào model"
+   ],
+   "claude-E-academic": [
+    1,
+    "phải đầu tư môi trường và tài liệu cho agent"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "verifier tất định quan trọng hơn context"
+   ],
+   "claude-G-security": [
+    1,
+    "Nền tảng background agent tự xây thành chuẩn ở công ty lớn."
+   ],
+   "claude-H-skeptic": [
+    1,
+    "thành công dựa trên hạ tầng có trước LLM (devbox, 3 triệu test)"
+   ]
+  },
+  "N10": {
+   "agy-gemini-argon": [
+    2,
+    "Nếu một repo thiếu cơ chế build/test chuẩn hóa một lệnh duy nhất, background agent hoàn toàn vô dụng"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Thay vì sửa bug trong code, agent tự động làm suy yếu assertion"
+   ],
+   "claude-D-vendor": [
+    2,
+    "agent tìm đường tắt để build xanh, như **xóa test fail**"
+   ],
+   "claude-E-academic": [
+    2,
+    "Lỗi phổ biến nhất là agent làm vượt yêu cầu (refactor, tắt test flaky)."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Repo không có test thì agent không tự xác minh được, và con người phải gánh lại việc kiểm tra"
+   ],
+   "claude-G-security": [
+    2,
+    "thiếu test hay môi trường thì vòng kiểm chứng sụp"
+   ],
+   "claude-H-skeptic": [
+    1,
+    "Mario Zechner: test do agent viết trở nên không đáng tin, chỉ còn test thủ công là đáng tin"
+   ]
+  },
+  "N11": {
+   "agy-gemini-argon": [
+    1,
+    "không một tổ chức kỹ thuật nghiêm túc nào cho phép auto-merge (hợp nhất tự động không qua mắt người) đối với các PR tính năng phức tạp"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "KHÔNG auto-merge các PR chứa logic nghiệp vụ do agent sinh ra"
+   ],
+   "claude-D-vendor": [
+    1,
+    "Người vẫn review mọi PR."
+   ],
+   "claude-E-academic": [
+    1,
+    "do agent viết 100%, người review"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "(3) người review mọi PR, trừ Vercel"
+   ],
+   "claude-G-security": [
+    2,
+    "Tổ chức lớn vẫn review 100% PR agent"
+   ],
+   "claude-H-skeptic": [
+    1,
+    "Có người review trước khi merge."
+   ]
+  },
+  "N12": {
+   "agy-gemini-argon": [
+    2,
+    "Chỉ áp dụng Auto-Merge cho thay đổi cơ học/rủi ro thấp có tính kiểm chứng toán học"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "do agent tạo; chỉ áp dụng cho dependency patch hoặc test độc lập với chính sách cấm agent sửa file test"
+   ],
+   "claude-D-vendor": [
+    2,
+    "nên bắt đầu bằng *auto-approve theo checklist tất định* (kiểu Ona), giữ một người bấm merge"
+   ],
+   "claude-E-academic": [
+    2,
+    "Auto-merge an toàn mới được chứng minh ở phạm vi hẹp (bump dependency có test phủ đúng vùng)"
+   ],
+   "claude-F-casestudy": [
+    1,
+    "auth, thanh toán, hạ tầng, mật mã, PR xóa code, repo không có test"
+   ],
+   "claude-G-security": [
+    2,
+    "bump dependency, docs, thêm test, refactor. Danh mục loại trừ: auth, bảo mật, migration, billing."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Auto-merge chỉ có bằng chứng tốt cho dependency patch/minor, tài liệu và CI/build, khi được kiểm soát bằng luật tất định"
+   ]
+  },
+  "N13": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-D-vendor": [
+    2,
+    "Auto-approve hoặc auto-merge theo tầng rủi ro có số đo trước/sau tích cực (Ona, Vercel, Intercom), nhưng tất cả đều tự báo cáo và chưa có dữ liệu sự cố độc lập."
+   ],
+   "claude-E-academic": [
+    2,
+    "Merge không cần người ở diện rộng (Uncountable 91%) chưa kèm số liệu incident."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Vercel không công bố sự cố hậu kiểm nào, và không có nhóm đối chứng."
+   ],
+   "claude-G-security": [
+    1,
+    "Không tìm được sự cố hay dữ liệu revert liên quan."
+   ],
+   "claude-H-skeptic": [
+    1,
+    "post-mortem công khai nào về sự cố do auto-merge PR của agent"
+   ]
+  },
+  "N14": {
+   "agy-gemini-argon": [
+    1,
+    "Băng thông suy luận và Review của con người (Giới hạn lớn nhất)"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Băng thông Review của con người là giới hạn tối thượng"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Chưa có dữ liệu ngoài giai thoại về số agent mỗi kỹ sư. Mức 2–4 agent có giám sát là đồng thuận, và giới hạn là sự chú ý cùng chất lượng review."
+   ],
+   "claude-E-academic": [
+    2,
+    "Tôi không tìm thấy nghiên cứu nào đo trần số agent/kỹ sư."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Không có dữ liệu nghiêm túc về số agent tối ưu mỗi kỹ sư; giới hạn thực là băng thông review và chi phí."
+   ],
+   "claude-G-security": [
+    2,
+    "Trần song song là năng lực review, không phải số agent."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Không có dữ liệu có kiểm soát về số agent đồng thời tối ưu mỗi kỹ sư với LLM thật"
+   ]
+  },
+  "N15": {
+   "agy-gemini-argon": [
+    2,
+    "Trần nhận thức bền vững cho mỗi kỹ sư là 3–4 agent chạy song song trên các tác vụ độc lập"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "2 agent chạy nền đồng thời trên mỗi kỹ sư"
+   ],
+   "claude-D-vendor": [
+    2,
+    "2–4 agent có giám sát cộng thêm vài agent nền cho các task có tiêu chí chấp nhận tự động (test hoặc CI) là mức đồng thuận"
+   ],
+   "claude-E-academic": [
+    -1,
+    "Con số 3–5 agent/người hay được nhắc là giai thoại."
+   ],
+   "claude-F-casestudy": [
+    -1,
+    "không phải số agent. Mức song song cao chỉ có lợi khi có"
+   ],
+   "claude-G-security": [
+    2,
+    "Khuyến nghị (suy luận): 2–3 agent/kỹ sư cho task tương tác"
+   ],
+   "claude-H-skeptic": [
+    -1,
+    "con số hợp lý là số PR mà một người review kỹ được mỗi ngày, không phải số agent"
+   ]
+  },
+  "N16": {
+   "agy-gemini-argon": [
+    2,
+    "Không để nhiều agent tự ý phối hợp trên cùng một phạm vi code mà thiếu phân vùng cứng"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Khi nhiều agent cùng chạy trên các nhánh tách biệt, tỷ lệ xung đột git vượt mốc"
+   ],
+   "claude-D-vendor": [
+    1,
+    "Cognition chủ trương ghi một luồng"
+   ],
+   "claude-E-academic": [
+    2,
+    "Song song nhiều agent gây xung đột merge thật: 27–42% cặp PR. Muốn song song thì phải tách task theo module và có kênh \"claim\"."
+   ],
+   "claude-F-casestudy": [
+    1,
+    "(3) tác vụ độc lập với nhau, ví dụ migration fan-out qua nhiều repo"
+   ],
+   "claude-G-security": [
+    1,
+    "xung đột code (Stripe dùng devbox riêng cho mỗi run)"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Multi-agent hại cho việc tuần tự (−39 đến −70%) và chỉ có lợi khi việc chia nhỏ được và có bộ kiểm tra trung tâm"
+   ]
+  },
+  "N17": {
+   "agy-gemini-argon": [
+    2,
+    "agent bắt buộc phải chạy trong MicroVM Sandbox có chặn mạng chiều ra (egress filtering) và dùng token ngắn hạn (JIT tokens)"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Môi trường ephemeral (dùng một lần rồi hủy), mạng cách ly, không có quyền truy cập máy cá nhân"
+   ],
+   "claude-D-vendor": [
+    2,
+    "nên chạy trong cloud hoặc VM sandbox có egress allowlist và secret ngắn hạn. Agent local nên bật sandbox OS."
+   ],
+   "claude-E-academic": [
+    2,
+    "Anthropic: sandbox OS cho local, proxy credential cho cloud."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "sandbox không có credential production và chặn egress"
+   ],
+   "claude-G-security": [
+    2,
+    "không credential production, egress theo allow-list, credential git/registry qua proxy, hạ tầng làm phần push. Máy dev chỉ cho phiên tương tác, có bật sandbox"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "cloud agent của nhà cung cấp cộng với egress hạn chế cộng với token ngắn hạn là lựa chọn mặc định an toàn hơn agent local có full quyền"
+   ]
+  },
+  "N18": {
+   "agy-gemini-argon": [
+    -1,
+    "chạy agent bên trong một **microVM nhẹ ngay trên laptop**"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "tuyệt đối không chạy trực tiếp trên máy dev local vì nguy cơ RCE và rò rỉ bí mật"
+   ],
+   "claude-D-vendor": [
+    -1,
+    "Agent local nên bật sandbox OS."
+   ],
+   "claude-E-academic": [
+    0,
+    ""
+   ],
+   "claude-F-casestudy": [
+    0,
+    ""
+   ],
+   "claude-G-security": [
+    1,
+    "Máy dev chỉ cho phiên tương tác, có bật sandbox."
+   ],
+   "claude-H-skeptic": [
+    0,
+    ""
+   ]
+  },
+  "N19": {
+   "agy-gemini-argon": [
+    2,
+    "vừa đảm bảo môi trường kiểm chứng thật (chạy được Docker-in-Docker, database, browser test) vừa cô lập phần cứng"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Phải thiết lập hạ tầng devbox đồng bộ, cần mock service hoặc kết nối VPN an toàn đến test environment"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Việc verify nên dựa vào CI hoặc preview environment sẵn có thay vì cố dựng lại môi trường trong máy agent."
+   ],
+   "claude-E-academic": [
+    2,
+    "Họ không giải bằng cách cho agent truy cập production."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "sandbox phải *giống production* thì mới tự xác minh được"
+   ],
+   "claude-G-security": [
+    2,
+    "Cách giải phổ biến: devbox dựng sẵn, không credential production"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Stripe giải quyết bằng môi trường devbox cùng loại với máy kỹ sư, được dựng sẵn service"
+   ]
+  },
+  "N20": {
+   "agy-gemini-argon": [
+    2,
+    "Tuyệt đối không dùng LLM tự động sinh file `AGENTS.md` / `CLAUDE.md` dài dòng"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "không nhồi nhét văn xuôi dài dòng hay quy tắc style guide vào prompt"
+   ],
+   "claude-D-vendor": [
+    2,
+    "AGENTS.md/CLAUDE.md nên ngắn và tối thiểu. File dài, nhiều yêu cầu có bằng chứng làm giảm tỷ lệ thành công và tăng chi phí."
+   ],
+   "claude-E-academic": [
+    2,
+    "AGENTS.md dài và chung chung làm tăng chi phí hơn 20% mà không tăng tỷ lệ thành công. Hãy viết ngắn, chỉ ghi điều không suy ra được từ code."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "AGENTS.md dài có thể làm giảm hiệu quả và tăng chi phí hơn 20%; chỉ nên chứa ràng buộc tối thiểu và kiến thức model chưa có."
+   ],
+   "claude-G-security": [
+    2,
+    "AGENTS.md dài hoặc do LLM sinh không giúp và tốn thêm hơn 20% chi phí; giữ tối thiểu."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "AGENTS.md dài hoặc tự sinh không tăng độ đúng mà tăng chi phí hơn 20%. Hãy giữ nó ngắn và chỉ ghi quy ước không chuẩn"
+   ]
+  },
+  "N21": {
+   "agy-gemini-argon": [
+    1,
+    "(map/router) chứ không phải cuốn bách khoa toàn thư"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Module hóa và Scoping cục bộ (Glob targeting)"
+   ],
+   "claude-D-vendor": [
+    2,
+    "file ngắn, chỉ chứa lệnh build/test và ranh giới, giúp agent đỡ mò mẫm"
+   ],
+   "claude-E-academic": [
+    2,
+    "Runtime median **−28,64%**, output token **−16,58%**"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "chỉ mục docs 8KB nhúng trong AGENTS.md đạt 100%"
+   ],
+   "claude-G-security": [
+    2,
+    "Chỉ mục docs 8KB trong AGENTS.md đạt 100%; skill mặc định 53%, bằng baseline (56% trường hợp skill không được gọi)"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Có AGENTS.md thì runtime trung vị giảm 28,64% và output token giảm 16,58%"
+   ]
+  },
+  "N22": {
+   "agy-gemini-argon": [
+    2,
+    "nếu gắn hàng chục MCP server trực tiếp vào phiên làm việc cá nhân, phần mô tả schema của hàng trăm công cụ sẽ ngốn hàng chục ngàn token ngay từ lượt chat đầu tiên"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-D-vendor": [
+    2,
+    "Với MCP, ưu tiên CLI như `gh` hay `aws` vì tiết kiệm context hơn."
+   ],
+   "claude-E-academic": [
+    2,
+    "CLI hiệu quả context hơn MCP [C6] | Hội tụ thực hành: ít tool, chọn lọc"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "chọn trước tool thay vì nạp cả catalog"
+   ],
+   "claude-G-security": [
+    2,
+    "ít tool vì \"MCP thêm unpredictability\""
+   ],
+   "claude-H-skeptic": [
+    1,
+    "Stripe có hơn 400 tool nhưng chỉ đưa cho agent một tập nhỏ mặc định"
+   ]
+  },
+  "N23": {
+   "agy-gemini-argon": [
+    1,
+    "có quyền đọc dữ liệu không đáng tin cậy từ bên ngoài (PR, issue, thư viện mã nguồn mở), có quyền thực thi lệnh shell cục bộ"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Khi background agent tự động quét issue để fix bug, nó đọc phải payload này"
+   ],
+   "claude-D-vendor": [
+    1,
+    "agent có quyền ghi và đọc nội dung bên ngoài (issue, Sentry, web)"
+   ],
+   "claude-E-academic": [
+    2,
+    "Workflow triage issue dùng `claude-code-action` với Bash/Write/Edit, ai mở issue cũng kích hoạt được."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Đây là chuỗi supply chain thật, đi qua một agent trong CI."
+   ],
+   "claude-G-security": [
+    2,
+    "Agent trong CI đọc input không tin cậy là vector đã bị khai thác thật (Clinejection, Comment and Control, PromptPwnd, Mini Shai-Hulud)."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Agent trong CI nhận input không tin cậy và có shell là vector supply chain đã bị khai thác thật (Clinejection)"
+   ]
+  },
+  "N24": {
+   "agy-gemini-argon": [
+    1,
+    "Năm 2025–2026 chứng kiến coding agent trở thành mục tiêu tấn công hàng đầu vì chúng hội tụ đủ 3 yếu tố"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-D-vendor": [
+    1,
+    "Amazon nói nguyên nhân là \"user error — misconfigured access controls\""
+   ],
+   "claude-E-academic": [
+    2,
+    "Mọi sự cố lớn 2025–2026 đều là dữ liệu không tin cậy gặp credential quyền rộng. Phân quyền tối thiểu cho agent là biện pháp hiệu quả nhất."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Sự cố 2026 (PocketOS, Clinejection) chủ yếu do token quá quyền và agent nhận input không tin cậy, không phải do \"model kém\"."
+   ],
+   "claude-G-security": [
+    1,
+    "Bài học: \"tool rộng trong CI + input không tin cậy = shell cho mọi người dùng GitHub\""
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Sự cố lớn nhất đều có chung mẫu: agent có quyền rộng và không có người thứ hai duyệt. Cách sửa là phân quyền, không phải model tốt hơn"
+   ]
+  },
+  "N25": {
+   "agy-gemini-argon": [
+    2,
+    "Tấn công Chuỗi cung ứng qua MCP"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Một MCP Server bên thứ ba bị xâm nhập hoặc cung cấp định nghĩa tool độc hại"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Riêng MCP là bề mặt tấn công bị khai thác thực tế (Agentjacking)."
+   ],
+   "claude-E-academic": [
+    2,
+    "MCP server giả mạo (bản clone server Oura) phát tán infostealer | Chuỗi cung ứng qua registry MCP"
+   ],
+   "claude-F-casestudy": [
+    1,
+    "biến thể Shai-Hulud cài MCP server giả"
+   ],
+   "claude-G-security": [
+    1,
+    "Bảo mật: context, rule và output MCP là bề mặt tấn công (OWASP ASI06)."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "đây là tiền lệ trực tiếp cho rủi ro \"skills/plugins là supply chain\""
+   ]
+  },
+  "N26": {
+   "agy-gemini-argon": [
+    1,
+    "OWASP Top 10 for Agentic Applications (v1.0-2026, công bố 12/2025)"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "xác lập chuẩn bảo mật cho hệ thống tự chủ"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Tính đến cập nhật 14/08/2026, **chưa có guidance chính thức**"
+   ],
+   "claude-E-academic": [
+    2,
+    "công bố 09/12/2025, ký hiệu ASI01–ASI10"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Chưa có deliverable chính thức"
+   ],
+   "claude-G-security": [
+    2,
+    "overlay SP 800-53 dự kiến cuối 2026–2027"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "OWASP Top 10 for Agentic Applications 2026 (phát hành 09/12/2025, mã ASI01–ASI10)"
+   ]
+  },
+  "N27": {
+   "agy-gemini-argon": [
+    1,
+    "$200 đến hơn $500+ / kỹ sư / tháng"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "150$ đến 500$+/kỹ sư/tháng"
+   ],
+   "claude-D-vendor": [
+    1,
+    "$150–250/dev/tháng"
+   ],
+   "claude-E-academic": [
+    2,
+    "Trần cuối cùng là 1.500 USD/người/công cụ/tháng sau khi cháy ngân sách năm trong 4 tháng."
+   ],
+   "claude-F-casestudy": [
+    1,
+    "các blog và vendor ước khoảng 200–600 USD/kỹ sư/tháng cho mức dùng agentic, với nhiều ngoại lệ rất cao"
+   ],
+   "claude-G-security": [
+    2,
+    "Chi phí token tăng nhanh (200–500 USD/dev/tháng phổ biến); cần ngân sách, giới hạn retry"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Chi phí token có thể vượt ngân sách rất nhanh (Uber hết ngân sách năm trong 4 tháng). Hãy đặt trần theo người và theo công cụ ngay từ đầu"
+   ]
+  },
+  "N28": {
+   "agy-gemini-argon": [
+    1,
+    "Cách đo ROI thực chất (Tránh Metrics Phù phiếm)"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "thời gian chu kỳ từ spec đến deploy (Lead time)"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Chi phí token (khoảng $150–250/dev/tháng cộng khoảng $1/review) nhỏ so với lương. ROI phải đo bằng lead time, deploy và incident, không bằng số PR."
+   ],
+   "claude-E-academic": [
+    2,
+    "mất thêm 5 giờ/tuần review thì tốn nhiều hơn tiền token"
+   ],
+   "claude-F-casestudy": [
+    1,
+    "sự cố/PR, revert, thời gian review"
+   ],
+   "claude-G-security": [
+    2,
+    "ROI: đo theo hệ thống (lead time, deployment, change failure rate, incident/PR, token/PR merge)"
+   ],
+   "claude-H-skeptic": [
+    1,
+    "(không bị revert), không đo trên token hay số PR mở"
+   ]
+  },
+  "N29": {
+   "agy-gemini-argon": [
+    -1,
+    "họ kéo chi phí xuống còn **$30 / PR**"
+   ],
+   "agy-gemini-flash": [
+    -1,
+    "0.50$ đến 3.00$ cho mỗi PR thành công"
+   ],
+   "claude-D-vendor": [
+    0,
+    ""
+   ],
+   "claude-E-academic": [
+    0,
+    ""
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Không công ty nào trong mẫu công bố cost/PR hay cost/kỹ sư cụ thể."
+   ],
+   "claude-G-security": [
+    2,
+    "Không có số cost/PR công bố."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Không có số cost/PR công khai đáng tin"
+   ]
+  },
+  "N30": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Agent phát huy ROI cao nhất ở các bài toán bảo trì/nâng cấp quy mô lớn (large-scale migration)"
+   ],
+   "claude-D-vendor": [
+    1,
+    "Migration tiết kiệm 60–90% thời gian (tự báo cáo)."
+   ],
+   "claude-E-academic": [
+    0,
+    ""
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Tác vụ có ROI rõ nhất là migration, toil và fix nhỏ có test tốt (Spotify, Uber, Stripe)."
+   ],
+   "claude-G-security": [
+    1,
+    "các team báo tiết kiệm 60–90% thời gian migration (tự báo cáo)"
+   ],
+   "claude-H-skeptic": [
+    1,
+    "Một migration Java hoàn thành trong 3 ngày."
+   ]
+  },
+  "N31": {
+   "agy-gemini-argon": [
+    1,
+    "dịch chuyển dứt khoát từ mô hình \"trợ lý chat trong IDE\" sang kiến trúc"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "sự trỗi dậy của \"Hệ sinh thái Agentic Software Engineering chạy nền, bất đồng bộ"
+   ],
+   "claude-D-vendor": [
+    2,
+    "Thay đổi vận hành lớn nhất của 04–10/2026 là agent nền/cloud tự mở draft PR, chứ không phải model mới."
+   ],
+   "claude-E-academic": [
+    1,
+    "Cloud/background agent trở thành mặc định trong IDE và nền tảng git."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Tâm điểm chuyển từ IDE sang \"background agent platform\" tự xây trên sandbox"
+   ],
+   "claude-G-security": [
+    1,
+    "Stripe Minions, Ramp Inspect, Uber Minion, Spotify Honk dùng cùng khuôn"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Thay đổi thực chất nhất trong 6 tháng là hạ tầng cloud environment và coordinator"
+   ]
+  },
+  "N32": {
+   "agy-gemini-argon": [
+    1,
+    "junior năm 2026 phải được đào tạo ngay từ đầu về"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Lập trình viên mới vào nghề lạm dụng AI thường không phát triển được mô hình tư duy (mental models) nền tảng"
+   ],
+   "claude-D-vendor": [
+    0,
+    ""
+   ],
+   "claude-E-academic": [
+    1,
+    "teo kỹ năng làm giảm khả năng giám sát"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Giao hết việc cho AI làm giảm khả năng debug của người học (−17 điểm), nên cần thiết kế lại cách đào tạo junior."
+   ],
+   "claude-G-security": [
+    1,
+    "junior vẫn code và debug tay một phần"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Junior giao toàn bộ việc cho AI học kém hơn rõ rệt (quiz 50% so với 67%). Đào tạo phải thiết kế lại"
+   ]
+  },
+  "N33": {
+   "agy-gemini-argon": [
+    2,
+    "đã **sụt giảm gần 20%** so với đỉnh tuyển dụng cuối năm 2022"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Các phân tích thị trường chỉ ra làn sóng sụt giảm mạnh trong nhu cầu tuyển dụng lập trình viên từ 22–25 tuổi"
+   ],
+   "claude-D-vendor": [
+    2,
+    "tuyển new-grad và entry-level **giảm khoảng 65%**"
+   ],
+   "claude-E-academic": [
+    2,
+    "nhóm 22–25 tuổi trong nghề phơi nhiễm AI cao có việc làm **thấp hơn khoảng 19%**"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Đây là chỉ báo mô tả, chưa phải ước lượng nhân quả"
+   ],
+   "claude-G-security": [
+    2,
+    "việc làm nhóm 22–25 tuổi trong nghề phơi nhiễm AI thấp hơn 19% so với mức kỳ vọng"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "việc làm của dev 22–25 tuổi giảm gần 20% so với đỉnh cuối 2022"
+   ]
+  },
+  "N34": {
+   "agy-gemini-argon": [
+    2,
+    "kiệt sức vì ra quyết định (decision fatigue)"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "gây ra sự kiệt quệ tinh thần nặng nề hơn nhiều so với việc tự viết code"
+   ],
+   "claude-D-vendor": [
+    2,
+    "đã ghi nhận ở Osmani [C37], Spotify"
+   ],
+   "claude-E-academic": [
+    2,
+    "đã có bằng chứng ở cả telemetry (LinearB, Faros) [C11][C13], khảo sát (Sonar) [C17] và định tính"
+   ],
+   "claude-F-casestudy": [
+    1,
+    "Đây là rủi ro \"rubber-stamp\"."
+   ],
+   "claude-G-security": [
+    2,
+    "làm 3–4 agent, kiệt sức sau khoảng 2 giờ"
+   ],
+   "claude-H-skeptic": [
+    2,
+    "14% người dùng AI báo cáo \"AI brain fry\". Mức giám sát agent cao là yếu tố dự báo mạnh"
+   ]
+  },
+  "N35": {
+   "agy-gemini-argon": [
+    2,
+    "kỹ sư bấm nút Approve/Merge chịu 100% trách nhiệm pháp lý và vận hành"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Việc phải đọc, phân tích và chịu trách nhiệm cho hàng nghìn dòng code mỗi ngày do máy viết"
+   ],
+   "claude-D-vendor": [
+    2,
+    "CODEOWNERS vẫn là người chịu trách nhiệm cho code agent viết. Agent không phải là owner."
+   ],
+   "claude-E-academic": [
+    1,
+    "Stripe giữ nguyên tắc \"người review chịu trách nhiệm\" dù code là 100% agent."
+   ],
+   "claude-F-casestudy": [
+    2,
+    "quyền sở hữu thuộc về người merge hoặc team chủ repo, không thuộc về người kích hoạt agent."
+   ],
+   "claude-G-security": [
+    2,
+    "Người merge chịu trách nhiệm như code mình viết."
+   ],
+   "claude-H-skeptic": [
+    1,
+    "Trách nhiệm được gán lại rõ cho người"
+   ]
+  },
+  "N36": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-D-vendor": [
+    2,
+    "không thấy bản công bố. Báo cáo ROI của DORA không có số liệu trên trang."
+   ],
+   "claude-E-academic": [
+    2,
+    "dạng \"State of…\" có ra chưa: không tìm thấy"
+   ],
+   "claude-F-casestudy": [
+    2,
+    "Không tìm được báo cáo DORA 2026 chính thức"
+   ],
+   "claude-G-security": [
+    2,
+    "Không tìm được DORA 2026 có số liệu."
+   ],
+   "claude-H-skeptic": [
+    2,
+    "Không tìm được báo cáo DORA 2026 chính chủ."
+   ]
+  }
+ },
+ "notes": {
+  "N6": "E nói rõ số +242,7% đã lỗi thời (+14,5% mới); D/F/G/H chỉ cảnh báo vendor/tương quan (1); argon dùng như bằng chứng nhân quả ('chứng minh') nên -1.",
+  "N15": "E/F/H bị chấm -1 vì phủ nhận ngưỡng theo số agent (E: con số 3–5 là giai thoại; F/H: giới hạn là số PR review được, 'không phải số agent'). G nói câu tương tự nhưng vẫn khuyến nghị 2–3 agent nên được 2.",
+  "N18": "D và argon chấm -1 vì cho phép agent local trong sandbox OS/microVM trên laptop; G được 1 vì giới hạn máy dev cho phiên tương tác có sandbox.",
+  "N29": "argon (Warp $30–80/PR) và flash ($0,5–3/PR) đưa ra số cost/PR như dữ kiện nên -1.",
+  "N14": "argon/flash: đồng ý giới hạn là review nhưng trình bày ngưỡng số agent như dữ liệu, nên chỉ được 1."
+ }
+}

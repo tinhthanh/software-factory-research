@@ -13,6 +13,29 @@ Thực hiện ngày 2026-10-13: 5 agent research song song trên cùng một b�
 | [raw/](raw/) | 4 báo cáo research gốc: `claude-{A-vendor,B-academic,C-practitioner}.md`, `agy-gemini-flash.md` (báo cáo gpt-oss đã bị loại và xoá, lý do ở CONSENSUS) |
 | [scoring/](scoring/) | `claims.json`, `consensus.json` (điểm + trích dẫn), `lexical.json`, `url-check.txt` (kết quả HTTP của mọi URL nguồn), `video-consensus-{a,b,c}.json`, `video-agy-scores.json`, `video-merged.json`, `video-claims.json`, `merge_video.py`, `render_partB.py` |
 
+## Round 2 (2026-10-18)
+
+Round 2 đào sâu bằng chứng 04–10/2026, case study công ty và ba điểm còn tranh cãi của round 1
+(auto-merge, mức song song, chạy agent local hay sandbox). Cách chạy:
+- 7 agent research song song, cô lập nhau: 5 Claude subagent với 5 lăng kính (vendor, học thuật,
+  case study, bảo mật, hoài nghi), cộng `agy` Gemini 4 Argon và Gemini 3.8 Flash.
+- 3 người chấm độc lập (2 Claude và 1 Gemini, κ = 0,68–0,77).
+- Kiểm chứng 18 số liệu then chốt trên nguồn gốc.
+
+| File | Nội dung |
+|---|---|
+| [round2/REPORT.md](round2/REPORT.md) | **Báo cáo round 2**: 8 điểm mới, đối chiếu với round 1, kết luận 3 điểm tranh cãi, checklist bảo mật từ các sự cố 2026, các chỉnh sửa cho quy trình 8 bước và lộ trình 3 tháng |
+| [round2/CONSENSUS.md](round2/CONSENSUS.md) | 36 claim × 7 báo cáo (trung vị của 3 người chấm), độ tin cậy giữa người chấm, tương đồng văn bản, bảng kiểm chứng số liệu, outlier |
+| [round2/BRIEF-R2.md](round2/BRIEF-R2.md) | Bộ câu hỏi R1–R8 |
+| [round2/raw/](round2/raw/) | 7 báo cáo gốc |
+| [round2/scoring/](round2/scoring/) | `claims.json`, `rater-{a,b,agy}.json`, `consensus.json`, `fact-check.md`, `urls.tsv` / `url-status.tsv`, `lexical.json`, các script `merge.py`, `render.py`, `lexical.py` |
+
+```bash
+python3 round2/scoring/merge.py    # kiểm tra trích dẫn, κ giữa người chấm, trung vị → consensus.json
+python3 round2/scoring/render.py   # in bảng ma trận Markdown
+python3 round2/scoring/lexical.py  # TF-IDF cosine + Jaccard domain
+```
+
 ## Chạy lại
 
 ```bash

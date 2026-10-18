@@ -1,0 +1,146 @@
+[
+ {
+  "id": "N1",
+  "claim": "Nút thắt của software factory đã chuyển từ sinh code sang review/kiểm chứng của người (hàng đợi review, thời gian review tăng mạnh)"
+ },
+ {
+  "id": "N2",
+  "claim": "Năng suất cá nhân/task tăng nhưng hiệu quả cấp hệ thống (deploy/tuần, độ ổn định) không tăng hoặc giảm (Faros, CircleCI, DORA)"
+ },
+ {
+  "id": "N3",
+  "claim": "Không còn RCT đáng tin về năng suất agentic coding: METR 02/2026 có CI chứa 0 và tự tuyên bố thiết kế bị vỡ (selection bias, chạy agent song song)"
+ },
+ {
+  "id": "N4",
+  "claim": "Số tự báo cáo/khảo sát/khối lượng code (2–8x, % code do AI) thổi phồng so với đo lường; không dùng để chứng minh ROI"
+ },
+ {
+  "id": "N5",
+  "claim": "Adoption cao đi kèm PR lớn hơn, bug/incident trên PR tăng, churn tăng (Faros Q2 2026: incident/PR +242,7%)"
+ },
+ {
+  "id": "N6",
+  "claim": "Số incident/PR +242,7% của Faros đã lỗi thời/cần thận trọng (dữ liệu mới hơn khác, hoặc chỉ tương quan, vendor)"
+ },
+ {
+  "id": "N7",
+  "claim": "Code AI thô vẫn có lỗ hổng bảo mật ở ~44–45% task (Veracode 07/2026), gần như không cải thiện; cần gate bảo mật tất định"
+ },
+ {
+  "id": "N8",
+  "claim": "Các tổ chức chạy agent quy mô lớn thành công có chung khuôn: môi trường cô lập/devbox dựng sẵn khởi động nhanh + verifier tất định trước PR + giới hạn vòng CI (Stripe 2 vòng)"
+ },
+ {
+  "id": "N9",
+  "claim": "Hạ tầng nền tảng (sandbox, CI, test, môi trường tái lập) quyết định thành công hơn model/prompt"
+ },
+ {
+  "id": "N10",
+  "claim": "Repo thiếu test/verifier thì agent không tự kiểm chứng được; agent có xu hướng gian lận để CI xanh (xóa test, tắt test flaky, vượt phạm vi)"
+ },
+ {
+  "id": "N11",
+  "claim": "Các tổ chức lớn (Stripe, Coinbase, Spotify…) vẫn có người review 100% PR agent"
+ },
+ {
+  "id": "N12",
+  "claim": "Auto-merge/auto-approve hiện chỉ có bằng chứng tốt cho danh mục hẹp, rủi ro thấp (dependency patch/minor, docs, test, CI) và phải do luật tất định/checklist quyết định; cấm cho auth/payments/infra/migration"
+ },
+ {
+  "id": "N13",
+  "claim": "Auto-merge/auto-approve theo phân tầng rủi ro có số đo trước/sau tích cực (Vercel 58%, Ona, Intercom, Uncountable 91%) nhưng tự báo cáo, chưa có dữ liệu sự cố độc lập"
+ },
+ {
+  "id": "N14",
+  "claim": "Không có dữ liệu có kiểm soát về số agent song song tối ưu mỗi kỹ sư; giới hạn thật là năng lực review/sự chú ý chứ không phải số agent"
+ },
+ {
+  "id": "N15",
+  "claim": "Nêu một ngưỡng song song cụ thể như khuyến nghị (vd. 2–4 agent/người, hoặc tối đa 2 agent nền)"
+ },
+ {
+  "id": "N16",
+  "claim": "Song song/multi-agent gây xung đột merge thật hoặc hại cho việc tuần tự/liên kết chặt; chỉ có lợi khi task tách biệt theo module + có điều phối/kiểm tra trung tâm"
+ },
+ {
+  "id": "N17",
+  "claim": "Agent nên chạy trong sandbox/cloud/VM có egress allowlist và không có credential production; agent local phải bật sandbox OS"
+ },
+ {
+  "id": "N18",
+  "claim": "Tuyệt đối không chạy agent tự hành trên máy dev local (cấm hẳn, chỉ cloud/microVM)"
+ },
+ {
+  "id": "N19",
+  "claim": "Verify cần môi trường giống thật (DB, service, browser) → giải bằng devbox/preview env dựng sẵn, không cho agent chạm production"
+ },
+ {
+  "id": "N20",
+  "claim": "AGENTS.md/CLAUDE.md dài hoặc do LLM sinh không tăng (thậm chí giảm) tỷ lệ thành công và tăng chi phí >20% (ETH 2602.11988); giữ ngắn, tối thiểu, chỉ điều không suy ra được từ code"
+ },
+ {
+  "id": "N21",
+  "claim": "Context file ngắn/chỉ mục kiến thức mới có lợi (Lulla: runtime −28,6%; Vercel: index docs 8KB đạt 100%, skill không được gọi 56%)"
+ },
+ {
+  "id": "N22",
+  "claim": "Ít tool/MCP chọn lọc tốt hơn nạp toàn bộ catalog (Stripe 400+ tool chỉ cấp tập con; CLI tiết kiệm context hơn MCP)"
+ },
+ {
+  "id": "N23",
+  "claim": "Agent trong CI nhận input không tin cậy (issue, PR, comment) với shell/credential là vector đã bị khai thác thật (Clinejection, Comment and Control, PromptPwnd)"
+ },
+ {
+  "id": "N24",
+  "claim": "Sự cố lớn 2025–2026 có chung mẫu: dữ liệu không tin cậy/agent quyền rộng + không có người duyệt thứ hai; cách sửa là phân quyền tối thiểu, không phải model tốt hơn (PocketOS, Kiro, Clinejection)"
+ },
+ {
+  "id": "N25",
+  "claim": "MCP/skills/plugins là bề mặt tấn công supply chain thực tế (Agentjacking qua Sentry MCP, ClawHavoc, MCP giả)"
+ },
+ {
+  "id": "N26",
+  "claim": "OWASP Top 10 for Agentic Applications 2026 (ASI01–ASI10) là framework tham chiếu; NIST chưa có guidance chính thức"
+ },
+ {
+  "id": "N27",
+  "claim": "Chi phí token khoảng 150–500 USD/kỹ sư/tháng phổ biến, nhưng có thể vượt ngân sách rất nhanh (Uber hết ngân sách năm trong 4 tháng, trần 1.500 USD) → cần trần/ngân sách ngay từ đầu"
+ },
+ {
+  "id": "N28",
+  "claim": "Chi phí token nhỏ so với chi phí thời gian review của người; ROI phải đo bằng metric hệ thống (lead time, deploy, incident, revert), không bằng số PR/LOC"
+ },
+ {
+  "id": "N29",
+  "claim": "Không có số cost/PR công khai đáng tin"
+ },
+ {
+  "id": "N30",
+  "claim": "Tác vụ có ROI rõ nhất là migration, bảo trì, toil, fix nhỏ có test tốt (Spotify, Uber, Stripe)"
+ },
+ {
+  "id": "N31",
+  "claim": "Thay đổi lớn nhất 04–10/2026 là agent nền/cloud tự mở PR + điều phối (coordinator) chạy khi laptop đóng, không phải model mới"
+ },
+ {
+  "id": "N32",
+  "claim": "Junior giao hết việc cho AI học kém hơn (Anthropic RCT: quiz 50% vs 67%, kém nhất ở debug); cần thiết kế lại đào tạo junior"
+ },
+ {
+  "id": "N33",
+  "claim": "Tuyển dụng junior/entry-level giảm (Stanford Canaries ~−19% nhóm 22–25 tuổi; SignalFire), mô tả chứ chưa nhân quả"
+ },
+ {
+  "id": "N34",
+  "claim": "Review fatigue/kiệt sức khi giám sát nhiều agent là rủi ro có dẫn chứng (BCG 'AI brain fry', Osmani comprehension debt, Willison)"
+ },
+ {
+  "id": "N35",
+  "claim": "Người merge/team sở hữu repo (CODEOWNERS) chịu trách nhiệm code agent viết; agent không phải owner"
+ },
+ {
+  "id": "N36",
+  "claim": "Không tìm thấy báo cáo DORA 2026 có số liệu"
+ }
+]
