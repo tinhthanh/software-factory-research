@@ -49,21 +49,23 @@ dùng `gpt-oss-120b-medium` thay thế.
 
 ## Sơ đồ
 
-Mở `diagrams/software-factory.drawio` bằng draw.io (desktop hoặc app.diagrams.net). Muốn sửa nội dung thì sửa
+Mở `diagrams/software-factory.drawio` bằng draw.io (desktop hoặc app.diagrams.net). Sơ đồ đã cập nhật theo round 2 (18/10/2026); mục round 2 được đánh dấu **R2** màu tím. Muốn sửa nội dung thì sửa
 `diagrams/build_drawio.py` rồi chạy lại `python3 diagrams/build_drawio.py`. Xuất PNG bằng lệnh
-`drawio -x -f png -p <trang 1..4> -o out.png diagrams/software-factory.drawio`.
+`drawio -x -f png -p <trang 1..5> -o out.png diagrams/software-factory.drawio`.
 
 | Trang | Nội dung |
 |---|---|
-| 1 | Quy trình 8 bước, chia làn Người / AI agent / Code tất định, có 2 gate và các vòng sửa lỗi |
+| 1 | Quy trình 8 bước, chia làn Người / AI agent / Code tất định, có 2 gate, các vòng sửa lỗi và làn auto-approve (R2) |
 | 2 | Kiến trúc: control plane (code tất định) và data plane (agent trong sandbox), đường đi của PR, khép vòng production |
-| 3 | Lộ trình 3 tháng, tiêu chí thoát từng giai đoạn, rủi ro, công cụ tối thiểu |
-| 4 | Bản đồ đồng thuận research × video và 3 điểm căng |
+| 3 | Lộ trình 3 tháng, tiêu chí thoát từng giai đoạn, rủi ro, công cụ tối thiểu, tín hiệu dừng mở rộng (R2) |
+| 4 | Bản đồ đồng thuận research × video và 3 điểm căng, kèm kết luận round 2 |
+| 5 | Round 2: đồng thuận 7 báo cáo × 3 người chấm, bất đồng thật, kết quả fact-check |
 
 ![Quy trình 8 bước](diagrams/page1.png)
 ![Kiến trúc](diagrams/page2.png)
 ![Lộ trình 3 tháng](diagrams/page3.png)
 ![Bản đồ đồng thuận](diagrams/page4.png)
+![Round 2](diagrams/page5.png)
 
 ## License
 
