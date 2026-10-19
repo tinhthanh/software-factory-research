@@ -13,6 +13,24 @@ Thực hiện ngày 2026-10-13: 5 agent research song song trên cùng một b�
 | [raw/](raw/) | 4 báo cáo research gốc: `claude-{A-vendor,B-academic,C-practitioner}.md`, `agy-gemini-flash.md` (báo cáo gpt-oss đã bị loại và xoá, lý do ở CONSENSUS) |
 | [scoring/](scoring/) | `claims.json`, `consensus.json` (điểm + trích dẫn), `lexical.json`, `url-check.txt` (kết quả HTTP của mọi URL nguồn), `video-consensus-{a,b,c}.json`, `video-agy-scores.json`, `video-merged.json`, `video-claims.json`, `merge_video.py`, `render_partB.py` |
 
+## Template tài liệu
+
+[templates/](templates/) là bộ template tài liệu tối thiểu cho team 3–10 kỹ sư làm việc cùng AI agent, gồm:
+README, AGENTS.md cùng CLAUDE.md, kiến trúc, ADR (MADR 4), API (OpenAPI 3.1 + RFC 9457), spec, chiến lược test, PR template có DoD,
+runbook và postmortem, SECURITY.md, chính sách dùng AI, CONTRIBUTING, glossary và CHANGELOG.
+Cách dùng: copy `templates/project/.` vào repo dự án rồi điền vào.
+
+Template được chọn bằng **round 3** ([round3/CONSENSUS.md](round3/CONSENSUS.md)):
+- 6 báo cáo research cô lập (4 Claude subagent theo 4 lăng kính, 2 `agy` Gemini);
+- 3 người chấm độc lập, κ = 0,74–0,86, chấm 83 claim, 1.334/1.334 trích dẫn đã kiểm;
+- mỗi lựa chọn trong template ghi mức đồng thuận A/B/C.
+
+| File round 3 | Nội dung |
+|---|---|
+| [round3/BRIEF-R3.md](round3/BRIEF-R3.md) | Bộ câu hỏi D1–D11 |
+| [round3/raw/](round3/raw/) | 6 báo cáo gốc |
+| [round3/scoring/](round3/scoring/) | `claims.json`, `rater-{a,b,agy}.json`, `consensus.json`, `url-status.tsv`, `lexical.json`, các script |
+
 ## Round 2 (2026-10-18)
 
 Round 2 đào sâu bằng chứng 04–10/2026, case study công ty và ba điểm còn tranh cãi của round 1

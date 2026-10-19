@@ -1,0 +1,2171 @@
+{
+ "rater": "rater-b",
+ "scores": {
+  "G1": {
+   "agy-gemini-argon": [
+    2,
+    "Cấu trúc tối giản 8 file/thư mục cốt lõi"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "nằm chung kho mã nguồn và được cập nhật, phê duyệt đồng thời qua Pull Request"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Tối thiểu hoá bộ tài liệu: ít file, đúng, sống trong repo, sửa cùng PR với code"
+   ],
+   "claude-T2-standards": [
+    1,
+    "tài liệu kiến trúc nằm trong wiki tách khỏi code"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Lưu spec cạnh code (`docs/specs/NNNN-*.md`) và link từ PR."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Mỗi tài liệu phải gắn với một quy trình buộc phải chạm vào nó, nếu không thì đừng viết."
+   ]
+  },
+  "R1": {
+   "agy-gemini-argon": [
+    1,
+    "Lai ghép giữa **Make a README** và cấu trúc cốt lõi của **Standard Readme**"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Pragmatic Developer README (Make a README + Standard Readme)"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Google docguide README + Install/Usage của standard-readme"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Standard Readme làm khung thứ tự"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "standard-readme rút gọn, cộng một dòng trỏ sang `AGENTS.md` và `docs/`"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "khung rút gọn từ standard-readme"
+   ]
+  },
+  "R2": {
+   "agy-gemini-argon": [
+    2,
+    "Các câu lệnh copy-paste để cài đặt"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Tối đa 4–5 dòng lệnh chạy được ngay"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Quickstart (yêu cầu môi trường + lệnh build/test/run copy được)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Chạy & test cục bộ (lệnh copy-paste được)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Quickstart (cài, chạy, test bằng lệnh copy-paste được)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Quickstart: chạy local bằng ≤5 lệnh copy-paste được."
+   ]
+  },
+  "R3": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Trạng thái/owner (đầu mối)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Trạng thái dự án; Cài đặt"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Đóng góp/liên hệ chủ sở hữu"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Status (active / beta / deprecated, owner)."
+   ]
+  },
+  "R4": {
+   "agy-gemini-argon": [
+    2,
+    "What & Why: hệ thống giải quyết bài toán gì, thuộc domain nào"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "TL;DR & Purpose"
+   ],
+   "claude-T1-handbooks": [
+    0,
+    ""
+   ],
+   "claude-T2-standards": [
+    0,
+    ""
+   ],
+   "claude-T3-ai-agent": [
+    0,
+    ""
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "README cần Why, Status và Quickstart chạy được."
+   ]
+  },
+  "R5": {
+   "agy-gemini-argon": [
+    2,
+    "còn quy tắc vận hành chi tiết cho máy nằm ở `AGENTS.md`"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "1–2 trang màn hình (khoảng 40–80 dòng Markdown"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "1–2 màn hình, khoảng 50–150 dòng"
+   ],
+   "claude-T2-standards": [
+    2,
+    "README nên là cổng điều hướng tới bốn loại này"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Không nhồi hướng dẫn cho agent vào README"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Không nhồi quy ước cho agent vào đây, phần đó để ở D2."
+   ]
+  },
+  "R6": {
+   "agy-gemini-argon": [
+    1,
+    "chạy thử các lệnh trong mục `## Quickstart` trên môi trường sạch (container)"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Mọi dòng lệnh phải là bản copy-paste chạy được ngay."
+   ],
+   "claude-T1-handbooks": [
+    1,
+    "Lệnh trong README không chạy được."
+   ],
+   "claude-T2-standards": [
+    1,
+    "Lệnh trong README nên chạy được nguyên văn"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "nên có job CI chạy lại chúng"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Lệnh trong README nên được chạy trong CI"
+   ]
+  },
+  "A1": {
+   "agy-gemini-argon": [
+    2,
+    "kết hợp tạo file `CLAUDE.md` gồm 1 dòng `@AGENTS.md`"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "AGENTS.md tại thư mục gốc làm Single Source of Truth (SSOT)"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "thêm `CLAUDE.md` chỉ chứa `@AGENTS.md` cộng phần riêng cho Claude"
+   ],
+   "claude-T2-standards": [
+    2,
+    "`CLAUDE.md` chỉ chứa `@AGENTS.md` cộng phần riêng của Claude"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "`CLAUDE.md` chỉ chứa `@AGENTS.md` cộng phần riêng của Claude"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "CLAUDE.md (nếu cần) chỉ gồm `@AGENTS.md` cộng vài dòng đặc thù Claude."
+   ]
+  },
+  "A2": {
+   "agy-gemini-argon": [
+    2,
+    "Nhồi nhét hoặc dùng LLM tự sinh file `AGENTS.md` dài dòng (Context Bloat)"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "AGENTS.md do LLM tự sinh rồi để nguyên"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Để LLM tự sinh rồi commit nguyên văn mà không cắt gọt"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Sinh file bằng `/init` rồi bỏ mặc, không biên tập."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "commit file do `/init` hay LLM sinh ra mà không cắt gọt"
+   ]
+  },
+  "A3": {
+   "agy-gemini-argon": [
+    2,
+    "60–150 dòng Markdown"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "80–200 dòng"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "dưới 200 dòng mỗi file."
+   ],
+   "claude-T2-standards": [
+    2,
+    "30–100 dòng, trần ~200"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "khoảng 60–150 dòng cho file gốc"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "30–150 dòng, trần 200 dòng theo Anthropic."
+   ]
+  },
+  "A4": {
+   "agy-gemini-argon": [
+    2,
+    "Verification & Workflow Rules"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Build, Lint & Test Commands"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Cấu trúc và ranh giới (thư mục nào không được sửa, ví dụ migrations)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Cách kiểm chứng trước khi báo xong (test nào, check nào)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "thư mục không được sửa, env var, dịch vụ ngoài"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Verification: \"done\" nghĩa là lệnh nào phải xanh."
+   ]
+  },
+  "A5": {
+   "agy-gemini-argon": [
+    1,
+    "Danh sách thư mục sinh tự động `src/generated/`, cấu hình bảo mật, hoặc lệnh bị cấm thực thi"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "bắt buộc phải được tóm tắt và đưa trực tiếp vào file `AGENTS.md`"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Bảo mật (không đọc `.env`, không gọi prod)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Ranh giới (không sửa thư mục nào, không chạy lệnh nào, secrets)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Security & dữ liệu**: không đọc `.env`, không log PII."
+   ],
+   "claude-T4-smallteam": [
+    1,
+    "Boundaries: thư mục hoặc file không được sửa (migrations, generated, secrets)."
+   ]
+  },
+  "A6": {
+   "agy-gemini-argon": [
+    -1,
+    "Architecture & Directory Map"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Ghi lại những gì agent tự đọc được từ code: cây thư mục, mô tả từng file"
+   ],
+   "claude-T2-standards": [
+    1,
+    "Nên tách một bản tóm tắt kiến trúc khoảng 10 dòng để AGENTS.md link tới, đừng chép vào"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Chỉ đặt link, không chép nội dung vào."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Mô tả từng file, cây thư mục, tổng quan kiến trúc: `/doctor` của Claude Code mặc định cắt chính các phần này."
+   ]
+  },
+  "A7": {
+   "agy-gemini-argon": [
+    1,
+    "thay vì để Prettier/Biome/Ruff xử lý tự động qua pre-commit hook"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Dùng chỉ dẫn văn bản cho việc bắt buộc 100%. Việc đó nên làm bằng hook hoặc permission"
+   ],
+   "claude-T2-standards": [
+    2,
+    "nên chuyển thành hook/CI, vì instructions chỉ là gợi ý"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Hook và CI mới là cổng thật."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Quy tắc bắt buộc với agent phải là hook, CI hay permission. Văn xuôi chỉ là gợi ý."
+   ]
+  },
+  "A8": {
+   "agy-gemini-argon": [
+    1,
+    "Nested `AGENTS.md` trong từng gói của monorepo"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "đặt vào AGENTS.md lồng trong thư mục con hoặc `.claude/rules/*.md` có `paths:`"
+   ],
+   "claude-T2-standards": [
+    1,
+    "AGENTS.md lồng nhau cho từng package, `.claude/rules/` hoặc `.github/instructions/` theo glob"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Tri thức dùng không thường xuyên (quy trình migration, quy ước API…) tách thành **skills** hoặc rule theo glob"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Quy tắc theo vùng code để trong `.claude/rules/*.md` có `paths`, hoặc AGENTS.md lồng trong thư mục con."
+   ]
+  },
+  "A9": {
+   "agy-gemini-argon": [
+    2,
+    "kỹ sư bổ sung đúng 1 dòng quy tắc phòng ngừa vào `AGENTS.md` qua chính PR đó"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "dễ quản lý và review qua Pull Request y hệt như code"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "thêm dòng khi agent lặp lại một lỗi, review file này qua PR như code"
+   ],
+   "claude-T2-standards": [
+    1,
+    "Cần review trong PR như code"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Review qua PR như code. Sửa file khi agent sai lặp lại"
+   ],
+   "claude-T4-smallteam": [
+    1,
+    "Thêm quy tắc mới khi agent mắc cùng một lỗi lần thứ hai"
+   ]
+  },
+  "H1": {
+   "agy-gemini-argon": [
+    -1,
+    "bỏ qua arc42 12 mục để dùng `ARCHITECTURE.md` 1 file của Matklad"
+   ],
+   "agy-gemini-flash": [
+    -1,
+    "Pragmatic Architecture Doc (kết hợp C4 Level 1 & Level 2 vẽ bằng Mermaid"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Kiến trúc: arc42 rút gọn cộng C4 mức 1–2, diagram-as-code."
+   ],
+   "claude-T2-standards": [
+    2,
+    "arc42 rút gọn khoảng 7 mục cộng C4 cấp 1–2"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "arc42 rút gọn còn khoảng 6 mục, kèm sơ đồ C4 mức 1–2 dạng code"
+   ],
+   "claude-T4-smallteam": [
+    -1,
+    "Dùng arc42 như checklist tham khảo, không làm template phải điền đủ"
+   ]
+  },
+  "H2": {
+   "agy-gemini-argon": [
+    2,
+    "làm khung văn bản, nhúng thêm"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Chỉ duy trì duy nhất một file `docs/ARCHITECTURE.md` dài 2–3 trang với 2 biểu đồ C4 vẽ bằng Mermaid"
+   ],
+   "claude-T1-handbooks": [
+    -1,
+    "arc42 rút gọn + C4 L1–L2"
+   ],
+   "claude-T2-standards": [
+    -1,
+    "arc42 rút gọn + C4 Context/Container"
+   ],
+   "claude-T3-ai-agent": [
+    -1,
+    "arc42 rút gọn + C4 L1–L2 dạng code"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "ARCHITECTURE.md kiểu matklad, kèm 1–2 sơ đồ C4 (Context + Container) dạng diagram-as-code"
+   ]
+  },
+  "H3": {
+   "agy-gemini-argon": [
+    2,
+    "Vẽ sơ đồ bằng công cụ đóng (PNG/Draw.io/Lucidchart xuất ảnh tĩnh)"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "chỉ duy trì sơ đồ C4 Level 1 (Context) và Level 2 (Container) bằng mã nguồn text Mermaid"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "diagram-as-code như Mermaid hoặc Structurizr, để review được qua PR"
+   ],
+   "claude-T2-standards": [
+    2,
+    "sơ đồ nên ở dạng code (Structurizr/PlantUML/Mermaid) trong repo"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Diagram-as-code là định dạng agent đọc và sửa được, ảnh PNG thì không."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Sơ đồ ảnh PNG không sửa được, nên không ai cập nhật."
+   ]
+  },
+  "H4": {
+   "agy-gemini-argon": [
+    2,
+    "Tài liệu hóa xuống tận cấp độ Class/Method (C4 Level 4)"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Tuyệt đối không vẽ sơ đồ chi tiết class/function bằng tay"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Điền đủ 12 mục arc42 bằng nội dung rỗng"
+   ],
+   "claude-T2-standards": [
+    2,
+    "vẽ C4 cấp Code bằng tay (nhanh lỗi thời)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Điền đủ 12 mục arc42 cho cho có."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Điền đủ 12 mục arc42 cho dự án nhỏ."
+   ]
+  },
+  "H5": {
+   "agy-gemini-argon": [
+    2,
+    "Architectural Invariants & Boundaries"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Quy ước nền tảng về Bảo mật (AuthN/AuthZ), Nhật ký (Logging/Tracing) và Xử lý lỗi tập trung"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Nên viết phần \"ranh giới và bất biến\""
+   ],
+   "claude-T2-standards": [
+    1,
+    "Crosscutting concepts (auth, logging, error handling)"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Crosscutting Concepts (auth, logging, lỗi, cấu hình)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Cross-cutting: auth, logging, error handling."
+   ]
+  },
+  "H6": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Tech Stack Matrix + Tham chiếu ADR"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "thì thay bằng link tới thư mục ADR (D4)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Mục 9 (Decisions) chỉ trỏ sang thư mục ADR"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Mục 9 (Decisions) để trỏ sang `docs/adr/`."
+   ],
+   "claude-T4-smallteam": [
+    1,
+    "Tuỳ chọn: Deployment view, Quality goals, Risks/Tech debt"
+   ]
+  },
+  "D1": {
+   "agy-gemini-argon": [
+    2,
+    "MADR Bare-Minimal (MADR rút gọn)"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "MADR phiên bản tinh gọn (MADR v3.0.0 Minimal/Standard)"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "MADR 4 bản minimal"
+   ],
+   "claude-T2-standards": [
+    2,
+    "MADR 4.0 bản minimal"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "MADR 4 minimal (≈Nygard + Options)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "MADR 4 minimal (qua PR, status proposed)"
+   ]
+  },
+  "D2": {
+   "agy-gemini-argon": [
+    2,
+    "Danh sách ít nhất 2–3 phương án"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Liệt kê ít nhất 2 phương án"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "vẫn giữ \"Considered Options\""
+   ],
+   "claude-T2-standards": [
+    2,
+    "Considered Options (ít nhất 2)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Considered Options (≥2)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Considered Options (≥2)."
+   ]
+  },
+  "D3": {
+   "agy-gemini-argon": [
+    2,
+    "Sửa đè lịch sử các ADR cũ đã thi hành (Mutating Historical ADRs)"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "tuyệt đối không sửa đè lên file cũ mà phải tạo một ADR mới"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Sửa ADR đã Accepted thay vì supersede"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Sửa ADR đã accepted thay vì viết ADR mới để supersede"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Sửa ADR đã accepted thay vì supersede."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Sửa ADR cũ thay vì supersede."
+   ]
+  },
+  "D4": {
+   "agy-gemini-argon": [
+    1,
+    "Biến ADR thành tài liệu biện minh sau khi đã code xong xuôi"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Proposed / Accepted / Deprecated / Superseded by [ADR-XXXX]"
+   ],
+   "claude-T1-handbooks": [
+    1,
+    "cộng quy trình trạng thái của Nygard/AWS"
+   ],
+   "claude-T2-standards": [
+    0,
+    ""
+   ],
+   "claude-T3-ai-agent": [
+    0,
+    ""
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "merge thì mới accepted"
+   ]
+  },
+  "D5": {
+   "agy-gemini-argon": [
+    1,
+    "thông qua bài test kiến trúc hoặc quy tắc trong `AGENTS.md`"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "nên là kiểm tra tự động (lint, test)"
+   ],
+   "claude-T2-standards": [
+    1,
+    "có thể nối với test hoặc linter kiến trúc để kiểm tra tự động"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "agent có thể biến nó thành check tự động"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "nên là check tự động (lint, arch test) để agent không vi phạm"
+   ]
+  },
+  "D6": {
+   "agy-gemini-argon": [
+    2,
+    "khuyến khích mở đầu bằng 1 câu theo cấu trúc Y-statement"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "thường được dùng làm câu tóm tắt mở đầu cho các tài liệu ADR lớn hơn"
+   ],
+   "claude-T1-handbooks": [
+    0,
+    ""
+   ],
+   "claude-T2-standards": [
+    2,
+    "Y-statement dùng làm dòng tóm tắt đầu file (suy luận)."
+   ],
+   "claude-T3-ai-agent": [
+    0,
+    ""
+   ],
+   "claude-T4-smallteam": [
+    0,
+    ""
+   ]
+  },
+  "D7": {
+   "agy-gemini-argon": [
+    2,
+    "gọn trong 1–2 trang màn hình"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "1–2 trang Markdown (khoảng 300–600 từ cho mỗi bản ADR)"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Mỗi ADR chỉ một quyết định"
+   ],
+   "claude-T2-standards": [
+    1,
+    "1–2 trang (Nygard)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Dài 1–2 trang, mỗi ADR một quyết định"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "≤1 trang, trần 2 trang theo Nygard."
+   ]
+  },
+  "P1": {
+   "agy-gemini-argon": [
+    1,
+    "Dùng `openapi.yaml` (OpenAPI 3.1) làm nguồn chân lý cho dữ liệu endpoint"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "OpenAPI 3.1 Spec (Code-first hoặc Design-first tinh gọn)"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "OpenAPI 3.1+ làm contract, sinh ra hoặc viết tay trong repo"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Một file OpenAPI 3.1/3.2 (contract-first) cho mỗi service"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Contract-first OpenAPI 3.1"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "File `openapi.yaml` là contract (nguồn sự thật, lint trong CI bằng Spectral/Redocly)."
+   ]
+  },
+  "P2": {
+   "agy-gemini-argon": [
+    2,
+    "1 trang tóm tắt dựa trên Zalando RESTful API Guidelines"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Quy ước thiết kế rút gọn từ Google AIP"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Chỉ chọn khoảng 10–20 quy tắc MUST mà team thực sự áp"
+   ],
+   "claude-T2-standards": [
+    2,
+    "style guide ngắn khoảng 1–2 trang fork từ phần MUST của Zalando"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "trích các luật MUST cần thiết từ Zalando hoặc AIP"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "~10–15 quy tắc MUST chọn lọc từ Zalando"
+   ]
+  },
+  "P3": {
+   "agy-gemini-argon": [
+    2,
+    "Standard Error Format (RFC 9457 Problem Details)"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "dựa theo chuẩn [RFC 7807 Problem Details]"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Lỗi trả về theo Problem Details: RFC 9457"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Lỗi trả về theo RFC 9457"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Mô hình lỗi (RFC 9457 Problem Details)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Error format (RFC 9457 / problem+json)."
+   ]
+  },
+  "P4": {
+   "agy-gemini-argon": [
+    2,
+    "thực thi tự động qua linter `.spectral.yaml`"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "dùng Spectral để CI tự động kiểm tra"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "thực thi bằng linter OpenAPI"
+   ],
+   "claude-T2-standards": [
+    2,
+    "lint tự động trong CI (Spectral hoặc Zally"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "cưỡng chế bằng linter trong CI"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "OpenAPI là contract được lint trong CI"
+   ]
+  },
+  "P5": {
+   "agy-gemini-argon": [
+    2,
+    "Idempotency & Versioning Policy"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Pagination & Filtering Standards"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Naming (path, field casing) · Định dạng lỗi (Problem JSON) · Versioning & breaking-change policy"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Đặt tên URL/field; Versioning & tương thích ngược; Định dạng lỗi (RFC 9457); Pagination/filter; Auth; Idempotency"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Đặt tên resource/URL & casing; Versioning; Mô hình lỗi"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "naming, lỗi problem+json, phân trang, versioning, idempotency, auth"
+   ]
+  },
+  "E1": {
+   "agy-gemini-argon": [
+    2,
+    "tương đương 1–3 trang của Google Design Doc loại \"Mini Design Doc\""
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Pragmatic Google Design Doc (Mini-Design Doc / RFC)"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Google mini design doc + vòng đời Oxide RFD"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Google mini design doc (1–3 trang) làm nền"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Mini design doc 1–3 trang theo khung Google"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "mini doc 1–3 trang, quy trình RFD trên PR"
+   ]
+  },
+  "E2": {
+   "agy-gemini-argon": [
+    2,
+    "## 2. Goals & Non-Goals"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Goals & Explicit Non-Goals"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Non-goals và Verification là bắt buộc"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Context; Goals/Non-goals; Design; Alternatives; Acceptance/Test plan; Rollout/rollback"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Goals / Non-goals (Out of scope)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Context; Goals/Non-goals; Design; Alternatives; Risks/rollout; Verification"
+   ]
+  },
+  "E3": {
+   "agy-gemini-argon": [
+    1,
+    "Alternatives Considered` (Nếu quyết định thiết kế mang tính lâu dài"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Ít nhất 1 giải pháp thay thế đã được cân nhắc và lý do bị loại bỏ."
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Alternatives considered · Cross-cutting"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Alternatives considered; Acceptance criteria / Test plan"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Alternatives considered; Acceptance criteria (đo được)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Alternatives considered."
+   ]
+  },
+  "E4": {
+   "agy-gemini-argon": [
+    2,
+    "Verification & Acceptance Criteria"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "(đo được, có lệnh test)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "acceptance criteria phải kiểm chứng được bằng máy"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Verification plan (lệnh/test chứng minh xong)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "cách chứng minh feature chạy end-to-end"
+   ]
+  },
+  "E5": {
+   "agy-gemini-argon": [
+    2,
+    "chiến lược rollback/feature flag"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Rollout, Migration & Rollback Strategy"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Cross-cutting (security, observability, rollout/rollback)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Rollout & rollback; Open questions."
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Rollout/rollback, Security/Privacy, Open questions"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Risks & rollout/rollback."
+   ]
+  },
+  "E6": {
+   "agy-gemini-argon": [
+    1,
+    "chuyển trạng thái thành `Implemented`"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Tài liệu được lưu trực tiếp dưới dạng `docs/rfc/YYYY-MM-feature-name.md` và review bất đồng bộ qua Git PR"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "quy trình Oxide RFD làm khung vòng đời"
+   ],
+   "claude-T2-standards": [
+    0,
+    ""
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Lưu spec cạnh code (`docs/specs/NNNN-*.md`) và link từ PR."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "thảo luận trên PR, có trạng thái"
+   ]
+  },
+  "E7": {
+   "agy-gemini-argon": [
+    2,
+    "không bắt buộc viết spec cho các task/bugfix nhỏ dưới 1–2 ngày công"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "chỉ cần viết một bản tóm tắt ngắn (1–2 đoạn) ngay trong GitHub Issue"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Bộ spec Spec-Kit/Kiro song song với RFD: chọn một nơi duy nhất"
+   ],
+   "claude-T2-standards": [
+    2,
+    "viết spec cho thay đổi tầm thường"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Chạy pipeline SDD đầy đủ cho bug nhỏ (Böckeler)."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "áp toàn bộ pipeline spec-kit cho mọi task"
+   ]
+  },
+  "E8": {
+   "agy-gemini-argon": [
+    2,
+    "phỏng vấn ngược (Grill/Clarify)"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "để agent phỏng vấn người, viết `SPEC.md`, rồi mở phiên mới để thực thi"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Anthropic khuyên để agent phỏng vấn người dùng rồi viết `SPEC.md`, sau đó mở phiên mới để triển khai."
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "rồi mở **phiên mới** để thực thi spec với context sạch"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Có thể để agent phỏng vấn người viết spec, rồi thực thi trong phiên mới"
+   ]
+  },
+  "T1": {
+   "agy-gemini-argon": [
+    2,
+    "1 tài liệu ngắn gọn `docs/testing-and-dod.md`"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Chiến lược kiểm thử theo Practical Test Pyramid"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "(1–2 trang) theo test-size của Google cộng nguyên tắc pyramid"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Một trang `TESTING.md` theo khung Test Pyramid / test size của Google"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "`docs/testing.md` 1 trang (pyramid rút gọn)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "chọn pyramid (backend/lib) hoặc trophy (web app)"
+   ]
+  },
+  "T2": {
+   "agy-gemini-argon": [
+    2,
+    "Testing Trophy + Google Test Sizes (Small/Medium/Large)"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    0,
+    ""
+   ],
+   "claude-T2-standards": [
+    0,
+    ""
+   ],
+   "claude-T3-ai-agent": [
+    0,
+    ""
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Hợp với frontend/web app"
+   ]
+  },
+  "T3": {
+   "agy-gemini-argon": [
+    -1,
+    "phải chặn ở CI, không hỏi bằng checkbox trong PR"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "DoD được tích hợp thẳng vào Pull Request Template dưới dạng các checkbox"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "đặt ngay trong PR template (D8)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "DoD chỉ nằm trong đầu mọi người hoặc trên wiki thay vì trong PR template/CI"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "checklist DoD rút gọn"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "DoD dạng checklist ngắn nằm ngay trong PR template"
+   ]
+  },
+  "T4": {
+   "agy-gemini-argon": [
+    2,
+    "Hầu hết các mục trong Definition of Done cần được chuyển hóa thành CI checks"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Definition of Done (DoD) thực thi tự động qua CI checklist"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "DoD nên được tự động hoá thành hook hoặc CI gate"
+   ],
+   "claude-T2-standards": [
+    2,
+    "DoD kiểm chứng được bằng máy và đính kèm bằng chứng"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "mỗi dòng gắn một lệnh hoặc cổng CI"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "để agent tự chạy, hoặc thành Stop hook"
+   ]
+  },
+  "T5": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Các chức năng mới hoặc sửa lỗi bắt buộc phải có test đi kèm"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "bug fix có regression test"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Beyoncé Rule cho bug fix"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "bug fix cần regression test"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Test bắt buộc cho bug fix (regression test)."
+   ]
+  },
+  "T6": {
+   "agy-gemini-argon": [
+    2,
+    "Flaky Test & Coverage Policy"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "có xu hướng lạm dụng mock"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Quy tắc dữ liệu test, mock và flaky"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Quy tắc mock và dữ liệu test"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Cách xử lý test flaky"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Flaky test policy."
+   ]
+  },
+  "T7": {
+   "agy-gemini-argon": [
+    1,
+    "thậm chí sửa luôn assertion/production code cho khớp với kết quả sai"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "testing.md nên cấm sửa hoặc xoá test hiện có nếu không nêu lý do"
+   ],
+   "claude-T2-standards": [
+    2,
+    "cấm xoá hoặc skip test để cho pass"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Nên yêu cầu agent \"show evidence\" (output test) thay vì chỉ khẳng định"
+   ],
+   "claude-T4-smallteam": [
+    1,
+    "(output test) trong PR"
+   ]
+  },
+  "T8": {
+   "agy-gemini-argon": [
+    2,
+    "Không chạy đua theo con số % coverage giả tạo"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Vanity 100% Coverage Metric"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Lấy coverage % làm mục tiêu duy nhất (suy luận)."
+   ],
+   "claude-T2-standards": [
+    2,
+    "coverage % thành mục tiêu tự thân (suy luận)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Ngưỡng coverage cứng khiến agent sinh test rỗng để đạt số"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Coverage % làm mục tiêu tự thân (suy luận)."
+   ]
+  },
+  "Q1": {
+   "agy-gemini-argon": [
+    2,
+    "20–35 dòng Markdown"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "20–35 dòng Markdown"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "template dưới 30 dòng"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Template khoảng 15–30 dòng."
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "template dưới 25 dòng"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "template ≤25 dòng"
+   ]
+  },
+  "Q2": {
+   "agy-gemini-argon": [
+    2,
+    "Google CL Description (`What` & `Why`)"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Một câu giải thích bối cảnh và lý do tại sao chọn cách giải quyết này."
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Mô tả PR theo chuẩn Google (what + why)."
+   ],
+   "claude-T2-standards": [
+    2,
+    "nội dung theo nguyên tắc CL description của Google"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Tóm tắt (cái gì và tại sao)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Template ngắn 4–5 mục theo Google CL description"
+   ]
+  },
+  "Q3": {
+   "agy-gemini-argon": [
+    2,
+    "Bằng chứng kiểm thử: câu lệnh test đã chạy"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "How to Test / Verification Steps"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "How to test / bằng chứng (lệnh + kết quả, screenshot)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Cách kiểm chứng (lệnh, kết quả, ảnh chụp)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Cách kiểm chứng / evidence (lệnh, output, ảnh chụp)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "How to verify**: lệnh, ảnh chụp, output test"
+   ]
+  },
+  "Q4": {
+   "agy-gemini-argon": [
+    1,
+    "AI Assistance Disclosure / Review Focus"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "PR template cần có mục khai báo việc sử dụng AI."
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "AI usage (Yes/No, công cụ, phạm vi; người submit chịu trách nhiệm)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Khai báo AI (công cụ, phạm vi, người đã review)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "AI assistance (công cụ, phạm vi;"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "AI disclosure**: agent/công cụ dùng, phần nào do agent sinh."
+   ]
+  },
+  "Q5": {
+   "agy-gemini-argon": [
+    1,
+    "Rollout & Risk Notes"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Rủi ro/rollback; AI usage"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Rủi ro & rollback; Khai báo AI"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Rủi ro & rollback"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Risk / rollback"
+   ]
+  },
+  "Q6": {
+   "agy-gemini-argon": [
+    2,
+    "Reviewer Attention / Assumptions"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    1,
+    "Ghi chú cho reviewer, user-facing change/changelog"
+   ],
+   "claude-T2-standards": [
+    1,
+    "ghi chú cho reviewer (nên đọc file nào trước)"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Thay đổi chính (cho reviewer biết đọc đâu trước)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Feedback wanted**: chỗ cần reviewer nhìn kỹ"
+   ]
+  },
+  "Q7": {
+   "agy-gemini-argon": [
+    1,
+    "Duyệt các PR lớn hàng nghìn dòng do AI agent sinh ra"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Một PR sửa 1.500 dòng code trên 40 files"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "PR nên khoảng 100 dòng thay đổi, 1000 dòng là quá lớn"
+   ],
+   "claude-T2-standards": [
+    2,
+    "PR nên nhắm khoảng 100–400 dòng diff"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "PR khổng lồ do agent sinh (suy luận)."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "PR mục tiêu khoảng 100–400 dòng diff"
+   ]
+  },
+  "Q8": {
+   "agy-gemini-argon": [
+    2,
+    "tiêu đề theo **Conventional Commits**"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Hướng dẫn đặt tiêu đề chuẩn `type(scope): short description`"
+   ],
+   "claude-T1-handbooks": [
+    0,
+    ""
+   ],
+   "claude-T2-standards": [
+    0,
+    ""
+   ],
+   "claude-T3-ai-agent": [
+    0,
+    ""
+   ],
+   "claude-T4-smallteam": [
+    0,
+    ""
+   ]
+  },
+  "O1": {
+   "agy-gemini-argon": [
+    2,
+    "Google SRE Blameless Postmortem rút gọn"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Google SRE Blameless Postmortem rút gọn"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Postmortem: Google SRE example rút gọn"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Postmortem theo Google SRE example"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Postmortem theo Google SRE rút gọn"
+   ],
+   "claude-T4-smallteam": [
+    1,
+    "Đổ lỗi cá nhân (Google)."
+   ]
+  },
+  "O2": {
+   "agy-gemini-argon": [
+    1,
+    "Root Cause & Contributing Factors"
+   ],
+   "agy-gemini-flash": [
+    -1,
+    "Root Cause vs. Trigger"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "(thay cho một \"root cause\" duy nhất)"
+   ],
+   "claude-T2-standards": [
+    1,
+    "Root causes / contributing factors"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Root/contributing causes"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Contributing factors (blameless)."
+   ]
+  },
+  "O3": {
+   "agy-gemini-argon": [
+    2,
+    "What went well*, *What went wrong*, *Where we got lucky*"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Where We Got Lucky vs. Where We Failed"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Lessons (went well / wrong / lucky)."
+   ],
+   "claude-T2-standards": [
+    2,
+    "Lessons (went well / wrong / lucky)"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Lessons learned (went well/wrong/lucky)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "What went well / poorly."
+   ]
+  },
+  "O4": {
+   "agy-gemini-argon": [
+    2,
+    "chỉ bắt buộc viết cho sự cố mức độ nghiêm trọng SEV-1/SEV-2 gây gián đoạn người dùng thật"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "cho các sự cố nghiêm trọng (SEV-1/SEV-2)"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Trigger viết postmortem* (Google): downtime vượt ngưỡng, mất dữ liệu"
+   ],
+   "claude-T2-standards": [
+    2,
+    "trigger phải được định nghĩa trước khi có sự cố"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Trigger viết postmortem được định nghĩa trước"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Chỉ viết khi chạm ngưỡng kích hoạt kiểu Google."
+   ]
+  },
+  "O5": {
+   "agy-gemini-argon": [
+    2,
+    "có gắn người phụ trách, hạn chót và link Issue/PR cụ thể"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "có người chịu trách nhiệm chính, và có link issue ticket trên sprint backlog"
+   ],
+   "claude-T1-handbooks": [
+    1,
+    "Action items (owner, priority, ticket)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Action items (owner, ticket, hạn)"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Action Items (owner, hạn)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Action items (owner + hạn + ticket)."
+   ]
+  },
+  "O6": {
+   "agy-gemini-argon": [
+    1,
+    "Cảnh báo nào kích hoạt runbook này?"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "liên kết từ link cảnh báo alert"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "được link trực tiếp từ alert"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Runbook theo mô hình mỗi alert một entry của SRE Workbook"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Runbook mỗi alert một file"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "mỗi alert một mục ngắn"
+   ]
+  },
+  "O7": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Ngày xác minh lần cuối."
+   ],
+   "claude-T2-standards": [
+    1,
+    "runbook lỗi thời (SRE Workbook)"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Runbook không bao giờ được chạy thử sẽ trôi khỏi thực tế"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Last verified (ngày)."
+   ]
+  },
+  "O8": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    2,
+    "báo cáo tóm tắt tình hình cho kỹ sư quyết định xử lý"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "phải có người phê duyệt (permission deny hoặc hook)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "các thao tác phá huỷ phải có cổng phê duyệt của người"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Bước ghi hoặc khắc phục phải có cổng người duyệt."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Nhưng mọi hành động thay đổi production phải có người duyệt"
+   ]
+  },
+  "O9": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "AI agent có liên quan không, và guardrail nào thiếu"
+   ],
+   "claude-T2-standards": [
+    2,
+    "agent/automation có liên quan không"
+   ],
+   "claude-T3-ai-agent": [
+    0,
+    ""
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Sự cố do agent gây ra (lệnh phá huỷ, secret lộ)"
+   ]
+  },
+  "X1": {
+   "agy-gemini-argon": [
+    2,
+    "Kênh báo cáo lỗ hổng bảo mật riêng tư, email liên hệ, SLA phản hồi dự kiến"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Response & Resolution SLA"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "kênh báo cáo riêng tư, SLA phản hồi tính bằng ngày, phiên bản được hỗ trợ"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Thời hạn phản hồi (ngày); Phạm vi / ngoài phạm vi"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Supported versions; Cách báo cáo (kênh riêng tư); SLA phản hồi; Phạm vi."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Thời gian phản hồi kỳ vọng."
+   ]
+  },
+  "X2": {
+   "agy-gemini-argon": [
+    -1,
+    "KHÔNG tách rời `SECURITY.md` và `AI_USAGE_POLICY.md`"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "AI_USAGE_POLICY.md` (tổng hợp tinh gọn từ OWASP LLM và Linux Foundation)"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "ghép từ LLVM (trách nhiệm, human-in-the-loop)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "AI policy mô hình kernel/LLVM"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "AI_POLICY.md (kiểu kernel/LLVM/Ghostty)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "dựa trên LLVM/kernel/Fedora: trách nhiệm con người"
+   ]
+  },
+  "X3": {
+   "agy-gemini-argon": [
+    1,
+    "AI agent không có tư cách pháp nhân để ký Developer Certificate of Origin (DCO)"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "kernel (`Assisted-by`, không để agent ký thay)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "để agent ký DCO hoặc Signed-off-by (kernel cấm)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "agent không ký thay người"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "cấm agent tự thêm `Signed-off-by`"
+   ]
+  },
+  "X4": {
+   "agy-gemini-argon": [
+    2,
+    "cấm merge PR mà người mở không giải thích được logic bên trong"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "phải được kỹ sư con người review, hiểu rõ và chịu trách nhiệm 100%"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "người merge chịu trách nhiệm như code tự viết, phải hiểu và giải thích được"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Trách nhiệm của người (review, hiểu được code)"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "người submit chịu trách nhiệm hoàn toàn, phải hiểu và giải thích được diff"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "người merge chịu trách nhiệm"
+   ]
+  },
+  "X5": {
+   "agy-gemini-argon": [
+    2,
+    "Team cần đồng bộ các lệnh cấm trong `SECURITY.md` trực tiếp vào cấu hình quyền của AI agent"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "quyền agent được enforce bằng cấu hình chứ không bằng lời"
+   ],
+   "claude-T2-standards": [
+    2,
+    "chỉ dựa vào instructions để chặn hành vi nguy hiểm thay vì hook hoặc quyền hệ thống"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "dùng hook hoặc permission để cưỡng chế"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Agent permissions (enforce bằng config)"
+   ]
+  },
+  "X6": {
+   "agy-gemini-argon": [
+    2,
+    "dán vào cửa sổ chat của AI/LLM chưa được cấp phép"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Nghiêm cấm tuyệt đối việc đưa API keys, mật khẩu, database credentials"
+   ],
+   "claude-T1-handbooks": [
+    1,
+    "Công cụ và mô hình được phép (và dữ liệu được gửi đi)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "không đưa secrets hay dữ liệu khách hàng vào công cụ chưa được duyệt"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "loại dữ liệu cấm đưa vào (secrets, PII, mã khách hàng)"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "không đưa secret, dữ liệu khách hàng hay mã độc quyền vào công cụ chưa được duyệt"
+   ]
+  },
+  "X7": {
+   "agy-gemini-argon": [
+    2,
+    "OWASP Top 10 for Agentic Applications (2026)"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "OWASP Top 10 for LLM Applications"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "tham chiếu OWASP Agentic"
+   ],
+   "claude-T2-standards": [
+    1,
+    "agent có quyền quá rộng (OWASP Agentic Top 10)"
+   ],
+   "claude-T3-ai-agent": [
+    0,
+    ""
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Nên tham chiếu OWASP Agentic Top 10"
+   ]
+  },
+  "X8": {
+   "agy-gemini-argon": [
+    1,
+    "cấm cấp quyền ghi DB production hoặc AWS/GCP admin credentials cho agent"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Cấm AI agent tự động merge code vào nhánh `main`/`production`"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "cấm gì (prod, secrets, force-push, tự merge)"
+   ],
+   "claude-T2-standards": [
+    2,
+    "không có hành động tự động nào mà không có người duyệt"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "cấm push/deploy/merge tự động"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "agent không tự merge"
+   ]
+  },
+  "M1": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Tài liệu Khởi tạo Môi trường Cục bộ & Đóng góp"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "CONTRIBUTING.md` / dev setup"
+   ],
+   "claude-T2-standards": [
+    2,
+    "CONTRIBUTING.md / quy trình làm việc"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "CONTRIBUTING.md / dev setup"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "CONTRIBUTING/dev-setup chạy được."
+   ]
+  },
+  "M2": {
+   "agy-gemini-argon": [
+    2,
+    "Domain Glossary / Ubiquitous Language"
+   ],
+   "agy-gemini-flash": [
+    2,
+    "Ubiquitous Language theo Domain-Driven Design"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Glossary / ngôn ngữ miền"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Glossary / ngôn ngữ miền"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Glossary thuật ngữ miền."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "Glossary/domain terms"
+   ]
+  },
+  "M3": {
+   "agy-gemini-argon": [
+    2,
+    "Keep a Changelog v1.1.0"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "CHANGELOG / release notes"
+   ],
+   "claude-T2-standards": [
+    2,
+    "Định dạng Keep a Changelog phổ biến"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "CHANGELOG** nếu có người dùng bên ngoài"
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "CHANGELOG / release notes"
+   ]
+  },
+  "M4": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    0,
+    ""
+   ],
+   "claude-T2-standards": [
+    2,
+    "cho `AGENTS.md`, `docs/adr/`, `openapi.yaml` và `SECURITY.md`"
+   ],
+   "claude-T3-ai-agent": [
+    0,
+    ""
+   ],
+   "claude-T4-smallteam": [
+    0,
+    ""
+   ]
+  },
+  "M5": {
+   "agy-gemini-argon": [
+    1,
+    "script kiểm tra các đường dẫn thư mục được nhắc tới trong `AGENTS.md` và `ARCHITECTURE.md` có còn tồn tại thật"
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    0,
+    ""
+   ],
+   "claude-T2-standards": [
+    1,
+    "Với team nhỏ, file nào lint được thì sẽ còn được bảo trì"
+   ],
+   "claude-T3-ai-agent": [
+    1,
+    "Lệnh cài đặt lỗi thời không được CI kiểm."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "một CI check tài liệu: link checker, lệnh trong README chạy được"
+   ]
+  },
+  "M6": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "How-to ngắn theo Diátaxis"
+   ],
+   "claude-T2-standards": [
+    2,
+    "phần dài hơn chuyển sang `docs/` theo Diátaxis"
+   ],
+   "claude-T3-ai-agent": [
+    0,
+    ""
+   ],
+   "claude-T4-smallteam": [
+    1,
+    "Diátaxis tách bốn loại này"
+   ]
+  },
+  "M7": {
+   "agy-gemini-argon": [
+    0,
+    ""
+   ],
+   "agy-gemini-flash": [
+    0,
+    ""
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "phần how-to lặp lại nên chuyển thành"
+   ],
+   "claude-T2-standards": [
+    0,
+    ""
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "Mỗi skill đóng gói một quy trình lặp lại"
+   ],
+   "claude-T4-smallteam": [
+    1,
+    "skill cho quy trình nhiều bước"
+   ]
+  },
+  "M8": {
+   "agy-gemini-argon": [
+    2,
+    "kiểu IEEE 829 hay arc42 đầy đủ 12 mục"
+   ],
+   "agy-gemini-flash": [
+    1,
+    "Tài liệu Chiến lược Kiểm thử (Testing Strategy) độc lập dài hàng chục trang"
+   ],
+   "claude-T1-handbooks": [
+    2,
+    "Wiki ngoài repo cho tài liệu kỹ thuật: không review được qua PR"
+   ],
+   "claude-T2-standards": [
+    2,
+    "hoặc IEEE 829 cho từng release: quá nặng"
+   ],
+   "claude-T3-ai-agent": [
+    2,
+    "arc42 đủ 12 mục; KEP đủ PRR questionnaire."
+   ],
+   "claude-T4-smallteam": [
+    2,
+    "wiki tách khỏi repo"
+   ]
+  }
+ },
+ "notes": {
+  "H1": "Chấm theo nền được chọn: T1/T2/T3 chọn arc42 rút gọn (H2=-1); T4/argon chọn matklad (H1=-1); flash chọn 'Pragmatic Architecture Doc' C4+Mermaid (H1=-1, H2=1 vì có ARCHITECTURE.md nhưng không codemap/invariants).",
+  "A6": "argon đưa 'Architecture & Directory Map' vào mục bắt buộc AGENTS.md => -1; T2/flash để bản đồ thư mục ở mục tuỳ chọn (T2=1 vì khuyên link không chép, flash=0). T1 có 'Cấu trúc và ranh giới' bắt buộc nhưng nội dung là vùng cấm sửa, đồng thời nêu cây thư mục là anti-pattern => 2.",
+  "O2": "flash chỉ dùng 'Root Cause vs. Trigger' (một nguyên nhân gốc) => -1; T2/T3/argon ghép root cause + contributing => 1.",
+  "T3": "argon đặt DoD trong docs/testing-and-dod.md và nói rõ không hỏi bằng checkbox trong PR => -1.",
+  "X2": "argon chủ trương gộp chính sách AI vào SECURITY.md, không tách file => -1; flash có AI_USAGE_POLICY.md nhưng dựa OWASP/LF chứ không LLVM/kernel/Ghostty => 1.",
+  "general": "Claim ghép nhiều ý: 2 khi có phần lớn ý, 1 khi chỉ một phần/ở mục tuỳ chọn/chỉ liệt kê có thiện cảm; ứng viên chỉ được liệt kê mà không chọn hay ủng hộ => 0."
+ }
+}

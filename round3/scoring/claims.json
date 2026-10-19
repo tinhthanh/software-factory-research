@@ -1,0 +1,417 @@
+[
+ {
+  "id": "G1",
+  "doc": "Chung",
+  "claim": "Tối thiểu hoá: ít tài liệu, nằm trong repo, sửa cùng PR với code; tài liệu chỉ nên tồn tại nếu gắn với quy trình buộc phải chạm vào nó (PR, alert, agent đọc mỗi phiên); xoá tài liệu chết"
+ },
+ {
+  "id": "R1",
+  "doc": "D1 README",
+  "claim": "Nền README: khung ngắn kiểu standard-readme (rút gọn) và/hoặc Google docguide"
+ },
+ {
+  "id": "R2",
+  "doc": "D1 README",
+  "claim": "README bắt buộc có Quickstart/lệnh cài-chạy-test copy-paste chạy được"
+ },
+ {
+  "id": "R3",
+  "doc": "D1 README",
+  "claim": "README bắt buộc có trạng thái dự án (status) và/hoặc owner/đầu mối"
+ },
+ {
+  "id": "R4",
+  "doc": "D1 README",
+  "claim": "README có mục 'Why'/mục đích (không chỉ 'What')"
+ },
+ {
+  "id": "R5",
+  "doc": "D1 README",
+  "claim": "README ngắn (~1–2 màn hình, ≲150 dòng), là cổng điều hướng: link sang docs/, ADR, AGENTS.md; không chứa hướng dẫn cho agent"
+ },
+ {
+  "id": "R6",
+  "doc": "D1 README",
+  "claim": "Lệnh trong README nên được CI chạy lại (smoke test) để chống lỗi thời"
+ },
+ {
+  "id": "A1",
+  "doc": "D2 Agent",
+  "claim": "AGENTS.md là nguồn duy nhất cho agent; CLAUDE.md chỉ import @AGENTS.md (+ phần riêng)"
+ },
+ {
+  "id": "A2",
+  "doc": "D2 Agent",
+  "claim": "AGENTS.md viết tay; không commit file do LLM//init sinh mà không cắt gọt (ETH 2602.11988: không tăng thành công, +>20% chi phí)"
+ },
+ {
+  "id": "A3",
+  "doc": "D2 Agent",
+  "claim": "Độ dài AGENTS.md ≤ ~200 dòng (thường 30–150)"
+ },
+ {
+  "id": "A4",
+  "doc": "D2 Agent",
+  "claim": "Mục bắt buộc AGENTS.md: lệnh build/test/lint; quy ước khác mặc định; ranh giới/vùng cấm sửa; cách kiểm chứng 'done'"
+ },
+ {
+  "id": "A5",
+  "doc": "D2 Agent",
+  "claim": "AGENTS.md có mục bảo mật/dữ liệu (không đọc .env/secrets, không chạm prod)"
+ },
+ {
+  "id": "A6",
+  "doc": "D2 Agent",
+  "claim": "KHÔNG đưa tổng quan kiến trúc / cây thư mục / mô tả từng file vào AGENTS.md (link thay vì chép)"
+ },
+ {
+  "id": "A7",
+  "doc": "D2 Agent",
+  "claim": "Quy tắc bắt buộc phải cưỡng chế bằng hook/CI/permission; file hướng dẫn chỉ là 'advisory'"
+ },
+ {
+  "id": "A8",
+  "doc": "D2 Agent",
+  "claim": "Tri thức theo vùng/hiếm dùng tách ra rule theo path (glob), AGENTS.md lồng nhau hoặc skills nạp khi cần"
+ },
+ {
+  "id": "A9",
+  "doc": "D2 Agent",
+  "claim": "Cập nhật AGENTS.md khi agent lặp lại một lỗi; review file này qua PR như code"
+ },
+ {
+  "id": "H1",
+  "doc": "D3 Kiến trúc",
+  "claim": "Nền kiến trúc: arc42 rút gọn (~6–7 mục) + sơ đồ C4 mức 1–2"
+ },
+ {
+  "id": "H2",
+  "doc": "D3 Kiến trúc",
+  "claim": "Nền kiến trúc: ARCHITECTURE.md kiểu matklad (codemap, invariants, boundaries) + C4 L1–L2"
+ },
+ {
+  "id": "H3",
+  "doc": "D3 Kiến trúc",
+  "claim": "Sơ đồ dạng diagram-as-code (Mermaid/Structurizr/PlantUML) trong repo, không ảnh tĩnh"
+ },
+ {
+  "id": "H4",
+  "doc": "D3 Kiến trúc",
+  "claim": "Không điền đủ 12 mục arc42; không vẽ C4 mức Component/Code bằng tay"
+ },
+ {
+  "id": "H5",
+  "doc": "D3 Kiến trúc",
+  "claim": "Có mục crosscutting concepts (auth, logging, error handling) và invariants/ranh giới"
+ },
+ {
+  "id": "H6",
+  "doc": "D3 Kiến trúc",
+  "claim": "Có mục rủi ro / nợ kỹ thuật; mục 'Decisions' chỉ trỏ sang thư mục ADR"
+ },
+ {
+  "id": "D1",
+  "doc": "D4 ADR",
+  "claim": "Nền ADR: MADR 4 bản minimal (≈ Nygard + Considered Options)"
+ },
+ {
+  "id": "D2",
+  "doc": "D4 ADR",
+  "claim": "ADR bắt buộc có Considered Options (≥2 phương án)"
+ },
+ {
+  "id": "D3",
+  "doc": "D4 ADR",
+  "claim": "ADR đã accepted là bất biến; thay đổi bằng ADR mới supersede"
+ },
+ {
+  "id": "D4",
+  "doc": "D4 ADR",
+  "claim": "ADR đi qua PR với status 'proposed' trước khi 'accepted' (tránh accepted ngay)"
+ },
+ {
+  "id": "D5",
+  "doc": "D4 ADR",
+  "claim": "Mục Confirmation/cách kiểm chứng tuân thủ nên là check tự động (lint, arch test)"
+ },
+ {
+  "id": "D6",
+  "doc": "D4 ADR",
+  "claim": "Y-statement dùng làm dòng tóm tắt quyết định"
+ },
+ {
+  "id": "D7",
+  "doc": "D4 ADR",
+  "claim": "ADR ngắn: ≤1–2 trang, mỗi ADR một quyết định"
+ },
+ {
+  "id": "P1",
+  "doc": "D5 API",
+  "claim": "OpenAPI 3.1+ contract-first, file trong repo, là nguồn sự thật"
+ },
+ {
+  "id": "P2",
+  "doc": "D5 API",
+  "claim": "Style guide API ngắn (1–3 trang) chọn lọc quy tắc MUST từ Zalando (và/hoặc AIP); không chép nguyên bộ guideline lớn"
+ },
+ {
+  "id": "P3",
+  "doc": "D5 API",
+  "claim": "Định dạng lỗi theo RFC 9457 (Problem Details / problem+json)"
+ },
+ {
+  "id": "P4",
+  "doc": "D5 API",
+  "claim": "Lint contract trong CI (Spectral/Zally/Redocly) làm cổng chặn"
+ },
+ {
+  "id": "P5",
+  "doc": "D5 API",
+  "claim": "Style guide bắt buộc có: naming, versioning/breaking change, error format, pagination, auth, idempotency"
+ },
+ {
+  "id": "E1",
+  "doc": "D6 Spec",
+  "claim": "Nền spec: Google mini design doc 1–3 trang"
+ },
+ {
+  "id": "E2",
+  "doc": "D6 Spec",
+  "claim": "Spec bắt buộc có Goals và Non-goals"
+ },
+ {
+  "id": "E3",
+  "doc": "D6 Spec",
+  "claim": "Spec bắt buộc có Alternatives considered"
+ },
+ {
+  "id": "E4",
+  "doc": "D6 Spec",
+  "claim": "Spec bắt buộc có Acceptance criteria / Verification máy kiểm chứng được"
+ },
+ {
+  "id": "E5",
+  "doc": "D6 Spec",
+  "claim": "Spec có Rollout/rollback"
+ },
+ {
+  "id": "E6",
+  "doc": "D6 Spec",
+  "claim": "Vòng đời spec kiểu Oxide RFD: file trong repo, có trạng thái, thảo luận/duyệt qua PR"
+ },
+ {
+  "id": "E7",
+  "doc": "D6 Spec",
+  "claim": "Không viết spec cho thay đổi tầm thường; không áp pipeline SDD đầy đủ (spec-kit/Kiro) cho mọi task"
+ },
+ {
+  "id": "E8",
+  "doc": "D6 Spec",
+  "claim": "Với agent: để agent phỏng vấn người → viết spec → phiên mới thực thi; spec tự đủ (nêu file/interface, out-of-scope, bước kiểm chứng)"
+ },
+ {
+  "id": "T1",
+  "doc": "D7 Test+DoD",
+  "claim": "Test strategy là 1 file ngắn (1–2 trang) theo test pyramid / Google test sizes"
+ },
+ {
+  "id": "T2",
+  "doc": "D7 Test+DoD",
+  "claim": "Testing Trophy là lựa chọn hợp lệ (đặc biệt cho web app)"
+ },
+ {
+  "id": "T3",
+  "doc": "D7 Test+DoD",
+  "claim": "DoD là checklist ngắn (~5–10 mục) đặt trong PR template, không trên wiki"
+ },
+ {
+  "id": "T4",
+  "doc": "D7 Test+DoD",
+  "claim": "Mỗi mục DoD ánh xạ tới lệnh/CI gate máy kiểm được (agent tự chạy được)"
+ },
+ {
+  "id": "T5",
+  "doc": "D7 Test+DoD",
+  "claim": "Bug fix bắt buộc có regression test"
+ },
+ {
+  "id": "T6",
+  "doc": "D7 Test+DoD",
+  "claim": "Có chính sách test flaky và mock"
+ },
+ {
+  "id": "T7",
+  "doc": "D7 Test+DoD",
+  "claim": "Cấm sửa/xoá/skip test để cho pass; agent phải đưa bằng chứng (output test)"
+ },
+ {
+  "id": "T8",
+  "doc": "D7 Test+DoD",
+  "claim": "Không lấy % coverage làm mục tiêu tự thân / tránh ice-cream cone"
+ },
+ {
+  "id": "Q1",
+  "doc": "D8 PR",
+  "claim": "PR template ngắn (≲25–35 dòng)"
+ },
+ {
+  "id": "Q2",
+  "doc": "D8 PR",
+  "claim": "Mô tả PR theo Google CL description (what + why, tự đủ ý, không 'Fix bug')"
+ },
+ {
+  "id": "Q3",
+  "doc": "D8 PR",
+  "claim": "PR bắt buộc có cách kiểm chứng kèm bằng chứng (lệnh/output/ảnh)"
+ },
+ {
+  "id": "Q4",
+  "doc": "D8 PR",
+  "claim": "PR có mục khai báo AI (công cụ, phạm vi; trailer Assisted-by)"
+ },
+ {
+  "id": "Q5",
+  "doc": "D8 PR",
+  "claim": "PR có rủi ro & rollback"
+ },
+ {
+  "id": "Q6",
+  "doc": "D8 PR",
+  "claim": "PR có 'ghi chú cho reviewer / feedback mong muốn'"
+ },
+ {
+  "id": "Q7",
+  "doc": "D8 PR",
+  "claim": "PR nhỏ (khoảng 100–400 dòng diff; 1000 là quá lớn)"
+ },
+ {
+  "id": "Q8",
+  "doc": "D8 PR",
+  "claim": "Tiêu đề PR theo Conventional Commits"
+ },
+ {
+  "id": "O1",
+  "doc": "D9 Ops",
+  "claim": "Postmortem theo Google SRE (example postmortem) rút gọn, blameless"
+ },
+ {
+  "id": "O2",
+  "doc": "D9 Ops",
+  "claim": "Postmortem dùng 'contributing factors' (PagerDuty) thay vì một root cause duy nhất"
+ },
+ {
+  "id": "O3",
+  "doc": "D9 Ops",
+  "claim": "Postmortem có Lessons: went well / went wrong / where we got lucky"
+ },
+ {
+  "id": "O4",
+  "doc": "D9 Ops",
+  "claim": "Trigger viết postmortem định nghĩa trước (downtime, mất dữ liệu, on-call can thiệp…); không viết cho mọi sự cố nhỏ"
+ },
+ {
+  "id": "O5",
+  "doc": "D9 Ops",
+  "claim": "Action items bắt buộc có owner + ticket + hạn; postmortem phải được review"
+ },
+ {
+  "id": "O6",
+  "doc": "D9 Ops",
+  "claim": "Runbook: mỗi alert một mục/file, alert link thẳng tới runbook"
+ },
+ {
+  "id": "O7",
+  "doc": "D9 Ops",
+  "claim": "Runbook có ngày 'last verified' / được chạy thử định kỳ"
+ },
+ {
+  "id": "O8",
+  "doc": "D9 Ops",
+  "claim": "Bước thay đổi production trong runbook cần người phê duyệt (agent chỉ chẩn đoán)"
+ },
+ {
+  "id": "O9",
+  "doc": "D9 Ops",
+  "claim": "Postmortem có trường 'AI agent có liên quan không'"
+ },
+ {
+  "id": "X1",
+  "doc": "D10 Sec+AI",
+  "claim": "SECURITY.md theo GitHub: supported versions, kênh báo cáo riêng tư, SLA phản hồi (ngày), phạm vi"
+ },
+ {
+  "id": "X2",
+  "doc": "D10 Sec+AI",
+  "claim": "Chính sách AI là file riêng (AI_POLICY.md / docs/ai-policy.md) theo mô hình LLVM/Linux kernel/Ghostty"
+ },
+ {
+  "id": "X3",
+  "doc": "D10 Sec+AI",
+  "claim": "Khai báo AI bằng trailer Assisted-by; agent không được ký Signed-off-by/DCO thay người"
+ },
+ {
+  "id": "X4",
+  "doc": "D10 Sec+AI",
+  "claim": "Người submit/merge chịu trách nhiệm hoàn toàn, phải hiểu và giải thích được diff"
+ },
+ {
+  "id": "X5",
+  "doc": "D10 Sec+AI",
+  "claim": "Quyền của agent cưỡng chế bằng cấu hình (permissions/sandbox/hook/CI), không chỉ văn xuôi"
+ },
+ {
+  "id": "X6",
+  "doc": "D10 Sec+AI",
+  "claim": "Có quy tắc dữ liệu: không đưa secrets/PII/dữ liệu khách hàng vào công cụ chưa duyệt"
+ },
+ {
+  "id": "X7",
+  "doc": "D10 Sec+AI",
+  "claim": "Tham chiếu OWASP Top 10 for Agentic Applications 2026"
+ },
+ {
+  "id": "X8",
+  "doc": "D10 Sec+AI",
+  "claim": "Cấm agent tự hành (tự merge/push/deploy/comment) khi chưa có người duyệt"
+ },
+ {
+  "id": "M1",
+  "doc": "D11 Thêm",
+  "claim": "Nên có CONTRIBUTING / dev setup (có thể gộp README)"
+ },
+ {
+  "id": "M2",
+  "doc": "D11 Thêm",
+  "claim": "Nên có glossary / ngôn ngữ miền (ubiquitous language)"
+ },
+ {
+  "id": "M3",
+  "doc": "D11 Thêm",
+  "claim": "Nên có CHANGELOG / release notes (Keep a Changelog)"
+ },
+ {
+  "id": "M4",
+  "doc": "D11 Thêm",
+  "claim": "Nên có CODEOWNERS cho file quy tắc agent/ADR/contract"
+ },
+ {
+  "id": "M5",
+  "doc": "D11 Thêm",
+  "claim": "Nên có CI kiểm tài liệu (link checker, lệnh README, tham chiếu code lỗi thời)"
+ },
+ {
+  "id": "M6",
+  "doc": "D11 Thêm",
+  "claim": "Dùng Diátaxis để phân loại tài liệu (tutorial/how-to/reference/explanation)"
+ },
+ {
+  "id": "M7",
+  "doc": "D11 Thêm",
+  "claim": "Quy trình lặp lại đóng gói thành skills cho agent"
+ },
+ {
+  "id": "M8",
+  "doc": "D11 Thêm",
+  "claim": "Không đáng làm: test plan IEEE 829/ISO 29119, KEP/PRR đầy đủ, wiki ngoài repo"
+ }
+]

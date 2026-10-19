@@ -1,0 +1,5401 @@
+{
+ "raters": [
+  "rater-a",
+  "rater-agy",
+  "rater-b"
+ ],
+ "pairwise": {
+  "rater-a~rater-agy": {
+   "kappa_3cat": 0.7504810004810006,
+   "agree_3cat": 0.9497991967871486,
+   "exact": 0.8975903614457831
+  },
+  "rater-a~rater-b": {
+   "kappa_3cat": 0.8648575305291721,
+   "agree_3cat": 0.9698795180722891,
+   "exact": 0.9116465863453815
+  },
+  "rater-agy~rater-b": {
+   "kappa_3cat": 0.7419986184664978,
+   "agree_3cat": 0.9457831325301205,
+   "exact": 0.8714859437751004
+  }
+ },
+ "quote_check": {
+  "rater-a:ok": 443,
+  "rater-agy:ok": 448,
+  "rater-b:ok": 443
+ },
+ "bad_quotes": [],
+ "claims": {
+  "G1": {
+   "doc": "Chung",
+   "claim": "Tối thiểu hoá: ít tài liệu, nằm trong repo, sửa cùng PR với code; tài liệu chỉ nên tồn tại nếu gắn với quy trình buộc phải chạm vào nó (PR, alert, agent đọc mỗi phiên); xoá tài liệu chết",
+   "sum": 8,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 2
+     },
+     "quote": "tránh \"Thuế Bảo trì Tài liệu\" (Documentation Maintenance Tax)"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 2
+     },
+     "quote": "Thà có một tài liệu 1 trang được cập nhật liên tục còn hơn một tài liệu 50 trang bị bỏ hoang"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Tối thiểu hoá bộ tài liệu: ít file, đúng, sống trong repo, sửa cùng PR với code"
+    },
+    "claude-T2-standards": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "hai file mỏng, mỗi file có chuẩn chính chủ hoặc tiền lệ adoption rõ ràng"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Giữ spec cũ trong repo khi code đã lệch xa mà không đánh dấu trạng thái"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mỗi tài liệu phải gắn với một quy trình buộc phải chạm vào nó, nếu không thì đừng viết."
+    }
+   }
+  },
+  "R1": {
+   "doc": "D1 README",
+   "claim": "Nền README: khung ngắn kiểu standard-readme (rút gọn) và/hoặc Google docguide",
+   "sum": 10,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Lai ghép giữa **Make a README** và cấu trúc cốt lõi của **Standard Readme**"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Pragmatic Developer README (Make a README + Standard Readme)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Google docguide README + Install/Usage của standard-readme"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Standard Readme làm khung thứ tự"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "standard-readme rút gọn, cộng một dòng trỏ sang `AGENTS.md` và `docs/`"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "khung rút gọn từ standard-readme"
+    }
+   }
+  },
+  "R2": {
+   "doc": "D1 README",
+   "claim": "README bắt buộc có Quickstart/lệnh cài-chạy-test copy-paste chạy được",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`## Quickstart / Local Setup` (Các câu lệnh copy-paste để cài đặt"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mọi dòng lệnh phải là bản copy-paste chạy được ngay."
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Quickstart (yêu cầu môi trường + lệnh build/test/run copy được)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Chạy & test cục bộ (lệnh copy-paste được)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Quickstart (cài, chạy, test bằng lệnh copy-paste được)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Quickstart: chạy local bằng ≤5 lệnh copy-paste được."
+    }
+   }
+  },
+  "R3": {
+   "doc": "D1 README",
+   "claim": "README bắt buộc có trạng thái dự án (status) và/hoặc owner/đầu mối",
+   "sum": 8,
+   "support": 4,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": -1,
+      "rater-b": 0
+     },
+     "quote": "như Table of Contents hay Maintainers list dài dòng"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Trạng thái/owner (đầu mối)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Trạng thái dự án; Cài đặt"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Đóng góp/liên hệ chủ sở hữu"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Status (active / beta / deprecated, owner)."
+    }
+   }
+  },
+  "R4": {
+   "doc": "D1 README",
+   "claim": "README có mục 'Why'/mục đích (không chỉ 'What')",
+   "sum": 5,
+   "support": 3,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "What & Why: hệ thống giải quyết bài toán gì"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "1 câu mô tả chính xác hệ thống giải quyết vấn đề gì, cho đối tượng nào"
+    },
+    "claude-T1-handbooks": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T2-standards": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "README cần Why, Status và Quickstart chạy được."
+    }
+   }
+  },
+  "R5": {
+   "doc": "D1 README",
+   "claim": "README ngắn (~1–2 màn hình, ≲150 dòng), là cổng điều hướng: link sang docs/, ADR, AGENTS.md; không chứa hướng dẫn cho agent",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "80–150 dòng Markdown"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "1–2 trang màn hình (khoảng 40–80 dòng Markdown"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "1–2 màn hình, khoảng 50–150 dòng"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "giữ dưới khoảng 150 dòng"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Không nhồi hướng dẫn cho agent vào README"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Không nhồi quy ước cho agent vào đây"
+    }
+   }
+  },
+  "R6": {
+   "doc": "D1 README",
+   "claim": "Lệnh trong README nên được CI chạy lại (smoke test) để chống lỗi thời",
+   "sum": 7,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash",
+    "claude-T1-handbooks",
+    "claude-T2-standards"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "chạy thử các lệnh trong mục `## Quickstart` trên môi trường sạch (container)"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 1
+     },
+     "quote": "Mọi dòng lệnh phải là bản copy-paste chạy được ngay."
+    },
+    "claude-T1-handbooks": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 0,
+      "rater-b": 1
+     },
+     "quote": "Lệnh trong README không chạy được"
+    },
+    "claude-T2-standards": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 0,
+      "rater-b": 1
+     },
+     "quote": "Lệnh trong README nên chạy được nguyên văn"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "nên có job CI chạy lại chúng"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Lệnh trong README nên được chạy trong CI"
+    }
+   }
+  },
+  "A1": {
+   "doc": "D2 Agent",
+   "claim": "AGENTS.md là nguồn duy nhất cho agent; CLAUDE.md chỉ import @AGENTS.md (+ phần riêng)",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "đặt tại thư mục gốc làm nguồn chân lý duy nhất (Single Source of Truth)"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "AGENTS.md tại thư mục gốc làm Single Source of Truth (SSOT)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CLAUDE.md chỉ `@AGENTS.md` cộng phần riêng"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`CLAUDE.md` chỉ chứa `@AGENTS.md` cộng phần riêng của Claude"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`CLAUDE.md` chỉ chứa `@AGENTS.md` cộng phần riêng của Claude, nếu có"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CLAUDE.md (nếu cần) chỉ gồm `@AGENTS.md` cộng vài dòng đặc thù Claude."
+    }
+   }
+  },
+  "A2": {
+   "doc": "D2 Agent",
+   "claim": "AGENTS.md viết tay; không commit file do LLM//init sinh mà không cắt gọt (ETH 2602.11988: không tăng thành công, +>20% chi phí)",
+   "sum": 10,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Nhồi nhét hoặc dùng LLM tự sinh file `AGENTS.md` dài dòng (Context Bloat)"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "con người chỉ đóng vai trò viết, giám sát và duy trì."
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Đừng để LLM tự sinh AGENTS.md rồi bỏ đó"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Để LLM tự sinh rồi commit nguyên văn mà không cắt gọt"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Sinh file bằng `/init` rồi bỏ mặc, không biên tập"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "commit file do `/init` hay LLM sinh ra mà không cắt gọt"
+    }
+   }
+  },
+  "A3": {
+   "doc": "D2 Agent",
+   "claim": "Độ dài AGENTS.md ≤ ~200 dòng (thường 30–150)",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "(tối đa tuyệt đối không quá 200 dòng)"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "80–200 dòng (khoảng 500–1.200 từ"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "dưới 200 dòng mỗi file."
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Thực tế khoảng 30–100 dòng"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "khoảng 60–150 dòng cho file gốc"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "30–150 dòng, trần 200 dòng theo Anthropic"
+    }
+   }
+  },
+  "A4": {
+   "doc": "D2 Agent",
+   "claim": "Mục bắt buộc AGENTS.md: lệnh build/test/lint; quy ước khác mặc định; ranh giới/vùng cấm sửa; cách kiểm chứng 'done'",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`## Hard Boundaries / Do Not Touch`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`Build, Lint & Test Commands`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Lệnh build/test/lint (chính xác, chạy được)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Cách kiểm chứng trước khi báo xong (test nào, check nào)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "thư mục không được sửa, env var, dịch vụ ngoài"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "nghĩa là lệnh nào phải xanh"
+    }
+   }
+  },
+  "A5": {
+   "doc": "D2 Agent",
+   "claim": "AGENTS.md có mục bảo mật/dữ liệu (không đọc .env/secrets, không chạm prod)",
+   "sum": 10,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "cấu hình bảo mật, hoặc lệnh bị cấm thực thi"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "bắt buộc phải được tóm tắt và đưa trực tiếp vào file `AGENTS.md`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Bảo mật (không đọc `.env`, không gọi prod)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "không chạy lệnh nào, secrets"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "không đọc `.env`, không log PII"
+    },
+    "claude-T4-smallteam": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "(migrations, generated, secrets)"
+    }
+   }
+  },
+  "A6": {
+   "doc": "D2 Agent",
+   "claim": "KHÔNG đưa tổng quan kiến trúc / cây thư mục / mô tả từng file vào AGENTS.md (link thay vì chép)",
+   "sum": 7,
+   "support": 4,
+   "contradict": 1,
+   "disputed_cells": [
+    "agy-gemini-argon"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": -1,
+     "scores": {
+      "rater-a": -1,
+      "rater-agy": 1,
+      "rater-b": -1
+     },
+     "quote": "`## Architecture & Directory Map` (Mô tả ngắn gọn 5–10 thư mục quan trọng nhất"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Ghi lại những gì agent tự đọc được từ code: cây thư mục, mô tả từng file"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Nên tách một bản tóm tắt kiến trúc khoảng 10 dòng để AGENTS.md link tới, đừng chép vào"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Chỉ đặt link, không chép nội dung vào."
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mô tả từng file, cây thư mục, tổng quan kiến trúc"
+    }
+   }
+  },
+  "A7": {
+   "doc": "D2 Agent",
+   "claim": "Quy tắc bắt buộc phải cưỡng chế bằng hook/CI/permission; file hướng dẫn chỉ là 'advisory'",
+   "sum": 9,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "thay vì để Prettier/Biome/Ruff xử lý tự động qua pre-commit hook"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CLAUDE.md instructions shape Claude's behavior but are not a hard enforcement layer"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "nên chuyển thành hook/CI, vì instructions chỉ là gợi ý"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Dùng file hướng dẫn để thay cho cơ chế cưỡng chế. Hook và CI mới là cổng thật."
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Quy tắc bắt buộc với agent phải là hook, CI hay permission. Văn xuôi chỉ là gợi ý."
+    }
+   }
+  },
+  "A8": {
+   "doc": "D2 Agent",
+   "claim": "Tri thức theo vùng/hiếm dùng tách ra rule theo path (glob), AGENTS.md lồng nhau hoặc skills nạp khi cần",
+   "sum": 9,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Nested `AGENTS.md` trong từng gói của monorepo"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "Hỗ trợ cấu trúc phân cấp kế thừa từ root repo đến từng thư mục con"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "AGENTS.md lồng trong thư mục con hoặc `.claude/rules/*.md` có `paths:`"
+    },
+    "claude-T2-standards": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "AGENTS.md lồng nhau cho từng package, `.claude/rules/` hoặc `.github/instructions/` theo glob"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Tri thức dùng không thường xuyên tách thành"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Quy tắc theo vùng code để trong `.claude/rules/*.md` có `paths`"
+    }
+   }
+  },
+  "A9": {
+   "doc": "D2 Agent",
+   "claim": "Cập nhật AGENTS.md khi agent lặp lại một lỗi; review file này qua PR như code",
+   "sum": 10,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "kỹ sư bổ sung đúng 1 dòng quy tắc phòng ngừa vào `AGENTS.md` qua chính PR đó"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "dễ quản lý và review qua Pull Request y hệt như code"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "thêm dòng khi agent lặp lại một lỗi, review file này qua PR như code"
+    },
+    "claude-T2-standards": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Cần review trong PR như code"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Sửa file khi agent sai lặp lại"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Thêm quy tắc mới khi agent mắc cùng một lỗi lần thứ hai"
+    }
+   }
+  },
+  "H1": {
+   "doc": "D3 Kiến trúc",
+   "claim": "Nền kiến trúc: arc42 rút gọn (~6–7 mục) + sơ đồ C4 mức 1–2",
+   "sum": 3,
+   "support": 3,
+   "contradict": 3,
+   "disputed_cells": [
+    "agy-gemini-argon",
+    "agy-gemini-flash",
+    "claude-T4-smallteam"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": -1,
+     "scores": {
+      "rater-a": -1,
+      "rater-agy": 1,
+      "rater-b": -1
+     },
+     "quote": "bỏ qua arc42 12 mục để dùng `ARCHITECTURE.md` 1 file của Matklad"
+    },
+    "agy-gemini-flash": {
+     "median": -1,
+     "scores": {
+      "rater-a": -1,
+      "rater-agy": 1,
+      "rater-b": -1
+     },
+     "quote": "arc42 bản đầy đủ 12 chương (trong D3 - Kiến trúc tổng quan)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "arc42 rút gọn, lồng sơ đồ C4 mức 1–2"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "arc42 bản rút gọn, lồng sơ đồ C4 cấp 1–2"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "arc42 rút gọn còn khoảng 6 mục, kèm sơ đồ C4 mức 1–2 dạng code"
+    },
+    "claude-T4-smallteam": {
+     "median": -1,
+     "scores": {
+      "rater-a": -1,
+      "rater-agy": 1,
+      "rater-b": -1
+     },
+     "quote": "Dùng ARCHITECTURE.md kiểu matklad với C4 Context + Container thay cho arc42 đầy đủ."
+    }
+   }
+  },
+  "H2": {
+   "doc": "D3 Kiến trúc",
+   "claim": "Nền kiến trúc: ARCHITECTURE.md kiểu matklad (codemap, invariants, boundaries) + C4 L1–L2",
+   "sum": 5,
+   "support": 3,
+   "contradict": 0,
+   "disputed_cells": [
+    "claude-T1-handbooks",
+    "claude-T2-standards",
+    "claude-T3-ai-agent"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "làm khung văn bản, nhúng thêm"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Pragmatic Architecture Doc (kết hợp C4 Level 1 & Level 2 vẽ bằng Mermaid"
+    },
+    "claude-T1-handbooks": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": -1
+     },
+     "quote": "Nên viết phần \"ranh giới và bất biến\" (module A không được gọi DB của B)"
+    },
+    "claude-T2-standards": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": -1
+     },
+     "quote": "Dùng **arc42 bản rút gọn, lồng sơ đồ C4 cấp 1–2**."
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": -1
+     },
+     "quote": "**arc42 rút gọn còn khoảng 6 mục, kèm sơ đồ C4 mức 1–2 dạng code**"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "ARCHITECTURE.md kiểu matklad, kèm 1–2 sơ đồ C4"
+    }
+   }
+  },
+  "H3": {
+   "doc": "D3 Kiến trúc",
+   "claim": "Sơ đồ dạng diagram-as-code (Mermaid/Structurizr/PlantUML) trong repo, không ảnh tĩnh",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Vẽ sơ đồ bằng công cụ đóng (PNG/Draw.io/Lucidchart xuất ảnh tĩnh)"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Biểu đồ nhị phân (Binary Images)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "diagram-as-code như Mermaid hoặc Structurizr"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "sơ đồ nên ở dạng code (Structurizr/PlantUML/Mermaid) trong repo"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Diagram-as-code là định dạng agent đọc và sửa được, ảnh PNG thì không."
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Sơ đồ ảnh PNG không sửa được, nên không ai cập nhật."
+    }
+   }
+  },
+  "H4": {
+   "doc": "D3 Kiến trúc",
+   "claim": "Không điền đủ 12 mục arc42; không vẽ C4 mức Component/Code bằng tay",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Tài liệu hóa xuống tận cấp độ Class/Method (C4 Level 4)"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Tuyệt đối không vẽ sơ đồ chi tiết class/function bằng tay"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Vẽ C4 mức Code (sẽ lỗi thời ngay, IDE sinh được)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Điền đủ cả 12 mục cho có"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Điền đủ 12 mục arc42 cho cho có"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Điền đủ 12 mục arc42 cho dự án nhỏ."
+    }
+   }
+  },
+  "H5": {
+   "doc": "D3 Kiến trúc",
+   "claim": "Có mục crosscutting concepts (auth, logging, error handling) và invariants/ranh giới",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`## Architectural Invariants & Boundaries`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`Cross-cutting Concerns`: Quy ước nền tảng về Bảo mật"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Crosscutting concepts (auth, logging, error handling, data)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Crosscutting concepts (auth, logging, error handling)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Crosscutting Concepts (auth, logging, lỗi, cấu hình)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Cross-cutting: auth, logging, error handling."
+    }
+   }
+  },
+  "H6": {
+   "doc": "D3 Kiến trúc",
+   "claim": "Có mục rủi ro / nợ kỹ thuật; mục 'Decisions' chỉ trỏ sang thư mục ADR",
+   "sum": 8,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Tech Stack Matrix + Tham chiếu ADR"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Rủi ro & nợ kỹ thuật"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mục 9 (Decisions) chỉ trỏ sang thư mục ADR"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mục 9 (Decisions) để trỏ sang `docs/adr/`"
+    },
+    "claude-T4-smallteam": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Link sang danh sách ADR."
+    }
+   }
+  },
+  "D1": {
+   "doc": "D4 ADR",
+   "claim": "Nền ADR: MADR 4 bản minimal (≈ Nygard + Considered Options)",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "MADR Bare-Minimal (MADR rút gọn)"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "MADR phiên bản tinh gọn (MADR v3.0.0 Minimal/Standard)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "MADR 4 bản minimal"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "MADR 4.0 bản minimal"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "MADR 4 minimal (≈Nygard + Options)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "MADR 4 minimal (qua PR, status proposed)"
+    }
+   }
+  },
+  "D2": {
+   "doc": "D4 ADR",
+   "claim": "ADR bắt buộc có Considered Options (≥2 phương án)",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Danh sách ít nhất 2–3 phương án"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Liệt kê ít nhất 2 phương án"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "mục *các phương án đã xét* là phần giá trị nhất"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Considered Options (ít nhất 2)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Considered Options (≥2)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Considered Options (≥2)."
+    }
+   }
+  },
+  "D3": {
+   "doc": "D4 ADR",
+   "claim": "ADR đã accepted là bất biến; thay đổi bằng ADR mới supersede",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Sửa đè lịch sử các ADR cũ đã thi hành (Mutating Historical ADRs)"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "ADR là bản ghi nhật ký bất biến theo dòng thời gian"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Sửa ADR đã Accepted thay vì supersede"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Sửa ADR đã accepted thay vì viết ADR mới để supersede"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Sửa ADR đã accepted thay vì supersede."
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Sửa ADR cũ thay vì supersede."
+    }
+   }
+  },
+  "D4": {
+   "doc": "D4 ADR",
+   "claim": "ADR đi qua PR với status 'proposed' trước khi 'accepted' (tránh accepted ngay)",
+   "sum": 5,
+   "support": 4,
+   "contradict": 0,
+   "disputed_cells": [
+    "claude-T2-standards",
+    "claude-T3-ai-agent"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "`Status`: Proposed | Accepted | Superseded by ADR-XXXX"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "review bất đồng bộ qua PR cùng lúc với code triển khai"
+    },
+    "claude-T1-handbooks": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Agent có thể soạn nháp ADR, nhưng quyết định và Status do người chốt"
+    },
+    "claude-T2-standards": {
+     "median": 0,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": "Decision Outcome phải do người ký"
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": "người ra quyết định duyệt"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "merge thì mới accepted"
+    }
+   }
+  },
+  "D5": {
+   "doc": "D4 ADR",
+   "claim": "Mục Confirmation/cách kiểm chứng tuân thủ nên là check tự động (lint, arch test)",
+   "sum": 9,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "thông qua bài test kiến trúc hoặc quy tắc trong `AGENTS.md`"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "Cách thức kiểm chứng quyết định trong tương lai (vd: benchmark, test tải)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mục *Confirmation* nên là kiểm tra tự động (lint, test)"
+    },
+    "claude-T2-standards": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Mục \"Confirmation\" của MADR có thể nối với test hoặc linter kiến trúc để kiểm tra tự động"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "agent có thể biến nó thành check tự động"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "nên là check tự động (lint, arch test) để agent không vi phạm"
+    }
+   }
+  },
+  "D6": {
+   "doc": "D4 ADR",
+   "claim": "Y-statement dùng làm dòng tóm tắt quyết định",
+   "sum": 5,
+   "support": 3,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "khuyến khích mở đầu bằng 1 câu theo cấu trúc Y-statement"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "thường được dùng làm câu tóm tắt mở đầu cho các tài liệu ADR lớn hơn."
+    },
+    "claude-T1-handbooks": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Y-statement dùng làm dòng tóm tắt đầu file"
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T4-smallteam": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    }
+   }
+  },
+  "D7": {
+   "doc": "D4 ADR",
+   "claim": "ADR ngắn: ≤1–2 trang, mỗi ADR một quyết định",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "gọn trong 1–2 trang màn hình"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "1–2 trang Markdown (khoảng 300–600 từ cho mỗi bản ADR)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mỗi ADR chỉ một quyết định"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "1–2 trang (Nygard). Thường 40–120 dòng"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "dưới 1 trang, tối đa 2 trang (Nygard)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "≤1 trang, trần 2 trang theo Nygard"
+    }
+   }
+  },
+  "P1": {
+   "doc": "D5 API",
+   "claim": "OpenAPI 3.1+ contract-first, file trong repo, là nguồn sự thật",
+   "sum": 10,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Dùng `openapi.yaml` (OpenAPI 3.1) làm nguồn chân lý cho dữ liệu endpoint"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "OpenAPI 3.1 Spec (Code-first hoặc Design-first tinh gọn)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "đổi API thì sửa `openapi.yaml` trước"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Một file OpenAPI 3.1/3.2 (contract-first) cho mỗi service"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "đặt trong repo (`api/openapi.yaml`)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "File `openapi.yaml` là contract (nguồn sự thật, lint trong CI bằng Spectral/Redocly)"
+    }
+   }
+  },
+  "P2": {
+   "doc": "D5 API",
+   "claim": "Style guide API ngắn (1–3 trang) chọn lọc quy tắc MUST từ Zalando (và/hoặc AIP); không chép nguyên bộ guideline lớn",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "1 trang tóm tắt dựa trên Zalando RESTful API Guidelines"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Quy ước thiết kế rút gọn từ Google AIP"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Chỉ chọn khoảng 10–20 quy tắc MUST mà team thực sự áp"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "style guide ngắn khoảng 1–2 trang fork từ phần MUST của Zalando"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "trích các luật MUST cần thiết từ Zalando hoặc AIP"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "quy tắc MUST chọn lọc từ Zalando"
+    }
+   }
+  },
+  "P3": {
+   "doc": "D5 API",
+   "claim": "Định dạng lỗi theo RFC 9457 (Problem Details / problem+json)",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`## Standard Error Format (RFC 9457 Problem Details)`"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "dựa theo chuẩn [RFC 7807 Problem Details]"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Problem Details: RFC 9457"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Lỗi trả về theo RFC 9457"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mô hình lỗi (RFC 9457 Problem Details)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Error format (RFC 9457 / problem+json)."
+    }
+   }
+  },
+  "P4": {
+   "doc": "D5 API",
+   "claim": "Lint contract trong CI (Spectral/Zally/Redocly) làm cổng chặn",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "thực thi tự động qua linter `.spectral.yaml`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CI sẽ báo đỏ ngay lập tức trên PR"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Contract dài bao nhiêu tuỳ API, nhưng lint phải xanh"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "lint tự động trong CI (Spectral hoặc Zally"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "cưỡng chế bằng linter trong CI"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "lint trong CI bằng Spectral/Redocly"
+    }
+   }
+  },
+  "P5": {
+   "doc": "D5 API",
+   "claim": "Style guide bắt buộc có: naming, versioning/breaking change, error format, pagination, auth, idempotency",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`## Idempotency & Concurrency`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`Authentication Scheme`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Versioning & breaking-change policy · Pagination/filtering · AuthN/AuthZ · Idempotency"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Đặt tên URL/field; Versioning & tương thích ngược; Định dạng lỗi (RFC 9457); Pagination/filter; Auth; Idempotency"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Đặt tên resource/URL & casing; Versioning"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "naming, lỗi problem+json, phân trang, versioning, idempotency, auth"
+    }
+   }
+  },
+  "E1": {
+   "doc": "D6 Spec",
+   "claim": "Nền spec: Google mini design doc 1–3 trang",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "lai ghép giữa Google Design Doc và Spec-Driven Development (SDD)"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Pragmatic Google Design Doc (Mini-Design Doc / RFC)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "làm khung nội dung + quy trình Oxide RFD làm khung vòng đời"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Google mini design doc (1–3 trang) làm nền"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mini design doc 1–3 trang theo khung Google"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "1–3 trang theo khung Google, quy trình kiểu Oxide RFD"
+    }
+   }
+  },
+  "E2": {
+   "doc": "D6 Spec",
+   "claim": "Spec bắt buộc có Goals và Non-goals",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`## 2. Goals & Non-Goals`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`Goals & Explicit Non-Goals`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Vì vậy Non-goals và Verification từ"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Google design doc là khung ít mục nhất mà vẫn bắt buộc có non-goals và alternatives"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Goals / Non-goals (Out of scope)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "để người viết mục Non-goals và Verification"
+    }
+   }
+  },
+  "E3": {
+   "doc": "D6 Spec",
+   "claim": "Spec bắt buộc có Alternatives considered",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "`## Alternatives Considered` (Nếu quyết định thiết kế mang tính lâu dài"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`Alternatives Considered`: Ít nhất 1 giải pháp thay thế"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Alternatives considered · Cross-cutting"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Alternatives considered; Acceptance criteria / Test plan"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Alternatives considered; Acceptance criteria (đo được)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Alternatives considered."
+    }
+   }
+  },
+  "E4": {
+   "doc": "D6 Spec",
+   "claim": "Spec bắt buộc có Acceptance criteria / Verification máy kiểm chứng được",
+   "sum": 10,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`## 5. Verification & Acceptance Criteria`"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "(đo được, có lệnh test)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "acceptance criteria phải là thứ kiểm chứng tự động được"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Verification plan (lệnh/test chứng minh xong)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "cách chứng minh feature chạy end-to-end"
+    }
+   }
+  },
+  "E5": {
+   "doc": "D6 Spec",
+   "claim": "Spec có Rollout/rollback",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "chiến lược rollback/feature flag"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`Rollout, Migration & Rollback Strategy`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Cross-cutting (security, observability, rollout/rollback)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Rollout & rollback; Open questions"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Rollout/rollback, Security/Privacy"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Risks & rollout/rollback."
+    }
+   }
+  },
+  "E6": {
+   "doc": "D6 Spec",
+   "claim": "Vòng đời spec kiểu Oxide RFD: file trong repo, có trạng thái, thảo luận/duyệt qua PR",
+   "sum": 7,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "sau đó duyệt Spec qua PR"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "review bất đồng bộ qua Git PR trong vòng 24–48 giờ"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "review bằng PR, có trường `state`"
+    },
+    "claude-T2-standards": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Lưu spec cạnh code (`docs/specs/NNNN-*.md`) và link từ PR"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "file `docs/rfd/NNNN-*.md`, thảo luận trên PR, có trạng thái"
+    }
+   }
+  },
+  "E7": {
+   "doc": "D6 Spec",
+   "claim": "Không viết spec cho thay đổi tầm thường; không áp pipeline SDD đầy đủ (spec-kit/Kiro) cho mọi task",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Tránh được sự cồng kềnh sinh ra 4–5 file cho mỗi tính năng của `spec-kit` nguyên bản"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "chỉ cần viết một bản tóm tắt ngắn (1–2 đoạn) ngay trong GitHub Issue"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "If you could describe the diff in one sentence, skip the plan"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "viết spec cho thay đổi tầm thường"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Chạy pipeline SDD đầy đủ cho bug nhỏ (Böckeler)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Pipeline spec-driven đầy đủ cho mọi task nhỏ"
+    }
+   }
+  },
+  "E8": {
+   "doc": "D6 Spec",
+   "claim": "Với agent: để agent phỏng vấn người → viết spec → phiên mới thực thi; spec tự đủ (nêu file/interface, out-of-scope, bước kiểm chứng)",
+   "sum": 9,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 2
+     },
+     "quote": "phỏng vấn ngược (Grill/Clarify)"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "Bản đặc tả định hướng cho AI code"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "để agent phỏng vấn người, viết `SPEC.md`, rồi mở phiên mới để thực thi"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Anthropic khuyên để agent phỏng vấn người dùng rồi viết `SPEC.md`, sau đó mở phiên mới để triển khai"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "rồi mở **phiên mới** để thực thi spec với context sạch"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Có thể để agent phỏng vấn người viết spec, rồi thực thi trong phiên mới"
+    }
+   }
+  },
+  "T1": {
+   "doc": "D7 Test+DoD",
+   "claim": "Test strategy là 1 file ngắn (1–2 trang) theo test pyramid / Google test sizes",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "1 tài liệu ngắn gọn `docs/testing-and-dod.md`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "1–2 trang Markdown (`docs/TESTING_STRATEGY.md`)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "một file `docs/testing.md` (1–2 trang) theo test-size của Google"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Một trang `TESTING.md` theo khung Test Pyramid / test size của Google"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`docs/testing.md` 1 trang (pyramid rút gọn)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "chọn pyramid (backend/lib) hoặc trophy (web app)"
+    }
+   }
+  },
+  "T2": {
+   "doc": "D7 Test+DoD",
+   "claim": "Testing Trophy là lựa chọn hợp lệ (đặc biệt cho web app)",
+   "sum": 4,
+   "support": 2,
+   "contradict": 0,
+   "disputed_cells": [
+    "claude-T3-ai-agent"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Testing Trophy + Google Test Sizes (Small/Medium/Large)"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T2-standards": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "- **Testing trophy** (Kent C. Dodds)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Hợp với frontend/web app"
+    }
+   }
+  },
+  "T3": {
+   "doc": "D7 Test+DoD",
+   "claim": "DoD là checklist ngắn (~5–10 mục) đặt trong PR template, không trên wiki",
+   "sum": 10,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-argon"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": -1
+     },
+     "quote": "`## 4. Definition of Done (PR & Feature Checklist)`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "DoD được tích hợp thẳng vào Pull Request Template"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "để DoD được kiểm tra ở mỗi PR thay vì nằm trong wiki"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "DoD chỉ nằm trong đầu mọi người hoặc trên wiki thay vì trong PR template/CI"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "DoD 6–10 dòng"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "DoD sống ở nơi mỗi PR phải chạm vào, không để trên wiki."
+    }
+   }
+  },
+  "T4": {
+   "doc": "D7 Test+DoD",
+   "claim": "Mỗi mục DoD ánh xạ tới lệnh/CI gate máy kiểm được (agent tự chạy được)",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Hầu hết các mục trong Definition of Done cần được chuyển hóa thành CI checks"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Bộ tiêu chí Definition of Done (DoD) thực thi tự động qua CI checklist"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "DoD nên được tự động hoá thành hook hoặc CI gate"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "để agent tự đóng vòng lặp"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "trong đó mỗi dòng gắn một lệnh hoặc cổng CI"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "để agent tự chạy, hoặc thành Stop hook"
+    }
+   }
+  },
+  "T5": {
+   "doc": "D7 Test+DoD",
+   "claim": "Bug fix bắt buộc có regression test",
+   "sum": 10,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Các chức năng mới hoặc sửa lỗi bắt buộc phải có test đi kèm"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "bug fix có regression test"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Beyoncé Rule cho bug fix"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "bug fix cần regression test"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Test bắt buộc cho bug fix (regression test)."
+    }
+   }
+  },
+  "T6": {
+   "doc": "D7 Test+DoD",
+   "claim": "Có chính sách test flaky và mock",
+   "sum": 10,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`## 3. Flaky Test & Coverage Policy`"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "có xu hướng lạm dụng mock"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Quy tắc dữ liệu test, mock và flaky"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Quy tắc mock và dữ liệu test"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Cách xử lý test flaky"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Cái gì mock / không mock."
+    }
+   }
+  },
+  "T7": {
+   "doc": "D7 Test+DoD",
+   "claim": "Cấm sửa/xoá/skip test để cho pass; agent phải đưa bằng chứng (output test)",
+   "sum": 7,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "thậm chí sửa luôn assertion/production code cho khớp với kết quả sai"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": "Yêu cầu AI agent tự chạy bộ test sau khi viết code xong"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "testing.md nên cấm sửa hoặc xoá test hiện có nếu không nêu lý do"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "cấm xoá hoặc skip test để cho pass"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "(output test) thay vì chỉ khẳng định"
+    },
+    "claude-T4-smallteam": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "(output test) trong PR, và review độc lập"
+    }
+   }
+  },
+  "T8": {
+   "doc": "D7 Test+DoD",
+   "claim": "Không lấy % coverage làm mục tiêu tự thân / tránh ice-cream cone",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Không chạy đua theo con số % coverage giả tạo"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "The Ice Cream Cone (Cây kem ốc quế ngược)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Lấy coverage % làm mục tiêu duy nhất"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "coverage % thành mục tiêu tự thân"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Ngưỡng coverage cứng khiến agent sinh test rỗng để đạt số"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Coverage % làm mục tiêu tự thân (suy luận)."
+    }
+   }
+  },
+  "Q1": {
+   "doc": "D8 PR",
+   "claim": "PR template ngắn (≲25–35 dòng)",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "20–35 dòng Markdown"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "20–35 dòng Markdown (khoảng 150–250 từ)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "template dưới 30 dòng"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Template khoảng 15–30 dòng"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "template dưới 25 dòng"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "template ≤25 dòng"
+    }
+   }
+  },
+  "Q2": {
+   "doc": "D8 PR",
+   "claim": "Mô tả PR theo Google CL description (what + why, tự đủ ý, không 'Fix bug')",
+   "sum": 10,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mô tả PR chỉ lặp lại `git diff` (What without Why)"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "`Why`: Một câu giải thích bối cảnh"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mô tả PR theo chuẩn Google (what + why)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "mô tả phải tự đủ ý vì link có thể chết"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Tóm tắt (cái gì và tại sao)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Template ngắn 4–5 mục theo Google CL description"
+    }
+   }
+  },
+  "Q3": {
+   "doc": "D8 PR",
+   "claim": "PR bắt buộc có cách kiểm chứng kèm bằng chứng (lệnh/output/ảnh)",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Bằng chứng kiểm thử: câu lệnh test đã chạy"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "`How to Test / Verification Steps`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "How to test / bằng chứng (lệnh + kết quả, screenshot)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Cách kiểm chứng (lệnh, kết quả, ảnh chụp)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "bắt buộc dán output"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "lệnh, ảnh chụp, output test"
+    }
+   }
+  },
+  "Q4": {
+   "doc": "D8 PR",
+   "claim": "PR có mục khai báo AI (công cụ, phạm vi; trailer Assisted-by)",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "`## AI Assistance Disclosure / Review Focus`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 1,
+      "rater-b": 2
+     },
+     "quote": "PR template cần có mục khai báo việc sử dụng AI"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "AI usage (Yes/No, công cụ, phạm vi; người submit chịu trách nhiệm)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Khai báo AI (công cụ, phạm vi, người đã review)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "AI assistance (công cụ, phạm vi"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "agent/công cụ dùng, phần nào do agent sinh"
+    }
+   }
+  },
+  "Q5": {
+   "doc": "D8 PR",
+   "claim": "PR có rủi ro & rollback",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "`## Rollout & Risk Notes`"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "`Breaking Changes & Migration Note`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Rủi ro & rollback"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Rủi ro & rollback; Khai báo AI"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Rủi ro & rollback; AI assistance"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Risk / rollback"
+    }
+   }
+  },
+  "Q6": {
+   "doc": "D8 PR",
+   "claim": "PR có 'ghi chú cho reviewer / feedback mong muốn'",
+   "sum": 8,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Top 1–3 điểm rủi ro nhất cần kỹ sư con người kiểm tra kỹ"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "Hướng dẫn reviewer cách tiếp cận bản diff hiệu quả nhất"
+    },
+    "claude-T1-handbooks": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Ghi chú cho reviewer, user-facing change/changelog"
+    },
+    "claude-T2-standards": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "ghi chú cho reviewer (nên đọc file nào trước)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Thay đổi chính (cho reviewer biết đọc đâu trước)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "chỗ cần reviewer nhìn kỹ, thứ tự review"
+    }
+   }
+  },
+  "Q7": {
+   "doc": "D8 PR",
+   "claim": "PR nhỏ (khoảng 100–400 dòng diff; 1000 là quá lớn)",
+   "sum": 9,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Duyệt các PR lớn hàng nghìn dòng do AI agent sinh ra"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Một PR sửa 1.500 dòng code trên 40 files"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "PR nên khoảng 100 dòng thay đổi, 1000 dòng là quá lớn"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "PR nên nhắm khoảng 100–400 dòng diff"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "PR khổng lồ do agent sinh (suy luận)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "PR mục tiêu khoảng 100–400 dòng diff"
+    }
+   }
+  },
+  "Q8": {
+   "doc": "D8 PR",
+   "claim": "Tiêu đề PR theo Conventional Commits",
+   "sum": 4,
+   "support": 2,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "tiêu đề theo **Conventional Commits** tại"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Hướng dẫn đặt tiêu đề chuẩn `type(scope): short description`"
+    },
+    "claude-T1-handbooks": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T2-standards": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T4-smallteam": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    }
+   }
+  },
+  "O1": {
+   "doc": "D9 Ops",
+   "claim": "Postmortem theo Google SRE (example postmortem) rút gọn, blameless",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [
+    "claude-T4-smallteam"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Google SRE Blameless Postmortem rút gọn"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Google SRE Blameless Postmortem rút gọn"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Postmortem: Google SRE example rút gọn"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Postmortem theo Google SRE example"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Postmortem theo Google SRE rút gọn"
+    },
+    "claude-T4-smallteam": {
+     "median": 1,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "- Contributing factors (blameless)."
+    }
+   }
+  },
+  "O2": {
+   "doc": "D9 Ops",
+   "claim": "Postmortem dùng 'contributing factors' (PagerDuty) thay vì một root cause duy nhất",
+   "sum": 7,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "`## Root Cause & Contributing Factors`"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": -1
+     },
+     "quote": "Root Cause vs. Trigger"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "của PagerDuty (thay cho một"
+    },
+    "claude-T2-standards": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Root causes / contributing factors"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Root/contributing causes + Trigger"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Contributing factors (blameless)."
+    }
+   }
+  },
+  "O3": {
+   "doc": "D9 Ops",
+   "claim": "Postmortem có Lessons: went well / went wrong / where we got lucky",
+   "sum": 10,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "3 gạch đầu dòng chuẩn Google SRE"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`Where We Got Lucky vs. Where We Failed`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Lessons (went well / wrong / lucky)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Lessons (went well / wrong / lucky)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Lessons learned (went well/wrong/lucky)"
+    },
+    "claude-T4-smallteam": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 2
+     },
+     "quote": "What went well / poorly."
+    }
+   }
+  },
+  "O4": {
+   "doc": "D9 Ops",
+   "claim": "Trigger viết postmortem định nghĩa trước (downtime, mất dữ liệu, on-call can thiệp…); không viết cho mọi sự cố nhỏ",
+   "sum": 10,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 1,
+      "rater-b": 2
+     },
+     "quote": "chỉ bắt buộc viết cho sự cố mức độ nghiêm trọng SEV-1/SEV-2 gây gián đoạn người dùng thật"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "cho các sự cố nghiêm trọng (SEV-1/SEV-2)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "downtime vượt ngưỡng, mất dữ liệu, on-call phải can thiệp"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "trigger phải được định nghĩa trước khi có sự cố"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Trigger viết postmortem được định nghĩa trước"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Chỉ viết khi chạm ngưỡng kích hoạt kiểu Google"
+    }
+   }
+  },
+  "O5": {
+   "doc": "D9 Ops",
+   "claim": "Action items bắt buộc có owner + ticket + hạn; postmortem phải được review",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "có gắn người phụ trách, hạn chót và link Issue/PR cụ thể"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "có người chịu trách nhiệm chính, và có link issue ticket trên sprint backlog"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Action items (owner, priority, ticket)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Action items (owner, ticket, hạn)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Action Items (owner, hạn)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Action items (owner + hạn + ticket)."
+    }
+   }
+  },
+  "O6": {
+   "doc": "D9 Ops",
+   "claim": "Runbook: mỗi alert một mục/file, alert link thẳng tới runbook",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "mỗi runbook chỉ giải quyết 1 kịch bản cụ thể"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "được liên kết từ link cảnh báo alert"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "mỗi alert một file `runbooks/<alert>.md`"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Runbook theo mô hình mỗi alert một entry"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Runbook mỗi alert một file"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "mỗi alert một mục ngắn"
+    }
+   }
+  },
+  "O7": {
+   "doc": "D9 Ops",
+   "claim": "Runbook có ngày 'last verified' / được chạy thử định kỳ",
+   "sum": 6,
+   "support": 4,
+   "contradict": 0,
+   "disputed_cells": [
+    "claude-T2-standards"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Ngày xác minh lần cuối"
+    },
+    "claude-T2-standards": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 0,
+      "rater-b": 1
+     },
+     "quote": "on-call cập nhật playbook khi alert kêu"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Runbook không bao giờ được chạy thử sẽ trôi khỏi thực tế"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Last verified (ngày)."
+    }
+   }
+  },
+  "O8": {
+   "doc": "D9 Ops",
+   "claim": "Bước thay đổi production trong runbook cần người phê duyệt (agent chỉ chẩn đoán)",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-argon"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "AI Agent đóng vai trò Trợ lý Điều tra Sự cố (AI SRE / Triage Assistant)"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "báo cáo tóm tắt tình hình cho kỹ sư quyết định xử lý"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "phải có người phê duyệt (permission deny hoặc hook)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "các thao tác phá huỷ phải có cổng phê duyệt của người"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Bước ghi hoặc khắc phục phải có cổng người duyệt"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "mọi hành động thay đổi production phải có người duyệt"
+    }
+   }
+  },
+  "O9": {
+   "doc": "D9 Ops",
+   "claim": "Postmortem có trường 'AI agent có liên quan không'",
+   "sum": 6,
+   "support": 3,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "AI agent có liên quan không, và guardrail nào thiếu"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "agent/automation có liên quan không"
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "agent involvement"
+    }
+   }
+  },
+  "X1": {
+   "doc": "D10 Sec+AI",
+   "claim": "SECURITY.md theo GitHub: supported versions, kênh báo cáo riêng tư, SLA phản hồi (ngày), phạm vi",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Kênh báo cáo lỗ hổng bảo mật riêng tư, email liên hệ, SLA phản hồi dự kiến"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`Response & Resolution SLA`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Supported versions · Cách báo cáo (private) · Thời hạn phản hồi/công bố · Phạm vi"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Supported versions; Cách báo cáo riêng tư"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Supported versions; Cách báo cáo (kênh riêng tư); SLA phản hồi; Phạm vi"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Cách báo cáo (kênh riêng, không qua issue công khai)."
+    }
+   }
+  },
+  "X2": {
+   "doc": "D10 Sec+AI",
+   "claim": "Chính sách AI là file riêng (AI_POLICY.md / docs/ai-policy.md) theo mô hình LLVM/Linux kernel/Ghostty",
+   "sum": 8,
+   "support": 5,
+   "contradict": 1,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": -1,
+     "scores": {
+      "rater-a": -1,
+      "rater-agy": -1,
+      "rater-b": -1
+     },
+     "quote": "KHÔNG tách rời `SECURITY.md` và `AI_USAGE_POLICY.md`"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "kết hợp `AI_USAGE_POLICY.md`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`docs/ai-policy.md` (hoặc `AI_POLICY.md`) ghép từ LLVM"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`AI_POLICY.md` (hoặc một mục trong CONTRIBUTING)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "AI_POLICY.md (kiểu kernel/LLVM/Ghostty)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "dựa trên LLVM/kernel/Fedora: trách nhiệm con người"
+    }
+   }
+  },
+  "X3": {
+   "doc": "D10 Sec+AI",
+   "claim": "Khai báo AI bằng trailer Assisted-by; agent không được ký Signed-off-by/DCO thay người",
+   "sum": 9,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "AI agent không có tư cách pháp nhân để ký Developer Certificate of Origin (DCO)"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "kernel (`Assisted-by`, không để agent ký thay)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "để agent ký DCO hoặc Signed-off-by (kernel cấm)"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "trailer `Assisted-by:` hoặc mục trong PR"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "cấm agent tự thêm `Signed-off-by`"
+    }
+   }
+  },
+  "X4": {
+   "doc": "D10 Sec+AI",
+   "claim": "Người submit/merge chịu trách nhiệm hoàn toàn, phải hiểu và giải thích được diff",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "cấm merge PR mà người mở không giải thích được logic bên trong"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "chịu trách nhiệm 100% về chất lượng"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "người merge chịu trách nhiệm như code tự viết, phải hiểu và giải thích được"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Người mở PR chịu trách nhiệm và phải giải thích được thay đổi"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "người submit chịu trách nhiệm hoàn toàn, phải hiểu và giải thích được diff"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "người merge chịu trách nhiệm"
+    }
+   }
+  },
+  "X5": {
+   "doc": "D10 Sec+AI",
+   "claim": "Quyền của agent cưỡng chế bằng cấu hình (permissions/sandbox/hook/CI), không chỉ văn xuôi",
+   "sum": 10,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Thực thi chính sách bằng Cấu hình Máy (Policy-as-Code) song hành với Văn bản"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "Chính sách sử dụng AI không chỉ để trên giấy cho người đọc"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Chỉ dẫn bằng văn bản không thay được enforcement"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "allowlist quyền, sandbox, hook, secret scanning"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "dùng hook hoặc permission để cưỡng chế"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Chính sách AI chỉ là văn xuôi, không có rào kỹ thuật."
+    }
+   }
+  },
+  "X6": {
+   "doc": "D10 Sec+AI",
+   "claim": "Có quy tắc dữ liệu: không đưa secrets/PII/dữ liệu khách hàng vào công cụ chưa duyệt",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "dán vào cửa sổ chat của AI/LLM chưa được cấp phép"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Nghiêm cấm tuyệt đối việc đưa API keys, mật khẩu"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "Công cụ và mô hình được phép (và dữ liệu được gửi đi)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "không đưa secrets hay dữ liệu khách hàng vào công cụ chưa được duyệt"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "loại dữ liệu cấm đưa vào (secrets, PII, mã khách hàng)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "không đưa secret, dữ liệu khách hàng hay mã độc quyền vào công cụ chưa được duyệt"
+    }
+   }
+  },
+  "X7": {
+   "doc": "D10 Sec+AI",
+   "claim": "Tham chiếu OWASP Top 10 for Agentic Applications 2026",
+   "sum": 9,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "OWASP Top 10 for Agentic Applications (2026)"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 0,
+      "rater-b": 1
+     },
+     "quote": "OWASP Top 10 for LLM Applications & AI Governance Guidelines"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "OWASP Top 10 for Agentic Applications 2026"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "OWASP Top 10 for Agentic Applications 2026 (ra ngày 09/12/2025"
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Nên tham chiếu OWASP Agentic Top 10"
+    }
+   }
+  },
+  "X8": {
+   "doc": "D10 Sec+AI",
+   "claim": "Cấm agent tự hành (tự merge/push/deploy/comment) khi chưa có người duyệt",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "được review độc lập trước khi merge vào `main`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Cấm AI agent tự động merge code vào nhánh `main`/`production`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Để agent tự hành động trong không gian chung mà không có người phê duyệt (LLVM cấm)"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "không có hành động tự động nào mà không có người duyệt"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "cấm push/deploy/merge tự động"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Để agent tự trả lời hoặc tự review mà không có người (LLVM cấm)."
+    }
+   }
+  },
+  "M1": {
+   "doc": "D11 Thêm",
+   "claim": "Nên có CONTRIBUTING / dev setup (có thể gộp README)",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-argon"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "`## Quickstart / Local Setup`"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`DEVELOPMENT.md` hoặc `CONTRIBUTING.md`"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "`CONTRIBUTING.md` / dev setup"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CONTRIBUTING.md / quy trình làm việc"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CONTRIBUTING.md / dev setup"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CONTRIBUTING/dev-setup chạy được."
+    }
+   }
+  },
+  "M2": {
+   "doc": "D11 Thêm",
+   "claim": "Nên có glossary / ngôn ngữ miền (ubiquitous language)",
+   "sum": 12,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Từ điển Thuật ngữ Nghiệp vụ — Domain Glossary / Ubiquitous Language"
+    },
+    "agy-gemini-flash": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Từ điển Thuật ngữ Nghiệp vụ & Bản đồ Thực thể Dữ liệu"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Glossary / ngôn ngữ miền"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Glossary / ngôn ngữ miền"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Glossary thuật ngữ miền"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Glossary/domain terms"
+    }
+   }
+  },
+  "M3": {
+   "doc": "D11 Thêm",
+   "claim": "Nên có CHANGELOG / release notes (Keep a Changelog)",
+   "sum": 9,
+   "support": 5,
+   "contradict": 0,
+   "disputed_cells": [
+    "agy-gemini-flash"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Nhật ký Thay đổi & Hướng dẫn Nâng cấp — Changelog"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 1,
+      "rater-b": 0
+     },
+     "quote": "Semantic Release (tự động đánh version và xuất changelog)"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CHANGELOG / release notes"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CHANGELOG / release notes"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 2,
+      "rater-b": 1
+     },
+     "quote": "nếu có người dùng bên ngoài (suy luận)"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "CHANGELOG / release notes"
+    }
+   }
+  },
+  "M4": {
+   "doc": "D11 Thêm",
+   "claim": "Nên có CODEOWNERS cho file quy tắc agent/ADR/contract",
+   "sum": 2,
+   "support": 1,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "cho `AGENTS.md`, `docs/adr/`, `openapi.yaml` và `SECURITY.md`"
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T4-smallteam": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    }
+   }
+  },
+  "M5": {
+   "doc": "D11 Thêm",
+   "claim": "Nên có CI kiểm tài liệu (link checker, lệnh README, tham chiếu code lỗi thời)",
+   "sum": 5,
+   "support": 4,
+   "contradict": 0,
+   "disputed_cells": [
+    "claude-T2-standards"
+   ],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "script kiểm tra các đường dẫn thư mục được nhắc tới trong `AGENTS.md`"
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T2-standards": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 0,
+      "rater-b": 1
+     },
+     "quote": "Với team nhỏ, file nào lint được thì sẽ còn được bảo trì"
+    },
+    "claude-T3-ai-agent": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Lệnh cài đặt lỗi thời không được CI kiểm"
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "một CI check tài liệu: link checker, lệnh trong README chạy được"
+    }
+   }
+  },
+  "M6": {
+   "doc": "D11 Thêm",
+   "claim": "Dùng Diátaxis để phân loại tài liệu (tutorial/how-to/reference/explanation)",
+   "sum": 5,
+   "support": 3,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "How-to ngắn theo Diátaxis"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "phần dài hơn chuyển sang `docs/` theo Diátaxis"
+    },
+    "claude-T3-ai-agent": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T4-smallteam": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Diátaxis tách bốn loại này"
+    }
+   }
+  },
+  "M7": {
+   "doc": "D11 Thêm",
+   "claim": "Quy trình lặp lại đóng gói thành skills cho agent",
+   "sum": 5,
+   "support": 3,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "agy-gemini-flash": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "nên chuyển thành *skill* (`.claude/skills/`)"
+    },
+    "claude-T2-standards": {
+     "median": 0,
+     "scores": {
+      "rater-a": 0,
+      "rater-agy": 0,
+      "rater-b": 0
+     },
+     "quote": ""
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Mỗi skill đóng gói một quy trình lặp lại"
+    },
+    "claude-T4-smallteam": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "skill cho quy trình nhiều bước"
+    }
+   }
+  },
+  "M8": {
+   "doc": "D11 Thêm",
+   "claim": "Không đáng làm: test plan IEEE 829/ISO 29119, KEP/PRR đầy đủ, wiki ngoài repo",
+   "sum": 11,
+   "support": 6,
+   "contradict": 0,
+   "disputed_cells": [],
+   "cells": {
+    "agy-gemini-argon": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "KHÔNG viết tài liệu Test Strategy dài hàng chục trang kiểu IEEE 829"
+    },
+    "agy-gemini-flash": {
+     "median": 1,
+     "scores": {
+      "rater-a": 1,
+      "rater-agy": 1,
+      "rater-b": 1
+     },
+     "quote": "Tài liệu Chiến lược Kiểm thử (Testing Strategy) độc lập dài hàng chục trang"
+    },
+    "claude-T1-handbooks": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "KEP đầy đủ kèm Production Readiness questionnaire"
+    },
+    "claude-T2-standards": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "hoặc IEEE 829 cho từng release: quá nặng"
+    },
+    "claude-T3-ai-agent": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "arc42 đủ 12 mục; KEP đủ PRR questionnaire."
+    },
+    "claude-T4-smallteam": {
+     "median": 2,
+     "scores": {
+      "rater-a": 2,
+      "rater-agy": 2,
+      "rater-b": 2
+     },
+     "quote": "Test plan theo IEEE 829."
+    }
+   }
+  }
+ }
+}
