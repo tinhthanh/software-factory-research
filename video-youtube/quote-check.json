@@ -407,5 +407,42 @@
    "found_at": 1161,
    "ts_off": 15
   }
+ ],
+ "14-WOhJflEz3mY": [
+  {
+   "q": "So, you go from building the product to building the factory that buil",
+   "ts": 66,
+   "match": 1.0,
+   "found_at": 62,
+   "ts_off": 4
+  },
+  {
+   "q": "the reality is AI it's just a tool. It writes very poor code, but beca",
+   "ts": 472,
+   "match": 1.0,
+   "found_at": 469,
+   "ts_off": 3
+  },
+  {
+   "q": "I believe TDD it's a waste of tokens for the most part, especially whe",
+   "ts": 612,
+   "match": 1.0,
+   "found_at": 606,
+   "ts_off": 6
+  },
+  {
+   "q": "If it takes more than a hundred turns, you stop and you go back to hum",
+   "ts": 687,
+   "match": 1.0,
+   "found_at": 685,
+   "ts_off": 2
+  },
+  {
+   "q": "It takes so many shortcuts. I've never seen someone taking so many sho",
+   "ts": 858,
+   "match": 1.0,
+   "found_at": 854,
+   "ts_off": 4
+  }
  ]
 }

@@ -15,19 +15,20 @@ out.append(f"""# Phần B — Đồng thuận giữa {n} video YouTube và resea
 Ngày chấm: 2026-10-13. Video và bản phân tích nằm ở [video-youtube/](video-youtube/).
 Dữ liệu chấm: [scoring/video-consensus-a.json](scoring/video-consensus-a.json) (v01–v06),
 [video-consensus-b.json](scoring/video-consensus-b.json) (v07–v12), [video-consensus-c.json](scoring/video-consensus-c.json) (v13),
+[video-consensus-d.json](scoring/video-consensus-d.json) (v14, chấm ngày 2026-10-23),
 [video-agy-scores.json](scoring/video-agy-scores.json), [video-merged.json](scoring/video-merged.json), [video-claims.json](scoring/video-claims.json).
 Script tạo bảng: `scoring/merge_video.py` → `scoring/render_partB.py`.
 
 ## Phương pháp
 
-- **Người chấm chính**: 3 Claude subagent (v01–06, v07–12, v13). Điểm 2 hoặc -1 chỉ được cho khi có câu trích
+- **Người chấm chính**: 4 Claude subagent (v01–06, v07–12, v13, v14). Điểm 2 hoặc -1 chỉ được cho khi có câu trích
   **nguyên văn trong transcript** kèm [mm:ss]. Script đã so khớp lại toàn bộ trích dẫn.
 - **Người chấm thứ hai**: `agy` (Gemini 3.8 Flash) chấm độc lập cả {n} video, chỉ cho điểm, không kèm trích dẫn.
 - **Độ khớp giữa hai người chấm**: trùng điểm tuyệt đối {ir['exact']:.0%}, trùng nhóm (ủng hộ / không nói / mâu thuẫn) {ir['bucket']:.0%},
   **Cohen's κ = {ir['kappa']:.2f}** (mức vừa), sai lệch trung bình (MAE) {ir['mae']:.2f}.
   agy chấm **dễ hơn rõ rệt**. Ví dụ, agy cho K21 (MAST) được 12/{n} video ủng hộ, dù không video nào nhắc tới MAST.
   → **Điểm của Claude (có bằng chứng) là số chính**; điểm agy chỉ dùng để kiểm tra độ nhạy.
-- **Độ mạnh bằng chứng của video** (1–5): v03 Builder.io, v04 Factory và v08 HumanLayer đạt 3 (thực chiến hoặc talk
+- **Độ mạnh bằng chứng của video** (1–5): v03 Builder.io, v04 Factory, v08 HumanLayer và v14 theSeniorDev đạt 3 (thực chiến hoặc talk
   production, số liệu tự báo cáo). v01, v05, v06, v07, v10, v11, v12, v13 đạt 2 (tutorial hoặc dự án cá nhân).
   v02 và v09 đạt 1 (demo, tin sản phẩm). **Không video nào có số liệu đo có phương pháp.**
 - **Nguồn transcript**: v01–v12 dùng phụ đề YouTube (tải bằng `youtube-transcript-api`). Riêng v13 được Gemini 3.1 Pro
@@ -61,14 +62,14 @@ out.append(f"""
 | ID | Claim | Video | n | Đánh giá |
 |---|---|---|---|---|""")
 vc=json.load(open('scoring/video-claims.json'))
-ev={"V1":"Đồng thuận cao giữa practitioner; khớp ý \"harness\" của research","V2":"**Căng với K6** (research: người duyệt mọi PR)","V3":"Thực hành phổ biến; v04 tự báo cáo tiết kiệm ~25%","V4":"Thực chiến, định tính","V5":"Demo","V6":"Thực chiến (Boundary: max 3 vòng)","V7":"v04 có số (tự báo cáo); v13: kiểm chứng viết trước","V8":"Ý kiến của người vận hành production","V9":"Ý kiến, khớp K7/K24","V10":"Ý kiến","V11":"Bổ sung cho K10/K25","V12":"Củng cố K3/K26","V13":"Ý kiến kiến trúc","V14":"Khớp bước \"retro\" của research","V15":"Demo","V16":"Thực chiến","V17":"Thực chiến","V18":"Phản ánh người dùng","V19":"**Căng với K8/K19** (sandbox)","V20":"Ý kiến; khớp khuyến nghị \"chưa cần framework nặng\" của research","V21":"Ý kiến; khớp bước Brief của research (agent phỏng vấn)","V22":"Ý kiến (tutorial)"}
+ev={"V1":"Đồng thuận cao giữa practitioner; khớp ý \"harness\" của research","V2":"**Căng với K6** (research: người duyệt mọi PR)","V3":"Thực hành phổ biến; v04 tự báo cáo tiết kiệm ~25%","V4":"Thực chiến, định tính","V5":"Demo","V6":"Thực chiến (Boundary: max 3 vòng)","V7":"v04 có số (tự báo cáo); v13: kiểm chứng viết trước","V8":"Ý kiến của người vận hành production","V9":"Ý kiến, khớp K7/K24","V10":"Ý kiến","V11":"Bổ sung cho K10/K25","V12":"Củng cố K3/K26","V13":"Ý kiến kiến trúc","V14":"Khớp bước \"retro\" của research","V15":"Demo","V16":"Thực chiến","V17":"Thực chiến","V18":"Phản ánh người dùng","V19":"**Căng với K8/K19** (sandbox)","V20":"Ý kiến; khớp khuyến nghị \"chưa cần framework nặng\" của research","V21":"Ý kiến; khớp bước Brief của research (agent phỏng vấn)","V22":"Ý kiến (tutorial)","V23":"**Căng với K13** (research: test viết trước, khoá lại); v14 vẫn tin E2E","V24":"Khớp bước retro/postmortem của research","V25":"Khớp mục \"bất biến\" trong template kiến trúc; formal verification còn sớm","V26":"Khớp nguyên tắc không dùng dữ liệu production thật"}
 for x in sorted(vc,key=lambda x:-len(x['videos'])):
     k=len(x['videos']); out.append(f"| {x['id']} | {x['claim']} | {' '.join(x['videos'])} | {'**'+str(k)+'**' if k>=5 else k} | {ev[x['id']]} |")
 out.append(f"""
 ## 3. Kết luận chấm gộp
 
 1. **Không có mâu thuẫn ở cốt lõi.** 7 claim (K2, K3, K5, K6, K8, K14, K25) được cả research (≥4/5)
-   lẫn đa số video (≥8/{n}) ủng hộ. Đây là phần đáng tin nhất của quy trình. K5 (harness kiểm chứng) được 12/{n} video nhắc; video duy nhất không nhắc là v02 (agent SRE, không bàn quy trình code).
+   lẫn đa số video (≥8/{n}) ủng hộ. Đây là phần đáng tin nhất của quy trình. K5 (harness kiểm chứng) được 13/{n} video nhắc; video duy nhất không nhắc là v02 (agent SRE, không bàn quy trình code).
 2. **Video bổ sung tầng "vận hành factory"** mà research còn mỏng: code tất định điều phối (V1),
    model routing (V3), khép vòng production (V4), định tuyến theo rủi ro (V2), kiểm chứng E2E (V7).
 3. **Ba điểm căng cần quyết định khi áp dụng:**

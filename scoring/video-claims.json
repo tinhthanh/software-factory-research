@@ -18,7 +18,8 @@
    "v01",
    "v03",
    "v05",
-   "v08"
+   "v08",
+   "v14"
   ]
  },
  {
@@ -31,7 +32,8 @@
    "v07",
    "v08",
    "v11",
-   "v12"
+   "v12",
+   "v14"
   ]
  },
  {
@@ -42,7 +44,8 @@
    "v04",
    "v05",
    "v07",
-   "v10"
+   "v10",
+   "v14"
   ]
  },
  {
@@ -71,14 +74,16 @@
    "v04",
    "v06",
    "v08",
-   "v13"
+   "v13",
+   "v14"
   ]
  },
  {
   "id": "V8",
   "claim": "Nhắm ~95% tự động, không 100%: luôn có đường thoát lên người khi vượt số vòng lặp hoặc không tạo được repro",
   "videos": [
-   "v08"
+   "v08",
+   "v14"
   ]
  },
  {
@@ -122,7 +127,8 @@
   "claim": "Tự sở hữu tầng dev environment (môi trường dạng 'cattle'), tách control plane / data plane; dùng monorepo hoặc mô phỏng monorepo, tránh submodule",
   "videos": [
    "v07",
-   "v08"
+   "v08",
+   "v14"
   ]
  },
  {
@@ -191,6 +197,34 @@
   "claim": "Tách PRD (what/why) và spec (how) thành hai phiên riêng; mọi artifact theo template cố định; người review plan tập trung vào chiến lược kiểm chứng (exit criteria)",
   "videos": [
    "v13"
+  ]
+ },
+ {
+  "id": "V23",
+  "claim": "Ưu tiên e2e test chạy trên môi trường thật theo feature hơn unit test/TDD do agent tự viết; TDD với agent bị coi là phí token khi code thay đổi nhanh",
+  "videos": [
+   "v14"
+  ]
+ },
+ {
+  "id": "V24",
+  "claim": "Khi agent làm sai thì sửa factory (gate, context, kiến trúc) chứ không vá từng component; postmortem sự cố để tìm thay đổi kiến trúc, nghĩ theo hệ quả bậc 2–3",
+  "videos": [
+   "v14"
+  ]
+ },
+ {
+  "id": "V25",
+  "claim": "Thiết kế codebase thân thiện với agent (modular, ranh giới rõ để giới hạn lỗi) kèm một lớp quy tắc/bất biến tĩnh (formal verification) mà agent không thể phá",
+  "videos": [
+   "v14"
+  ]
+ },
+ {
+  "id": "V26",
+  "claim": "Cấp cho agent dữ liệu giống production đã ẩn danh (mock production data, giữ hình dạng/độ dài dữ liệu thật) để tái hiện bug chính xác",
+  "videos": [
+   "v14"
   ]
  }
 ]

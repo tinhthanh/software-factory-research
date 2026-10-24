@@ -1,0 +1,281 @@
+{
+ "scores": {
+  "K1": {
+   "v14": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K2": {
+   "v14": {
+    "score": 1,
+    "quote": "once the code is written, it goes to our building quality pipeline.",
+    "ts": "05:36"
+   }
+  },
+  "K3": {
+   "v14": {
+    "score": 1,
+    "quote": "this is where we do have an AI reviewer, also. That's a separate engine that doesn't have the context of the others",
+    "ts": "13:37"
+   }
+  },
+  "K4": {
+   "v14": {
+    "score": 1,
+    "quote": "there's also different sub-agents. So, the beautiful thing is you can work in parallel on so many tickets.",
+    "ts": "05:29"
+   }
+  },
+  "K5": {
+   "v14": {
+    "score": 2,
+    "quote": "your building quality pipeline is basically the reason why you will sleep well at night or not sleep well at night when you're not reading the code.",
+    "ts": "05:53"
+   }
+  },
+  "K6": {
+   "v14": {
+    "score": 1,
+    "quote": "I only review based on the blast radius and the services affected.",
+    "ts": "12:21"
+   }
+  },
+  "K7": {
+   "v14": {
+    "score": 1,
+    "quote": "it's trying to go over to steps to reproduce its scope, acceptance criteria, and repro evidence.",
+    "ts": "03:56"
+   }
+  },
+  "K8": {
+   "v14": {
+    "score": 1,
+    "quote": "They need a copy of the database that they can spin up.",
+    "ts": "16:02"
+   }
+  },
+  "K9": {
+   "v14": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K10": {
+   "v14": {
+    "score": 1,
+    "quote": "So, it has access to our Cloud MD, where we define",
+    "ts": "04:47"
+   }
+  },
+  "K11": {
+   "v14": {
+    "score": 1,
+    "quote": "you're also not going to read the code unless it's something important and because you just don't have the time.",
+    "ts": "10:47"
+   }
+  },
+  "K12": {
+   "v14": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K13": {
+   "v14": {
+    "score": 1,
+    "quote": "sometimes they would hardcode the things into test.",
+    "ts": "13:53"
+   }
+  },
+  "K14": {
+   "v14": {
+    "score": 2,
+    "quote": "this is where we do have an AI reviewer, also. That's a separate engine that doesn't have the context of the others, and it's trying to check if there was any architecture regression.",
+    "ts": "13:37"
+   }
+  },
+  "K15": {
+   "v14": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K16": {
+   "v14": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K17": {
+   "v14": {
+    "score": 1,
+    "quote": "if you want quality and predictability, you need engineering.",
+    "ts": "25:42"
+   }
+  },
+  "K18": {
+   "v14": {
+    "score": 1,
+    "quote": "whenever you see that there's a lot of bugs around the feature, it's usually a sign that the architecture has changed.",
+    "ts": "18:13"
+   }
+  },
+  "K19": {
+   "v14": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K20": {
+   "v14": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K21": {
+   "v14": {
+    "score": 1,
+    "quote": "no matter what model you use, you can use stable, you can use Opus 5.5, they just go they drive themselves into loops. Maybe because they miss some context",
+    "ts": "11:09"
+   }
+  },
+  "K22": {
+   "v14": {
+    "score": 2,
+    "quote": "AI loves to add things. They would rewrite the whole thing. They would make up a function even if it's already declared.",
+    "ts": "14:03"
+   }
+  },
+  "K23": {
+   "v14": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  },
+  "K24": {
+   "v14": {
+    "score": 1,
+    "quote": "I do not do a lot of auto merge, but I think as we get more and more confidence and more and more releases are successful, if we get to a 99% ratio where I just skim through the PR and it looks good, then we're probably going to move also into the auto merge",
+    "ts": "13:09"
+   }
+  },
+  "K25": {
+   "v14": {
+    "score": 2,
+    "quote": "Where is the context missing to really understand why couldn't the model fix the issue?",
+    "ts": "11:47"
+   }
+  },
+  "K26": {
+   "v14": {
+    "score": 0,
+    "quote": "",
+    "ts": ""
+   }
+  }
+ },
+ "video_meta": {
+  "v14": {
+   "kind": "phỏng vấn",
+   "evidence_strength": 3,
+   "note": "Phỏng vấn một người làm thực tế về agentic software factory chạy production: triage→refinement→prioritizer→implementer→quality pipeline→AI reviewer→staging smoke→QA agent. Số liệu tự báo cáo (950 e2e suite, 10–20 PR/dev/ngày, ~$1.50/lần chạy, giới hạn 100 turn), không có phương pháp đo; cuối video quảng bá mentorship/khoá học."
+  }
+ },
+ "v_support": {
+  "V2": {
+   "quote": "And if the blast radius is very small and it only affects one service, then I would just have AI merging it.",
+   "ts": "12:32"
+  },
+  "V3": {
+   "quote": "Having a model router, so we can choose between a cheap model versus a strong model.",
+   "ts": "18:54"
+  },
+  "V4": {
+   "quote": "we have a triage agent ingesting issues that come either through Slack, Sentry, or they're user reported.",
+   "ts": "01:56"
+  },
+  "V7": {
+   "quote": "our agents are instructed screenshots before the feature and then they check out on the fixed branch and then they take screenshots and videos of the new feature.",
+   "ts": "10:32"
+  },
+  "V8": {
+   "quote": "If it takes more than a hundred turns, you stop and you go back to human review",
+   "ts": "11:27"
+  },
+  "V13": {
+   "quote": "And making sure that environments are reproducible",
+   "ts": "16:16"
+  }
+ },
+ "new_claims": [
+  {
+   "claim": "Ưu tiên e2e test chạy trên môi trường thật theo feature hơn unit test/TDD do agent tự viết; TDD với agent bị coi là phí token khi code thay đổi nhanh",
+   "evidence": [
+    {
+     "video": "v14",
+     "quote": "I believe TDD it's a waste of tokens for the most part, especially when you iterate very fast.",
+     "ts": "10:09"
+    },
+    {
+     "video": "v14",
+     "quote": "But end-to-end tests written against our features that run in our real environment, they make me sleep well at night.",
+     "ts": "10:23"
+    }
+   ]
+  },
+  {
+   "claim": "Khi agent làm sai thì sửa factory (gate, context, kiến trúc) chứ không vá từng component; postmortem sự cố để tìm thay đổi kiến trúc, nghĩ theo hệ quả bậc 2–3",
+   "evidence": [
+    {
+     "video": "v14",
+     "quote": "So, I'm not fixing a component, I'm fixing again the factory.",
+     "ts": "06:10"
+    },
+    {
+     "video": "v14",
+     "quote": "We go from incident doing a postmortem and understanding if there's any architecture change we need to implement, not just fixing the bug.",
+     "ts": "19:28"
+    }
+   ]
+  },
+  {
+   "claim": "Thiết kế codebase thân thiện với agent (modular, ranh giới rõ để giới hạn lỗi) kèm một lớp quy tắc/bất biến tĩnh (formal verification) mà agent không thể phá",
+   "evidence": [
+    {
+     "video": "v14",
+     "quote": "Design a code base that's modular. Design a code base that's easy to extend. Design clear boundaries so you limit failure.",
+     "ts": "18:38"
+    },
+    {
+     "video": "v14",
+     "quote": "You will need a layer of static architecture static rules that cannot be broken.",
+     "ts": "17:35"
+    }
+   ]
+  },
+  {
+   "claim": "Cấp cho agent dữ liệu giống production đã ẩn danh (mock production data, giữ hình dạng/độ dài dữ liệu thật) để tái hiện bug chính xác",
+   "evidence": [
+    {
+     "video": "v14",
+     "quote": "They have mock production data, so they can try and reproduce the exact same bug.",
+     "ts": "03:39"
+    },
+    {
+     "video": "v14",
+     "quote": "Sometimes we anonymize data.",
+     "ts": "16:21"
+    }
+   ]
+  }
+ ]
+}

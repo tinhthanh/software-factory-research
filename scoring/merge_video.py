@@ -1,11 +1,11 @@
 import json,collections
-a=json.load(open('scoring/video-consensus-a.json'));b=json.load(open('scoring/video-consensus-b.json'));c3=json.load(open('scoring/video-consensus-c.json'))
+a=json.load(open('scoring/video-consensus-a.json'));b=json.load(open('scoring/video-consensus-b.json'));c3=json.load(open('scoring/video-consensus-c.json'));d4=json.load(open('scoring/video-consensus-d.json'))
 g=json.load(open('scoring/video-agy-scores.json'))
 cl={x['id']:x['claim'] for x in json.load(open('scoring/claims.json'))}
 rs=json.load(open('scoring/consensus.json'))['scores']
-V=[f'v{i:02d}' for i in range(1,14)]
-meta={**a['video_meta'],**b['video_meta'],**c3['video_meta']}
-C={k:{**a['scores'][k],**b['scores'][k],**c3['scores'][k]} for k in cl}
+V=[f'v{i:02d}' for i in range(1,15)]
+meta={**a['video_meta'],**b['video_meta'],**c3['video_meta'],**d4['video_meta']}
+C={k:{**a['scores'][k],**b['scores'][k],**c3['scores'][k],**d4['scores'][k]} for k in cl}
 def sc(x): return x['score'] if isinstance(x,dict) else x
 bk=lambda s: 1 if s>=1 else (-1 if s<0 else 0)
 # inter-rater
@@ -26,5 +26,5 @@ for k in cl:
     agy_sup=sum(s>=1 for s in gs)
     rsup=sum(1 for r in rs[k].values() if r['score']>=1)
     rows.append((k,cl[k],rsup,sup,strong,agy_sup,w,contra,cs))
-    print(f"{k}|reports {rsup}/5|videos Claude ≥1:{sup}/13 (=2:{strong}) agy≥1:{agy_sup}/13|weighted {w}|contra {contra}|{cs}")
+    print(f"{k}|reports {rsup}/5|videos Claude ≥1:{sup}/{len(V)} (=2:{strong}) agy≥1:{agy_sup}/{len(V)}|weighted {w}|contra {contra}|{cs}")
 json.dump({'videos':V,'meta':meta,'claude':{k:{v:sc(C[k][v]) for v in V} for k in cl},'agy':g,'interrater':{'exact':exact,'bucket':buck,'kappa':kappa,'mae':mae}},open('scoring/video-merged.json','w'),indent=1,ensure_ascii=False)

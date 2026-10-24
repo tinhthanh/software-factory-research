@@ -1,6 +1,6 @@
 # Video YouTube — agy đọc hiểu từng video
 
-Danh sách video lấy từ [report.md](report.md) (01–12), cộng video 13 do người dùng bổ sung. Mỗi video có một file phân tích `NN-<videoId>.md`,
+Danh sách video lấy từ [report.md](report.md) (01–12), cộng video 13 và 14 do người dùng bổ sung (video 14 thêm ngày 2026-10-23). Mỗi video có một file phân tích `NN-<videoId>.md`,
 do `agy` (Gemini 3.8 Flash High) viết dựa trên transcript. Thực hiện ngày 2026-10-13.
 
 ## Kết luận: agy có đọc hiểu được video không?
@@ -34,11 +34,16 @@ do `agy` (Gemini 3.8 Flash High) viết dựa trên transcript. Thực hiện ng
 | 11 | My Super Simple Software Factory (For Agentic Engineers) | IndyDevDan | 29' | 4 | [11-haUfb1ievTE.md](11-haUfb1ievTE.md) |
 | 12 | Học Claude Code từ con số 0 → Sub-Agents & Automation | Thanh Trần - 5 Phút AI | 130' | 4.5 | [12-g-ZtK5u-iiw.md](12-g-ZtK5u-iiw.md) |
 | 13 | Every Claude Code Skill I Use to Drive My Entire Development Process | Cole Medin | 23' | 4.5 | [13-MbiMwgbGdxw.md](13-MbiMwgbGdxw.md) † |
+| 14 | software factory explained by a Senior Engineer (step by step) | theSeniorDev | 27' | 4.5 | [14-WOhJflEz3mY.md](14-WOhJflEz3mY.md) ‡ |
 
 † Transcript của video 13 **không phải phụ đề YouTube**. Khi tải video này, YouTube đã chặn IP của máy
 (`IpBlocked`), và cả `yt-dlp` lẫn bảng "Bản chép lời" trong trình duyệt đều trống. Vì vậy transcript được lấy bằng cách
 gắn video vào **AI Studio (Gemini 3.1 Pro, ~142K token)** qua Chrome, nhờ model chép nguyên văn kèm [mm:ss]
 (383 dòng, 00:00–23:02). Câu chữ có thể khác phụ đề gốc một chút. Gemini app (gemini.google.com) đã từ chối chép transcript đầy đủ.
+
+‡ Video 14: tóm tắt của agy nói năng suất đạt được "thông qua cơ chế tự động merge". Điều này **không đúng** với transcript:
+tác giả nói *"I do not do a lot of auto merge"* [13:09], chỉ cân nhắc auto-merge khi tỷ lệ phát hành thành công đạt khoảng 99%.
+Trích dẫn nguyên văn của v14: 5/5 khớp transcript, timestamp lệch dưới 6 giây.
 
 \* Điểm hữu ích cho team 3–10 kỹ sư (thang 1–5) do agy tự chấm. Đây là ý kiến của model, chưa được kiểm chứng.
 
